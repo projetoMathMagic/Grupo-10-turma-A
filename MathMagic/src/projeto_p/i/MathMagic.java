@@ -40,10 +40,15 @@ public class MathMagic {
                         + "Leva sua mãe para um abrigo!\n"
                         + "Vou para o fronte de batalha com o exército, depois a gente se encontra.");
                 System.out.println("Ório é o Líder da vila, Ánthropos é a vila de humanas que está em guerra com Mathema a anos, sendo sincero não sabemos o motivo até hoje.");
-                System.out.println(name + ": Vamos mãe ("+name_mother+") estamos sendo atacados, vou levar a senhora para o abrigo!");
+                System.out.println(name + ": Vamos mãe (" + name_mother + ") estamos sendo atacados, vou levar a senhora para o abrigo!");
                 System.out.println(name + " Sai de casa com sua mãe , e vê dezenas de casas pegando fogo, flechas voando, saqueadores invadindo casas! ");
                 System.out.println("No caminho encontram um soldado guiando o caminho,'Venham por aqui descendo as escadas encontrarão o abrigo!'");
-
+                System.out.println("Chegando no local, " + name + " encontrou dezenas de civis feridos, alguns inclusive pareciam ter sido atingidos por Magia!");
+                System.out.println(name + ": Já que deixei a senhora aqui vou para o fronte.");
+                System.out.println(name_mother + "Não!, Você é muito jovem para ir para guerra!");
+                System.out.println(name + "é meu dever, tenho q defender meu povo!");
+                System.out.println(name + "deixa sua mãe no abrigo, ela o puxa pelo braço pedindo par ele não ir.\n"
+                        + "Mas ele se solta da um beijo em seu rosto para se depedir e vai em direção a saida do abrigo e pede uma arma a um arqueiro q estava distribuindo armas, para os que estavam indo para o fronte.");
                 /* System.out.println("Que Falta de Educação a minha me chamo " + second_name + "!"); */
                 break;
             case 2:
