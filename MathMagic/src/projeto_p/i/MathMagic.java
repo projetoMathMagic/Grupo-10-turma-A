@@ -8,21 +8,25 @@ import java.util.Scanner;
 
 public class MathMagic {
 
-    public static void main(String[] args) {
+    public static int menu() {
         Scanner input = new Scanner(System.in);
-        int options;
-        int close = 0;
+        int options = 0;
         do {
             System.out.println("*******MATHMAGIC*******");
             System.out.println("1 - Jogar\n2 - Capítulos\n3 - Créditos\n4 - Sair");
             options = input.nextInt();
 
-            if (options == 1 || options == 2 || options == 3 || options == 4) {
-                close = 1;
-            } else {
-                close = 0;
+            if (options < 1 || options > 4) {
+                System.out.println("Opção Inválida!");
+                System.out.println("Digite novamente!");
             }
-        } while (close == 0);
+        } while (options < 1 || options > 4);
+        return options;
+    }
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int options = menu();
 
         switch (options) {
             case 1:
@@ -51,19 +55,18 @@ public class MathMagic {
                         + "Mas ele se solta da um beijo em seu rosto para se depedir e vai em direção a saida do abrigo e pede uma arma a um arqueiro q estava distribuindo armas, para os que estavam indo para o fronte.");
                 /* System.out.println("Que Falta de Educação a minha me chamo " + second_name + "!"); */
                 break;
+
             case 2:
 
                 break;
             case 3:
                 System.out.println("CRÉDITOS");
-                System.out.println("JOÃO PEDRO CARVALHO E SILVA\nJOÃO PEDRO SERIGNOLI BORIN\nGABRIEL ASSIS\nCAIO ROBERTO\nIGOR LIMA CHARLES");
+                System.out.println("JOÃO PEDRO CARVALHO E SILVA\nJOÃO PEDRO SERIGNOLI BORIN\nGABRIEL ASSIS\nCAIO ROBERTO\nIGOR HENRIQUE");
                 break;
             case 4:
                 System.out.println("O Jogo está sendo fechado, Obrigado e Volte Sempre!");
-                break;
-            default:
-                System.out.println("Opção inválida!");
         }
+
     }
 
 }
