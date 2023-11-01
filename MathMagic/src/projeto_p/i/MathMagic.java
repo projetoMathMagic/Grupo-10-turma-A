@@ -61,7 +61,7 @@ public class MathMagic {
                 break;
             case 3:
                 System.out.println("CRÉDITOS");
-                System.out.println("JOÃO PEDRO CARVALHO E SILVA\nJOÃO PEDRO SERIGNOLI BORIN\nGABRIEL ASSIS\nCAIO ROBERTO\nIGOR HENRIQUE");
+                System.out.println("JOÃO PEDRO CARVALHO E SILVA\nJOÃO PEDRO SERIGNOLLI BORIN\nGABRIEL ASSIS\nCAIO ROBERTO\nIGOR HENRIQUE");
                 break;
             case 4:
                 System.out.println("O Jogo está sendo fechado, Obrigado e Volte Sempre!");
