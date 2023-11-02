@@ -9,7 +9,6 @@ import java.util.Scanner;
 public class MathMagic {
 
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
         int op = menu();
         controlador(op);
     }
@@ -70,16 +69,19 @@ public class MathMagic {
         System.out.println("No caminho encontram um soldado guiando o caminho,'Venham por aqui descendo as escadas encontrarão o abrigo!'");
         System.out.println("Chegando no local, " + name + " encontrou dezenas de civis feridos, alguns inclusive pareciam ter sido atingidos por Magia!");
         System.out.println(name + ": Já que deixei a senhora aqui vou para o fronte.");
-        System.out.println(name_mother + ": Não!, Você é muito jovem para ir para guerra!");
+        System.out.println(name_mother + "Não!, Você é muito jovem para ir para guerra!");
         System.out.println(name + "é meu dever, tenho q defender meu povo!");
         System.out.println(name + "deixa sua mãe no abrigo, ela o puxa pelo braço pedindo par ele não ir.\n"
                 + "Mas ele se solta da um beijo em seu rosto para se depedir e vai em direção a saida do abrigo e pede uma arma a um arqueiro q estava distribuindo armas, para os que estavam indo para o fronte.");
-        System.out.println(name + ":Amigo, preciso de uma arma.");
-        System.out.println("Soldado: Qual Você quer ? ");
+        System.out.println(name
+                + ":Amigo, preciso de uma arma.");
+        System.out.println(
+                "Soldado: Qual Você quer ? ");
         do {
-            System.out.println("Escolha sua arma: \n"
-                    + "1)Espada\n"
-                    + "2)Arco");
+            System.out.println("""
+                               Escolha sua arma: 
+                               1)Espada
+                               2)Arco""");
             coletaDados = input.nextInt();
             if (coletaDados == 1) {
                 classe = "Bárbaro";
@@ -87,10 +89,10 @@ public class MathMagic {
                 classe = "Arqueiro";
             }
         } while (coletaDados < 1 || coletaDados > 2);
-
         System.out.println("Soldado: Que Falta de Educação a minha me chamo " + second_name + "!\n"
                 + "Boa Sorte, Bravo " + classe + ", as tropas de apoio se encontram a 5km daqui, tem um grupo de soldados se preparando para ir também, é só seguir a trilha");
-        System.out.println(name + ": Certo");
+        System.out.println(name
+                + ": Certo");
     }
 
     public static void creditos() {
