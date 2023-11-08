@@ -1,7 +1,4 @@
-/*
-Criado por:
-João Pedro Carvalho e Silva
- */
+
 package projeto_p.i;
 
 import java.util.Scanner;
@@ -99,11 +96,11 @@ public class MathMagic {
         System.out.println("Eu juro que vou me vingar!!");
 
         // Capítulo 2
-        System.out.printf("Mathema: %s, maldita insolência, como ousa atacar a minha vila e achar que sairiam impune?", name);
+        System.out.printf("Math: %s, maldita insolência, como ousa atacar a minha vila e achar que sairiam impune?", name);
         System.out.printf("%s: prove, velhote! Você e esses seus cabelos brancos não significam NADA, N-A-D-A", name);
-        System.out.println("Mathema: Ah é? Lógiki te aguarda");
+        System.out.println("Math: Ah é? Lógiki te aguarda");
         System.out.printf("%s: mais um nomezinho deplorável que vocês de exatas inventaram, e outra: vai fazer o quê? Me mandar pra outro planeta ou outra dimensãozinha?", name);
-        System.out.println("Mathema: você não sabe mesmo a hora de parar");
+        System.out.println("Math: você não sabe mesmo a hora de parar");
         System.out.println("***********~~~~~~~~~~~~~~~~~~~~~~~~~~***********");
         System.out.println("***********~~~~~~~~| |~~~~~~~~~***********");
         System.out.println("***********~~~~~|        |~~~~~***********");
@@ -111,53 +108,53 @@ public class MathMagic {
         System.out.println("****|            lÓGIKI              |****");
 
         System.out.printf("%s: Ixe! E não é que o velhote tava falando sério!", name);
-        System.out.println("Mathema: Ué? você não era o bonzão?");
+        System.out.println("Math: Ué? você não era o bonzão?");
         System.out.printf("%s: Também achava que eu era! Não sou mais, agora me tira daqui!", name);
-        System.out.println("Mathema: Daqui só se saí com matem...");
+        System.out.println("Math: Daqui só se saí com matem...");
         System.out.printf("%s: Lá vem!!1 Vocês não cansam de números, lógica e blablabla não?", name);
-        System.out.println("Mathema: ...ática");
-        System.out.println("Mathema: Só sai com matemática ou você fica ai e nunca mais volta");
+        System.out.println("Math: ...ática");
+        System.out.println("Math: Só sai com matemática ou você fica ai e nunca mais volta");
         System.out.printf("%s: Você precisa aprender a ameaçar mais as pessoas! Mas enfim tiozão, como volto?", name);
-        System.out.println("Mathema: Oh pessoazinha difícil!");
-        System.out.println("Mathema: O primeiro passo é matemática básica: potenciação!");
+        System.out.println("Math: Oh pessoazinha difícil!");
+        System.out.println("Math: O primeiro passo é matemática básica: potenciação!");
         System.out.printf("%s: E o que raios é isso?", name);
-        System.out.println("Mathema: \"A potenciação é uma operação matemática."
+        System.out.println("Math: \"A potenciação é uma operação matemática"
                 + "Utilizamos a potenciação para indicar multiplicações consecutivas de um mesmo número");
         System.out.printf("%s: Vamos tentar então!", name);
 
-        System.out.println("Mathema: Dois elevado a 3 é: ");
+        System.out.println("Math: Dois elevado a 3 é: ");
         while (true) {
             int resposta = input.nextInt();
 
             if (resposta == 8) {
-                System.out.println("Mathema: Parabéns, você acertou!");
+                System.out.println("Math: Parabéns, você acertou!");
                 break;
             } else {
-                System.out.println("Mathema: Tente de novo!");
+                System.out.println("Math: Tente de novo!");
             }
         }
 
-        System.out.println("Mathema: Logo dois elevado a 7 é: ");
+        System.out.println("Math: Logo dois elevado a 7 é: ");
         while (true) {
             int resposta = input.nextInt();
 
             if (resposta == 128) {
-                System.out.println("Mathema: Muito bom, você acertou!");
+                System.out.println("Math: Muito bom, você acertou!");
                 break;
             } else {
-                System.out.println("Mathema: Tente de novo!");
+                System.out.println("Math: Tente de novo!");
             }
         }
 
-        System.out.println("Mathema: Cinco elevado a 5 é: ");
+        System.out.println("Math: Cinco elevado a 5 é: ");
         while (true) {
             int resposta = input.nextInt();
 
             if (resposta == 3125) {
-                System.out.println("Mathema: Parabéns, você acertou!");
+                System.out.println("Math: Parabéns, você acertou!");
                 break;
             } else {
-                System.out.println("Mathema: Calma! Tente de novo!");
+                System.out.println("Math: Calma! Tente de novo!");
             }
 
         }
@@ -172,7 +169,7 @@ public class MathMagic {
 
     public static void creditos() {
         System.out.println("CRÉDITOS");
-        System.out.println("JOÃO PEDRO CARVALHO E SILVA\nJOÃO PEDRO SERIGNOLI BORIN\nGABRIEL ASSIS\nCAIO ROBERTO\nIGOR LIMA CHARLES");
+        System.out.println("JOÃO PEDRO CARVALHO E SILVA\nJOÃO PEDRO SERIGNOLI BORIN\nGABRIEL ASSIS\nCAIO ROBERTO MORAES DE OLIVEIRA\nIGOR LIMA CHARLES");
     }
 
     public static void sair() {
