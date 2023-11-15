@@ -2,6 +2,7 @@
 package projeto_p.i;
 
 import java.util.Scanner;
+import java.util.concurrent.TimeUnit;
 
 public class MathMagic {
 
@@ -176,4 +177,11 @@ public class MathMagic {
     public static void sair() {
         System.out.println("O Jogo está sendo fechado, Obrigado e Volte Sempre!");
     }
+    
+    public static void Falas(String falas, TimeUnit unit, long tempo_mensagem) throws InterruptedException {
+        for (char caractere : falas.toCharArray()) {
+        System.out.print(caractere);
+        unit.sleep(tempo_mensagem);
+        }
+    }   
 }
