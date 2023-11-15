@@ -26,6 +26,9 @@ public class MathMagic {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+        
+        static int tempo_dialog = 70, tempo_falas = 50, tempo_pausa = 30;
+        
         int options = menu();
 
         switch (options) {
