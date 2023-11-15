@@ -45,6 +45,7 @@ public class MathMagic {
 
     public static void historia() {
         Scanner input = new Scanner(System.in);
+        String [] names = new String[4];
         String name;
         String second_name = "Jarvis";
         String name_father = "Ório";
@@ -55,7 +56,7 @@ public class MathMagic {
         System.out.println("Para Iniciarmos nossa Jornada bravo guerreiro me diga seu nome.");
         System.out.println("Digite seu Nome: ");
         name = input.next();
-        System.out.println("Em uma manhã em Ánthropos, " + name + " acorda assustado com seu pai (" + name_father + ") mandando ele ir para um abrigo seguro!");
+        System.out.println("Em uma manhã em Ánthropos, " + names[0] + " acorda assustado com seu pai (" + name_father + ") mandando ele ir para um abrigo seguro!");
         System.out.println(name_father + ": Anda levanta a vila está sendo atacada!\n"
                 + "maldito exército de Mathema, pegaram a gente de surpresa\n"
                 + "Leva sua mãe para um abrigo!\n"
@@ -94,6 +95,9 @@ public class MathMagic {
                 + "Não pode ser!\n"
                 + "gritou chorando.");
         System.out.println("Eu juro que vou me vingar!!");
+        System.out.println("***********Duas semanas depois***********");
+        System.out.println(name + " acordou em sua cabana, no acampamento de batalha ");
+        System.out.println("");
 
         // Capítulo 2
         System.out.printf("Math: %s, maldita insolência, como ousa atacar a minha vila e achar que sairiam impune?", name);
