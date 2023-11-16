@@ -16,10 +16,8 @@ public class MathMagic {
     public static void controlador(int op) {
         switch (op) {
             case 1 -> historia();
-            case 2 -> {
-            }
-            case 3 -> creditos();
-            case 4 -> sair();
+            case 2 -> creditos();
+            case 3 -> sair();
         }
     }
 
@@ -28,7 +26,7 @@ public class MathMagic {
         int options = 0;
         do {
             System.out.println("*******MATHMAGIC*******");
-            System.out.println("1 - Jogar\n2 - Capítulos\n3 - Créditos\n4 - Sair");
+            System.out.println("1 - Jogar\n2 - Créditos\n3 - Sair");
             options = input.nextInt();
 
             if (options < 1 || options > 4) {
@@ -173,6 +171,9 @@ public class MathMagic {
                 + "______-------");
 
         System.out.printf("%s: *voz sarcastica* Ah, que lindo, um degrau! Muito obrigado, viu? ~_~", names[0]);
+    }
+    public static void capitulos(){
+       
     }
 
     public static void creditos() {
