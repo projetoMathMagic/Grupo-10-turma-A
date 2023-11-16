@@ -1,4 +1,3 @@
-
 package projeto_p.i;
 
 import java.util.Scanner;
@@ -7,25 +6,20 @@ import java.util.concurrent.TimeUnit;
 public class MathMagic {
 
     Scanner input = new Scanner(System.in);
-    static int temp_dialog =70, temp_falas = 100; // tempo das dialogs e falas dos personagens.
-    
+    static int temp_dialog = 70, temp_falas = 100; // tempo das dialogs e falas dos personagens.
+
     public static void main(String[] args) {
         int op = menu();
         controlador(op);
     }
 
-    public static void controlador(int options) {
-        switch (options) {
-            case 1:
-                historia();
-                break;
-            case 2:
-                break;
-            case 3:
-                creditos();
-                break;
-            case 4:
-                sair();
+    public static void controlador(int op) {
+        switch (op) {
+            case 1 -> historia();
+            case 2 -> {
+            }
+            case 3 -> creditos();
+            case 4 -> sair();
         }
     }
 
@@ -46,8 +40,14 @@ public class MathMagic {
     }
 
     public static void historia() {
+        String[] names = capitulo1();
+        capitulo2(names);
+
+    }
+
+    public static String[] capitulo1() {
         Scanner input = new Scanner(System.in);
-        String [] names = new String[5];       
+        String[] names = new String[5];
         names[1] = "Jarvis";
         names[2] = "Ório";
         names[3] = "Sarah";
@@ -62,7 +62,7 @@ public class MathMagic {
                 + "Leva sua mãe para um abrigo!\n"
                 + "Vou para o fronte de batalha com o exército, depois a gente se encontra.");
         System.out.println("Ório é o Líder da vila, Ánthropos é a vila de humanas que está em guerra com Mathema a anos, sendo sincero não sabemos o motivo até hoje.");
-        System.out.println(names[0] + ": Vamos mãe (" + names[3]+ ") estamos sendo atacados, vou levar a senhora para o abrigo!");
+        System.out.println(names[0] + ": Vamos mãe (" + names[3] + ") estamos sendo atacados, vou levar a senhora para o abrigo!");
         System.out.println(names[0] + " Sai de casa com sua mãe , e vê dezenas de casas pegando fogo, flechas voando, saqueadores invadindo casas! ");
         System.out.println("No caminho encontram um soldado guiando o caminho,'Venham por aqui descendo as escadas encontrarão o abrigo!'");
         System.out.println("Chegando no local, " + names[0] + " encontrou dezenas de civis feridos, alguns inclusive pareciam ter sido atingidos por Magia!");
@@ -86,8 +86,8 @@ public class MathMagic {
                 + "Boa Sorte, Bravo " + names[4] + ", as tropas de apoio se encontram a 10km daqui, tem um grupo de soldados se preparando para ir também, é só seguir a trilha");
         System.out.println(names[4] + ": Certo");
         System.out.println("Após quase uma hora indo com seu grupo a direção das tropas, " + names[0] + " houve um som muito alto, se vira e vê o abrigo pegando fogo.");
-        System.out.println("O grupo ficou muito abalado, mas decidiu continuar seu caminho, "+ names[0] +" por outro lado, pensando em sua mãe, decidiu  voltar ao abrigo.");
-        System.out.println("O grupo e " + names[0] +" entraram em discussão, eles não queriam que ele voltasse sozinho, e que continuasse com o grupo.");
+        System.out.println("O grupo ficou muito abalado, mas decidiu continuar seu caminho, " + names[0] + " por outro lado, pensando em sua mãe, decidiu  voltar ao abrigo.");
+        System.out.println("O grupo e " + names[0] + " entraram em discussão, eles não queriam que ele voltasse sozinho, e que continuasse com o grupo.");
         System.out.println("Porém, ele voltou mesmo assim.");
         System.out.println("Chegando lá, o exército inimigo já não estava mais lá, só tinha destroços do abrigo.");
         System.out.println("Após muita procura, ele encontra o corpo de sua mãe.");
@@ -99,6 +99,11 @@ public class MathMagic {
         System.out.println(names[0] + " acordou em sua cabana, no acampamento de batalha ");
         System.out.println("");
 
+        return names;
+    }
+
+    public static void capitulo2(String[] names) {
+        Scanner input = new Scanner(System.in);
         // Capítulo 2
         System.out.printf("Math: %s, maldita insolência, como ousa atacar a minha vila e achar que sairiam impune?", names[0]);
         System.out.printf("%s: prove, velhote! Você e esses seus cabelos brancos não significam NADA, N-A-D-A", names[0]);
@@ -168,7 +173,6 @@ public class MathMagic {
                 + "______-------");
 
         System.out.printf("%s: *voz sarcastica* Ah, que lindo, um degrau! Muito obrigado, viu? ~_~", names[0]);
-
     }
 
     public static void creditos() {
@@ -182,8 +186,8 @@ public class MathMagic {
 
     public static void Falas(String falas, TimeUnit unit, long tempo_mensagem) throws InterruptedException {
         for (char caractere : falas.toCharArray()) {
-        System.out.print(caractere);
-        unit.sleep(tempo_mensagem);
+            System.out.print(caractere);
+            unit.sleep(tempo_mensagem);
         }
-    }   
+    }
 }
