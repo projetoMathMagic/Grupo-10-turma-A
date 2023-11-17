@@ -95,40 +95,43 @@ public class MathMagic {
         System.out.println("Eu juro que vou me vingar!!");
         System.out.println("***********Duas semanas depois***********");
         System.out.println(names[0] + " acordou em sua cabana, no acampamento de batalha ");
-        System.out.println("");
-
+        System.out.println(names[0] + " estava decidido a colocar um fim nisso, mas não sabia com quem conversar.");
+        System.out.println(names[0] + "Será que aquele velhote chamado Math ainda existe?");
+        
         return names;
     }
 
     public static void capitulo2(String[] names) {
         Scanner input = new Scanner(System.in);
         // Capítulo 2
-        System.out.printf("Math: %s, maldita insolência, como ousa atacar a minha vila e achar que sairiam impune?", names[0]);
+        System.out.printf("Math: %s, maldita insolência, como ousou atacar a minha vila e achar que sairiam impune?", names[0]);
+        System.out.printf("%s: Onde eu ataquei a sua vila? Prove!", names[0]);
         System.out.printf("%s: prove, velhote! Você e esses seus cabelos brancos não significam NADA, N-A-D-A", names[0]);
-        System.out.println("Math: Ah é? Lógiki te aguarda");
-        System.out.printf("%s: mais um nomezinho deplorável que vocês de exatas inventaram, e outra: vai fazer o quê? Me mandar pra outro planeta ou outra dimensãozinha?", names[0]);
-        System.out.println("Math: você não sabe mesmo a hora de parar");
+        System.out.println("Math: Essa maldita guerra não estaria acontecendo se você não tivesse atacado o meu povo com a sua ignorância");
+        System.out.printf("%s: Eu taquei pedras para descontrair. Nada demais, são só pedras!", names[0]);
+        System.out.println("Math: Você não tem civilidade nenhuma!");
+        System.out.printf("%s: Eu sou mais civilizado que vocês, loucos dos números!", names[0]);
         System.out.println("***********~~~~~~~~~~~~~~~~~~~~~~~~~~***********");
         System.out.println("***********~~~~~~~~| |~~~~~~~~~***********");
         System.out.println("***********~~~~~|        |~~~~~***********");
         System.out.println("***********|                  |***********");
-        System.out.println("****|            lÓGIKI              |****");
+                System.out.printf("Math: %s, maldita insolência, como ousou atacar a minha vila e achar que sairiam impune?", names[0]);
+System.out.println("****|            lÓGIKI              |****");
 
-        System.out.printf("%s: Eita! E não é que o velhote tava falando sério!", names[0]);
+        System.out.printf("%s: Onde estou? QUE RAIOS DE LUGAR É ESSE?!", names[0]);
         System.out.println("Math: Ué? você não era o bonzão?");
         System.out.printf("%s: Também achava que eu era! Não sou mais, agora me tira daqui!", names[0]);
         System.out.println("Math: Daqui só se saí com matem...");
         System.out.printf("%s: Lá vem!!1 Vocês não cansam de números, lógica e blablabla não?", names[0]);
         System.out.println("Math: ...ática");
         System.out.println("Math: Só sai com matemática ou você fica ai e nunca mais volta");
-        System.out.printf("%s: Você precisa aprender a ameaçar mais as pessoas! Mas enfim tiozão, como volto?", names[0]);
-        System.out.println("Math: Oh pessoazinha difícil!");
+        System.out.printf("%s: Você precisa aprender a ameaçar mais as pessoas! Mas enfim, como volto?", names[0]);
         System.out.println("Math: O primeiro passo é matemática básica: potenciação!");
         System.out.printf("%s: E o que raios é isso?", names[0]);
         System.out.println("Math: \"A potenciação é uma operação matemática"
                 + "Utilizamos a potenciação para indicar multiplicações consecutivas de um mesmo número");
         System.out.printf("%s: Vamos tentar então!", names[0]);
-
+        
         System.out.println("Math: Dois elevado a 3 é: ");
         while (true) {
             int resposta = input.nextInt();
