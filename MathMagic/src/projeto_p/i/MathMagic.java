@@ -43,6 +43,7 @@ public class MathMagic {
     public static void historia() {
         String[] names = capitulo1();
         capitulo2(names);
+        capitulo3(names);
 
     }
 
@@ -201,9 +202,59 @@ public class MathMagic {
 
         System.out.printf("%s: *voz sarcastica* Ah, que lindo, um degrau! Muito obrigado, viu? ~_~", names[0]);
     }
+    
+    public static void capitulo3(String[]names) {
+        Scanner input = new Scanner(System.in);
+        
+        System.out.printf("%s: Que droga de criatura é essa? Meus ataques não surtem efeito nessa coisa, deve ter algum truque por trás disso!",names[0]);
+        if(names[4] == "Arqueiro"){
+            System.out.printf("%s: Minhas flechas de base hexadecimal não estão causando dano, vou testar com outro tipo de flechas!",names[0]);
+        }else{
+            System.out.printf("%s: Meus golpes de base hexadecimal não estão surtindo efeito, vou testar com outro tipo de base ",names[0]);
+        }
+        System.out.printf("%s: Meus ataques com outras bases também não estão causando dano nesse golem, preciso pensar em algo rápido!",names[0]);
+        
+        System.out.printf("%s: Vou tentar algo arriscado, acredito que os meus ataques não estou surtindo efeito pois esse golem está se adaptando a base numérica dos meus ataques no momento em que eles vão atingi-lo!",names[0]);
+        
+        System.out.printf("%s: Para superar essa habilidade, preciso usar minha magia para alterar a base numérica dele no momento que meus ataques forem acertar! Assim ele não vai conseguir se adaptar e conseguirei causar dano, para isso terei que resolver o cálculo necessário para alterar sua base numérica.",names[0]);
+        
+    System.out.printf("%s: A base numérica do golem é o número hexadecimal 3A, preciso passar essa base para um número binário: ",names[0]);
+        while (true) {
+            int resposta = input.nextInt();
 
-    public static void capitulos() {
+            if (resposta == 00111010) {
+                System.out.printf("%s: Consegui causar dano!",names[0]);
+                break;
+            } else {
+                System.out.printf("%s: O cálculo está errado, não consegui alterar a base numérica dele!",names[0]);
+            }
+        }
+        
+        System.out.printf("%s: Ele alterou a base numérica novamente,agora a base numérica dele é o número octal 47, dessa vez vou usar um ataque de base hexadecimal, preciso converter a base dele!",names[0]);
+        while (true) {
+            int resposta = input.nextInt();
 
+            if (resposta == 27) {
+                System.out.printf("%s: Ótimo, mais um golpe certeiro, mais um acerto e é o fim da linha para você!",names[0]);
+                break;
+            } else {
+                System.out.printf("%s: Droga, não consegui converter a base dele para a base decimal e ele conseguiu absorver meu ataque!",names[0]);
+            }
+        }
+        
+        System.out.printf("%s: Preciso acertar esse golpe final! A base numérica dele agora é o número 3F6 na base hexadecimal, vou usar um ataque de base decimal para finaliza-lo. ",names[0]);
+        while (true) {
+            int resposta = input.nextInt();
+
+            if (resposta == 1014) {
+                System.out.printf("%s: Está acabado, finalmente consegui derrota-lo!",names[0]);
+                break;
+            } else {
+                System.out.printf("%s: Falhei em converter a base dele para decimal, mas não desistirei!",names[0]);
+            }
+        }
+        
+        
     }
 
     public static void creditos() {
