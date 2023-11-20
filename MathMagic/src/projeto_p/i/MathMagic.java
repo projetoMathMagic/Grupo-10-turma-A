@@ -214,15 +214,15 @@ public class MathMagic {
         }
         System.out.printf("%s: Meus ataques com outras bases também não estão causando dano nesse golem, preciso pensar em algo rápido!",names[0]);
         
-        System.out.printf("%s: Vou tentar algo arriscado, acredito que os meus ataques não estou surtindo efeito pois esse golem está se adaptando a base numérica dos meus ataques no momento em que eles vão atingi-lo!",names[0]);
+        System.out.printf("%s: Vou tentar algo arriscado, acho que meus ataques não estão surtindo efeito,\n pois esse golem está se adaptando a base numérica dos meus ataques no momento em que eles vão atingi-lo!",names[0]);
         
-        System.out.printf("%s: Para superar essa habilidade, preciso usar minha magia para alterar a base numérica dele no momento que meus ataques forem acertar! Assim ele não vai conseguir se adaptar e conseguirei causar dano, para isso terei que resolver o cálculo necessário para alterar sua base numérica.",names[0]);
+        System.out.printf("%s: Para superar essa habilidade, preciso usar minha magia para alterar a base numérica dele no momento que meus ataques forem acertar!\n Assim ele não vai conseguir se adaptar e conseguirei causar dano,\n para isso terei que resolver o cálculo necessário para alterar sua base numérica.",names[0]);
         
-    System.out.printf("%s: A base numérica do golem é o número hexadecimal 3A, preciso passar essa base para um número binário: ",names[0]);
+    System.out.printf("%s: A base numérica do golem é o número hexadecimal 2A, preciso passar essa base para um número binário: ",names[0]);
         while (true) {
             int resposta = input.nextInt();
 
-            if (resposta == 00111010) {
+            if (resposta == 101010) {
                 System.out.printf("%s: Consegui causar dano!",names[0]);
                 break;
             } else {
@@ -230,7 +230,7 @@ public class MathMagic {
             }
         }
         
-        System.out.printf("%s: Ele alterou a base numérica novamente,agora a base numérica dele é o número octal 47, dessa vez vou usar um ataque de base hexadecimal, preciso converter a base dele!",names[0]);
+        System.out.printf("%s: Ele alterou a base numérica novamente,agora a base numérica dele é o número octal 47,\n dessa vez vou usar um ataque de base hexadecimal, preciso converter a base dele!",names[0]);
         while (true) {
             int resposta = input.nextInt();
 
@@ -242,7 +242,7 @@ public class MathMagic {
             }
         }
         
-        System.out.printf("%s: Preciso acertar esse golpe final! A base numérica dele agora é o número 3F6 na base hexadecimal, vou usar um ataque de base decimal para finaliza-lo. ",names[0]);
+        System.out.printf("%s: Preciso acertar esse golpe final! A base numérica dele agora é o número 3F6 na base hexadecimal,\n vou usar um ataque de base decimal para finaliza-lo. ",names[0]);
         while (true) {
             int resposta = input.nextInt();
 
