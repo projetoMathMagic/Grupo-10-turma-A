@@ -15,9 +15,12 @@ public class MathMagic {
 
     public static void controlador(int op) {
         switch (op) {
-            case 1 -> historia();
-            case 2 -> creditos();
-            case 3 -> sair();
+            case 1 ->
+                historia();
+            case 2 ->
+                creditos();
+            case 3 ->
+                sair();
         }
     }
 
@@ -45,11 +48,12 @@ public class MathMagic {
 
     public static String[] capitulo1() {
         Scanner input = new Scanner(System.in);
-        String[] names = new String[5];
+        String[] names = new String[6];
         names[1] = "Jarvis";
         names[2] = "Ório";
         names[3] = "Sarah";
         int coletaDados;
+        names[5] = "Math";
 
         System.out.println("Para Iniciarmos nossa Jornada bravo guerreiro me diga seu nome.");
         System.out.println("Digite seu Nome: ");
@@ -94,29 +98,51 @@ public class MathMagic {
                 + "gritou chorando.");
         System.out.println("Eu juro que vou me vingar!!");
         System.out.println("***********Duas semanas depois***********");
-        System.out.println(names[0] + " acordou em sua cabana, no acampamento de batalha ");
-        System.out.println(names[0] + " estava decidido a colocar um fim nisso, mas não sabia com quem conversar.");
-        System.out.println(names[0] + "Será que aquele velhote chamado Math ainda existe?");
-        
+        System.out.println(names[0] + ": acordou em sua cabana, no acampamento de batalha ");
+        System.out.println(names[0] + ": estava decidido a colocar um fim nisso, mas não sabia com quem conversar.");
+        System.out.println(names[0] + ": Será que aquele velhote chamado Math ainda existe?");
+        System.out.println(names[0] + ": decide ir para cabana onde estão sendi decididas as táticas de guerra.");
+        System.out.println(names[0] + ": pai eu vou até Mathema, vou me vingar daquele povo!");
+        System.out.println(names[2] + ": Não, você não vai!");
+        System.out.println(names[0] + ": eu vou de qualquer jeito");
+        System.out.println("Disse " + names[0] + " saindo da cabana!");
+        System.out.println("Durante a tarde ele encontrou o " + names[1] + " e pediu ajuda para saber onde ficavam as saidas do acampamento.");
+        System.out.println(names[1] + ": O que você está pretendendo fazer ?");
+        System.out.println(names[0] + ": Só estou fazendo uma pesquisa para saber onde melhorar a segurança do acampamento.");
+        System.out.println(names[1] + ": Entendo.");
+        System.out.println("Durante a Madrugada ele entrou no estábulo roubou um cavalo,e com levou sua armadura e arma.");
+
         return names;
     }
 
     public static void capitulo2(String[] names) {
         Scanner input = new Scanner(System.in);
-        // Capítulo 2
-        System.out.printf("Math: %s, maldita insolência, como ousou atacar a minha vila e achar que sairiam impune?", names[0]);
+        System.out.println("Após longos dias passando de viagem");
+        System.out.printf("Por muitas vezes tendo que se esconder das tropas inimigas, finalmente %s chegou em Mathema.", names[0]);
+        System.out.printf("%s: certo, preciso dar um jeito de invadir o castelo do Math.", names[0]);
+        System.out.printf("Após algumas horas estudando o castelo de longe,decidiu entrar pela área de serviços.");
+        System.out.printf("%s consegui entrar pela área de serviço, após nocautear um cozinheiro e pegar a roupa dele.", names[0]);
+        System.out.printf("%s subiu vários andares pelas as escadas, até que encontrou um guarda, o atacou pelas costa e seguiu seu caminho.", names[0]);
+        System.out.printf("Ele só não esperava de encontraria %s em um dos andares, se escondeu em uma das salas do corredor e ficou o observando de longe.", names[5]);
+        System.out.printf("Do nada Math se vira e olha para a porta, e questão de segundos %s apaga", names[0]);
+        System.out.printf("%s acordou amarrado em uma sala que parecia ter um trono no meio dela.", names[0]);
+        System.out.printf("%s:Finalmente acordou, pensei que nunca iria acordar", names[5]);
+        System.out.printf("%s:Realmente achou que invadiria meu castelo e eu não sentiria sua presença?", names[5]);
+        System.out.printf("%s:Vou dar uma dica para você meu caro, jamais subestime os poderes de um mago, se esconder se esconder dentro da minha sala de poções ?", names[5]);
+        System.out.printf("%s:Chega a ser hilário, e ainda tenta atacar minha vila sozinho.", names[5]);
+        System.out.printf("%s: %s, maldita insolência, como ousou atacar a minha vila e achar que sairiam impune?", names[5], names[0]);
         System.out.printf("%s: Onde eu ataquei a sua vila? Prove!", names[0]);
         System.out.printf("%s: prove, velhote! Você e esses seus cabelos brancos não significam NADA, N-A-D-A", names[0]);
-        System.out.println("Math: Essa maldita guerra não estaria acontecendo se você não tivesse atacado o meu povo com a sua ignorância");
+        System.out.printf("%s: Essa maldita guerra não estaria acontecendo se você não tivesse atacado o meu povo com a sua ignorância", names[5]);
         System.out.printf("%s: Eu taquei pedras para descontrair. Nada demais, são só pedras!", names[0]);
-        System.out.println("Math: Você não tem civilidade nenhuma!");
+        System.out.printf("%s:E elas acertaram sem querer a cabeça dos meu soldados né? ", names[5]);
+        System.out.printf("%s: Você não tem civilidade nenhuma!", names[5]);
         System.out.printf("%s: Eu sou mais civilizado que vocês, loucos dos números!", names[0]);
         System.out.println("***********~~~~~~~~~~~~~~~~~~~~~~~~~~***********");
         System.out.println("***********~~~~~~~~| |~~~~~~~~~***********");
         System.out.println("***********~~~~~|        |~~~~~***********");
         System.out.println("***********|                  |***********");
-                System.out.printf("Math: %s, maldita insolência, como ousou atacar a minha vila e achar que sairiam impune?", names[0]);
-System.out.println("****|            lÓGIKI              |****");
+        System.out.println("****|            lÓGIKI              |****");
 
         System.out.printf("%s: Onde estou? QUE RAIOS DE LUGAR É ESSE?!", names[0]);
         System.out.println("Math: Ué? você não era o bonzão?");
@@ -131,7 +157,7 @@ System.out.println("****|            lÓGIKI              |****");
         System.out.println("Math: \"A potenciação é uma operação matemática"
                 + "Utilizamos a potenciação para indicar multiplicações consecutivas de um mesmo número");
         System.out.printf("%s: Vamos tentar então!", names[0]);
-        
+
         System.out.println("Math: Dois elevado a 3 é: ");
         while (true) {
             int resposta = input.nextInt();
@@ -175,8 +201,9 @@ System.out.println("****|            lÓGIKI              |****");
 
         System.out.printf("%s: *voz sarcastica* Ah, que lindo, um degrau! Muito obrigado, viu? ~_~", names[0]);
     }
-    public static void capitulos(){
-       
+
+    public static void capitulos() {
+
     }
 
     public static void creditos() {
