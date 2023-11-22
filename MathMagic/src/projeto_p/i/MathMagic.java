@@ -73,7 +73,7 @@ public class MathMagic {
         System.out.println(names[0] + ": Não!, Você é muito jovem para ir para guerra!");
         System.out.println(names[0] + "é meu dever, tenho q defender meu povo!");
         System.out.println(names[0] + "deixa sua mãe no abrigo, ela o puxa pelo braço pedindo par ele não ir.\n"
-                + "Mas ele se solta da um beijo em seu rosto para se depedir e vai em direção a saida do abrigo e pede uma arma a um arqueiro q estava distribuindo armas, para os que estavam indo para o fronte.");
+                + "Mas ele se solta da um beijo em seu rosto para se despedir\n e vai em direção a saida do abrigo e pede uma arma a um arqueiro q estava distribuindo armas, para os que estavam indo para o fronte.");
         System.out.println(names[0] + ":Amigo, preciso de uma arma.");
         System.out.println("Soldado: Qual Você quer ? ");
         do {
@@ -123,18 +123,18 @@ public class MathMagic {
         System.out.printf("%s: certo, preciso dar um jeito de invadir o castelo do Math.", names[0]);
         System.out.printf("Após algumas horas estudando o castelo de longe,decidiu entrar pela área de serviços.");
         System.out.printf("%s consegui entrar pela área de serviço, após nocautear um cozinheiro e pegar a roupa dele.", names[0]);
-        System.out.printf("%s subiu vários andares pelas as escadas, até que encontrou um guarda, o atacou pelas costa e seguiu seu caminho.", names[0]);
-        System.out.printf("Ele só não esperava de encontraria %s em um dos andares, se escondeu em uma das salas do corredor e ficou o observando de longe.", names[5]);
+        System.out.printf("%s subiu vários andares pelas as escadas, até que encontrou um guarda,\n o atacou pelas costa e seguiu seu caminho.", names[0]);
+        System.out.printf("Ele só não esperava de encontraria %s em um dos andares,\n se escondeu em uma das salas do corredor e ficou o observando de longe.", names[5]);
         System.out.printf("Do nada Math se vira e olha para a porta, e questão de segundos %s apaga", names[0]);
         System.out.printf("%s acordou amarrado em uma sala que parecia ter um trono no meio dela.", names[0]);
         System.out.printf("%s:Finalmente acordou, pensei que nunca iria acordar", names[5]);
         System.out.printf("%s:Realmente achou que invadiria meu castelo e eu não sentiria sua presença?", names[5]);
-        System.out.printf("%s:Vou dar uma dica para você meu caro, jamais subestime os poderes de um mago, se esconder se esconder dentro da minha sala de poções ?", names[5]);
+        System.out.printf("%s:Vou dar uma dica para você meu caro, jamais subestime os poderes de um mago,\n se esconder se esconder dentro da minha sala de poções ?", names[5]);
         System.out.printf("%s:Chega a ser hilário, e ainda tenta atacar minha vila sozinho.", names[5]);
         System.out.printf("%s: %s, maldita insolência, como ousou atacar a minha vila e achar que sairiam impune?", names[5], names[0]);
         System.out.printf("%s: Onde eu ataquei a sua vila? Prove!", names[0]);
         System.out.printf("%s: prove, velhote! Você e esses seus cabelos brancos não significam NADA, N-A-D-A", names[0]);
-        System.out.printf("%s: Essa maldita guerra não estaria acontecendo se você não tivesse atacado o meu povo com a sua ignorância", names[5]);
+        System.out.printf("%s: Essa maldita guerra,\n ela não estaria acontecendo se você não tivesse atacado o meu povo com a sua ignorância", names[5]);
         System.out.printf("%s: Eu taquei pedras para descontrair. Nada demais, são só pedras!", names[0]);
         System.out.printf("%s:E elas acertaram sem querer a cabeça dos meu soldados né? ", names[5]);
         System.out.printf("%s: Você não tem civilidade nenhuma!", names[5]);
@@ -196,7 +196,7 @@ public class MathMagic {
 
         }
 
-        System.out.printf("Pegou o jeito da coisa, agora é só continuar, %s. Como recompensa, aqui está um pedaço da escada para você voltar", names[0]);
+        System.out.printf("Pegou o jeito da coisa, agora é só continuar, %s.\n Como recompensa, aqui está um pedaço da escada para você voltar", names[0]);
         System.out.println(""
                 + "______-------");
 
@@ -208,21 +208,21 @@ public class MathMagic {
         
         System.out.printf("%s: Que droga de criatura é essa? Meus ataques não surtem efeito nessa coisa, deve ter algum truque por trás disso!",names[0]);
         if(names[4] == "Arqueiro"){
-            System.out.printf("%s: Minhas flechas de base hexadecimal não estão causando dano, vou testar com outro tipo de flechas!",names[0]);
+            System.out.printf("%s: Minhas flechas de base hexadecimal não estão causando dano,\n vou testar com outro tipo de flechas!",names[0]);
         }else{
-            System.out.printf("%s: Meus golpes de base hexadecimal não estão surtindo efeito, vou testar com outro tipo de base ",names[0]);
+            System.out.printf("%s: Meus golpes de base hexadecimal não estão surtindo efeito,\n vou testar com outro tipo de base ",names[0]);
         }
-        System.out.printf("%s: Meus ataques com outras bases também não estão causando dano nesse golem, preciso pensar em algo rápido!",names[0]);
+        System.out.printf("%s: Meus ataques com outras bases também não estão causando dano nesse golem,\n preciso pensar em algo rápido!",names[0]);
         
         System.out.printf("%s: Vou tentar algo arriscado, acho que meus ataques não estão surtindo efeito,\n pois esse golem está se adaptando a base numérica dos meus ataques no momento em que eles vão atingi-lo!",names[0]);
         
         System.out.printf("%s: Para superar essa habilidade, preciso usar minha magia para alterar a base numérica dele no momento que meus ataques forem acertar!\n Assim ele não vai conseguir se adaptar e conseguirei causar dano,\n para isso terei que resolver o cálculo necessário para alterar sua base numérica.",names[0]);
         
-    System.out.printf("%s: A base numérica do golem é o número hexadecimal 2A, preciso passar essa base para um número binário: ",names[0]);
+    System.out.printf("%s: A base numérica do golem é o número hexadecimal 2A, preciso passar essa base para um número binário: \n Alternativas: \n1- 101010\n2- 001001\n3- 111000\n4- 010101\n",names[0]);
         while (true) {
             int resposta = input.nextInt();
 
-            if (resposta == 101010) {
+            if (resposta == 1) {
                 System.out.printf("%s: Consegui causar dano!",names[0]);
                 break;
             } else {
@@ -230,11 +230,11 @@ public class MathMagic {
             }
         }
         
-        System.out.printf("%s: Ele alterou a base numérica novamente,agora a base numérica dele é o número octal 47,\n dessa vez vou usar um ataque de base hexadecimal, preciso converter a base dele!",names[0]);
+        System.out.printf("%s: Ele alterou a base numérica novamente,agora a base numérica dele é o número octal 47,\n dessa vez vou usar um ataque de base hexadecimal, preciso converter a base dele!\nAlternativas: \n1- 32\n2- 54\n3- 27\n4- 11\n",names[0]);
         while (true) {
             int resposta = input.nextInt();
 
-            if (resposta == 27) {
+            if (resposta == 3) {
                 System.out.printf("%s: Ótimo, mais um golpe certeiro, mais um acerto e é o fim da linha para você!",names[0]);
                 break;
             } else {
@@ -242,11 +242,11 @@ public class MathMagic {
             }
         }
         
-        System.out.printf("%s: Preciso acertar esse golpe final! A base numérica dele agora é o número 3F6 na base hexadecimal,\n vou usar um ataque de base decimal para finaliza-lo. ",names[0]);
+        System.out.printf("%s: Preciso acertar esse golpe final! A base numérica dele agora é o número 3F6 na base hexadecimal,\n vou usar um ataque de base decimal para finaliza-lo.\n Alternativas: \n1- 2030\n2- 1013\n3- 1050\n4- 1014\n ",names[0]);
         while (true) {
             int resposta = input.nextInt();
 
-            if (resposta == 1014) {
+            if (resposta == 4) {
                 System.out.printf("%s: Está acabado, finalmente consegui derrota-lo!",names[0]);
                 break;
             } else {
