@@ -6,7 +6,7 @@ import java.util.concurrent.TimeUnit;
 public class MathMagic {
 
     Scanner input = new Scanner(System.in);
-    static int temp_dialog = 70, temp_falas = 100; // tempo das dialogs e falas dos personagens.
+    static int temp_dialog = 70, temp_falas = 100; // tempo das dialogs e falas dos personagens
 
     public static void main(String[] args) {
         int op = menu();
