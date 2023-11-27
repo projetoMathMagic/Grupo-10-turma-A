@@ -6,13 +6,16 @@ import java.util.concurrent.TimeUnit;
 public class MathMagic {
 
     Scanner input = new Scanner(System.in);
-    static int temp_dialog = 70, temp_falas = 100; // tempo das dialogs e falas dos personagens
+    
+    // tempo das dialogs e falas dos personagens, para mudar o tempo apenas troque o valor.
+    static int temp_dialog = 70, temp_falas = 100; 
 
     public static void main(String[] args) {
         int op = menu();
+        //chama a função para o usuário escolher a opção desejada.
         controlador(op);
     }
-
+    //Função que chama as opções escolhidas pelo jogador.
     public static void controlador(int op) {
         switch (op) {
             case 1 ->
@@ -24,6 +27,7 @@ public class MathMagic {
         }
     }
 
+    //Menu com as opções iniciais do jogo.
     public static int menu() {
         Scanner input = new Scanner(System.in);
         int options = 0;
@@ -40,13 +44,14 @@ public class MathMagic {
         return options;
     }
 
+    //Função
     public static void historia() {
         String[] names = capitulo1();
         capitulo2(names);
         capitulo3(names);
 
     }
-
+    //Primeiro capitulo do MathMagic RPG.
     public static String[] capitulo1() {
         Scanner input = new Scanner(System.in);
         String[] names = new String[6];
@@ -115,7 +120,7 @@ public class MathMagic {
 
         return names;
     }
-
+    //Segundo capitulo do MathMagic RPG.   
     public static void capitulo2(String[] names) {
         Scanner input = new Scanner(System.in);
         System.out.println("Após longos dias passando de viagem");
@@ -202,7 +207,7 @@ public class MathMagic {
 
         System.out.printf("%s: *voz sarcastica* Ah, que lindo, um degrau! Muito obrigado, viu? ~_~", names[0]);
     }
-    
+    //Terceiro capitulo do MathMagic RPG.  
     public static void capitulo3(String[]names) {
         Scanner input = new Scanner(System.in);
         
@@ -256,16 +261,16 @@ public class MathMagic {
         
         
     }
-
+    //Função que define os créditos do jogo.
     public static void creditos() {
         System.out.println("CRÉDITOS");
         System.out.println("JOÃO PEDRO CARVALHO E SILVA\nJOÃO PEDRO SERIGNOLLI BORIN\nGABRIEL DE ASSIS SILVA\nCAIO ROBERTO MORAES DE OLIVEIRA\nIGOR LIMA CHARLES");
     }
-
+    //Função para definir a mensagem que será imprimida ao fechar o jogo.
     public static void sair() {
         System.out.println("O Jogo está sendo fechado, Obrigado e Volte Sempre!");
     }
-
+    //Função para definir o tempo de falas dos personagens.
     public static void Falas(String falas, TimeUnit unit, long tempo_mensagem) throws InterruptedException {
         for (char caractere : falas.toCharArray()) {
             System.out.print(caractere);
