@@ -6,15 +6,16 @@ import java.util.concurrent.TimeUnit;
 public class MathMagic {
 
     Scanner input = new Scanner(System.in);
-    
+
     // tempo das dialogs e falas dos personagens, para mudar o tempo apenas troque o valor.
-    static int temp_dialog = 70, temp_falas = 100; 
+    static int temp_dialog = 70, temp_falas = 100;
 
     public static void main(String[] args) {
         int op = menu();
         //chama a função para o usuário escolher a opção desejada.
         controlador(op);
     }
+
     //Função que chama as opções escolhidas pelo jogador.
     public static void controlador(int op) {
         switch (op) {
@@ -36,21 +37,22 @@ public class MathMagic {
             System.out.println("1 - Jogar\n2 - Créditos\n3 - Sair");
             options = input.nextInt();
 
-            if (options < 1 || options > 4) {
+            if (options < 1 || options > 3) {
                 System.out.println("Opção Inválida!");
                 System.out.println("Digite novamente!");
             }
-        } while (options < 1 || options > 4);
+        } while (options < 1 || options > 3);
         return options;
     }
 
     //Função
     public static void historia() {
         String[] names = capitulo1();
-        capitulo2(names);
-        capitulo3(names);
+        int conhecimento = capitulo2(names);
+        capitulo3(names, conhecimento);
 
     }
+
     //Primeiro capitulo do MathMagic RPG.
     public static String[] capitulo1() {
         Scanner input = new Scanner(System.in);
@@ -120,9 +122,11 @@ public class MathMagic {
 
         return names;
     }
+
     //Segundo capitulo do MathMagic RPG.   
-    public static void capitulo2(String[] names) {
+    public static int capitulo2(String[] names) {
         Scanner input = new Scanner(System.in);
+        int conhencimento = 0;
         System.out.println("Após longos dias passando de viagem");
         System.out.printf("Por muitas vezes tendo que se esconder das tropas inimigas, finalmente %s chegou em Mathema.", names[0]);
         System.out.printf("%s: certo, preciso dar um jeito de invadir o castelo do Math.", names[0]);
@@ -165,39 +169,66 @@ public class MathMagic {
         System.out.printf("%s: Vamos tentar então!", names[0]);
 
         System.out.println("Math: Dois elevado a 3 é: ");
+        int n = 0;
         while (true) {
             int resposta = input.nextInt();
 
             if (resposta == 8) {
-                System.out.println("Math: Parabéns, você acertou!");
+                //Sistema de conhecimento (pontuação)
+                if (n <= 2) {
+                    System.out.println("Math: Parabéns, você acertou!");
+                    conhencimento += 1;
+                } else {
+                    System.out.println("Math: Parabéns, você acertou!");
+                }
                 break;
             } else {
                 System.out.println("Math: Tente de novo!");
             }
+            n++;
         }
 
         System.out.println("Math: Logo dois elevado a 7 é: ");
+        int i = 0;
         while (true) {
             int resposta = input.nextInt();
 
             if (resposta == 128) {
-                System.out.println("Math: Muito bom, você acertou!");
+                //Sistema de conhecimento (pontuação)
+                if (i <= 2) {
+                    System.out.println("Math: Muito bom, você acertou!");
+                    conhencimento += 1;
+                } else {
+                    System.out.println("Math: Muito bom, você acertou!");
+                }
                 break;
             } else {
                 System.out.println("Math: Tente de novo!");
             }
+            i++;
         }
 
         System.out.println("Math: Cinco elevado a 5 é: ");
+        int j = 0;
         while (true) {
             int resposta = input.nextInt();
 
             if (resposta == 3125) {
-                System.out.println("Math: Parabéns, você acertou!");
+                //Sistema de conhecimento (pontuação)
+                if (j <= 2) {
+                    System.out.println("Math: Parabéns, você acertou!");
+                    conhencimento += 3;
+                } else if (j > 2 && j <= 5) {
+                    System.out.println("Math: Parabéns, você acertou!");
+                    conhencimento += 1;
+                } else {
+                    System.out.println("Math: Parabéns, você acertou!");
+                }
                 break;
             } else {
                 System.out.println("Math: Calma! Tente de novo!");
             }
+            j++;
 
         }
 
@@ -206,70 +237,127 @@ public class MathMagic {
                 + "______-------");
 
         System.out.printf("%s: *voz sarcastica* Ah, que lindo, um degrau! Muito obrigado, viu? ~_~", names[0]);
+        return conhencimento;
     }
+
     //Terceiro capitulo do MathMagic RPG.  
-    public static void capitulo3(String[]names) {
+    public static void capitulo3(String[] names, int conhencimento) {
         Scanner input = new Scanner(System.in);
-        
-        System.out.printf("%s: Que droga de criatura é essa? Meus ataques não surtem efeito nessa coisa, deve ter algum truque por trás disso!",names[0]);
-        if(names[4] == "Arqueiro"){
-            System.out.printf("%s: Minhas flechas de base hexadecimal não estão causando dano,\n vou testar com outro tipo de flechas!",names[0]);
-        }else{
-            System.out.printf("%s: Meus golpes de base hexadecimal não estão surtindo efeito,\n vou testar com outro tipo de base ",names[0]);
+
+        System.out.printf("%s: Que droga de criatura é essa? Meus ataques não surtem efeito nessa coisa, deve ter algum truque por trás disso!", names[0]);
+        if (names[4] == "Arqueiro") {
+            System.out.printf("%s: Minhas flechas de base hexadecimal não estão causando dano,\n vou testar com outro tipo de flechas!", names[0]);
+        } else {
+            System.out.printf("%s: Meus golpes de base hexadecimal não estão surtindo efeito,\n vou testar com outro tipo de base ", names[0]);
         }
-        System.out.printf("%s: Meus ataques com outras bases também não estão causando dano nesse golem,\n preciso pensar em algo rápido!",names[0]);
-        
-        System.out.printf("%s: Vou tentar algo arriscado, acho que meus ataques não estão surtindo efeito,\n pois esse golem está se adaptando a base numérica dos meus ataques no momento em que eles vão atingi-lo!",names[0]);
-        
-        System.out.printf("%s: Para superar essa habilidade, preciso usar minha magia para alterar a base numérica dele no momento que meus ataques forem acertar!\n Assim ele não vai conseguir se adaptar e conseguirei causar dano,\n para isso terei que resolver o cálculo necessário para alterar sua base numérica.",names[0]);
-        
-    System.out.printf("%s: A base numérica do golem é o número hexadecimal 2A, preciso passar essa base para um número binário: \n Alternativas: \n1- 101010\n2- 001001\n3- 111000\n4- 010101\n",names[0]);
+        System.out.printf("%s: Meus ataques com outras bases também não estão causando dano nesse golem,\n preciso pensar em algo rápido!", names[0]);
+
+        System.out.printf("%s: Vou tentar algo arriscado, acho que meus ataques não estão surtindo efeito,\n pois esse golem está se adaptando a base numérica dos meus ataques no momento em que eles vão atingi-lo!", names[0]);
+
+        System.out.printf("%s: Para superar essa habilidade, preciso usar minha magia para alterar a base numérica dele no momento que meus ataques forem acertar!\n Assim ele não vai conseguir se adaptar e conseguirei causar dano,\n para isso terei que resolver o cálculo necessário para alterar sua base numérica.", names[0]);
+
+        int n = 0;
         while (true) {
+            System.out.printf("%s: A base numérica do golem é o número hexadecimal 2A, preciso passar essa base para um número binário: \n Alternativas: \n1- 101010\n2- 001001\n3- 111000\n4- 010101\n", names[0]);
             int resposta = input.nextInt();
 
             if (resposta == 1) {
-                System.out.printf("%s: Consegui causar dano!",names[0]);
+                //Sistema de conhecimento (pontuação)
+                 if (n <= 2) {
+                    System.out.printf("%s: Consegui causar dano!", names[0]);
+                    conhencimento += 1;
+                } else {
+                    System.out.printf("%s: Consegui causar dano!", names[0]);
+                }
                 break;
             } else {
-                System.out.printf("%s: O cálculo está errado, não consegui alterar a base numérica dele!",names[0]);
+                System.out.printf("%s: O cálculo está errado, não consegui alterar a base numérica dele!", names[0]);
             }
+            n++;
         }
-        
-        System.out.printf("%s: Ele alterou a base numérica novamente,agora a base numérica dele é o número octal 47,\n dessa vez vou usar um ataque de base hexadecimal, preciso converter a base dele!\nAlternativas: \n1- 32\n2- 54\n3- 27\n4- 11\n",names[0]);
+        int i = 0;
         while (true) {
+            System.out.printf("%s: Ele alterou a base numérica novamente,agora a base numérica dele é o número octal 47,\n dessa vez vou usar um ataque de base hexadecimal, preciso converter a base dele!\nAlternativas: \n1- 32\n2- 54\n3- 27\n4- 11\n", names[0]);
             int resposta = input.nextInt();
 
             if (resposta == 3) {
-                System.out.printf("%s: Ótimo, mais um golpe certeiro, mais um acerto e é o fim da linha para você!",names[0]);
+                //Sistema de conhecimento (pontuação)
+                if (n <= 2) {
+                    System.out.printf("%s: Ótimo, mais um golpe certeiro, mais um acerto e é o fim da linha para você!", names[0]);
+                    conhencimento += 1;
+                } else {
+                    System.out.printf("%s: Ótimo, mais um golpe certeiro, mais um acerto e é o fim da linha para você!", names[0]);
+                }
                 break;
             } else {
-                System.out.printf("%s: Droga, não consegui converter a base dele para a base decimal e ele conseguiu absorver meu ataque!",names[0]);
+                System.out.printf("%s: Droga, não consegui converter a base dele para a base decimal e ele conseguiu absorver meu ataque!", names[0]);
             }
+            i++;
         }
-        
-        System.out.printf("%s: Preciso acertar esse golpe final! A base numérica dele agora é o número 3F6 na base hexadecimal,\n vou usar um ataque de base decimal para finaliza-lo.\n Alternativas: \n1- 2030\n2- 1013\n3- 1050\n4- 1014\n ",names[0]);
+        int j = 0;
         while (true) {
+            System.out.printf("%s: Preciso acertar esse golpe final! A base numérica dele agora é o número 3F6 na base hexadecimal,\n vou usar um ataque de base decimal para finaliza-lo.\n Alternativas: \n1- 2030\n2- 1013\n3- 1050\n4- 1014\n ", names[0]);
             int resposta = input.nextInt();
 
             if (resposta == 4) {
-                System.out.printf("%s: Está acabado, finalmente consegui derrota-lo!",names[0]);
+                //Sistema de conhecimento (pontuação)
+                if (j <= 2) {
+                    System.out.printf("%s: Está acabado, finalmente consegui derrota-lo!", names[0]);
+                    conhencimento += 3;
+                } else if (j > 2 && j <= 5) {
+                    System.out.printf("%s: Está acabado, finalmente consegui derrota-lo!", names[0]);
+                    conhencimento += 1;
+                } else {
+                    System.out.printf("%s: Está acabado, finalmente consegui derrota-lo!", names[0]);
+                }
                 break;
             } else {
-                System.out.printf("%s: Falhei em converter a base dele para decimal, mas não desistirei!",names[0]);
+                //Sistema de conhecimento (Ajuda)
+                System.out.printf("%s: Falhei em converter a base dele para decimal, mas não desistirei!", names[0]);
+                if (n == 3 || n == 5 && conhencimento > 3) {
+                    System.out.println("Que tal uma dica?");
+                    System.out.println("Quando uma questão é acertada você adquiri pontos de conhecimento.");
+                    System.out.println("Se for um acerto com menos de tententavias você recebe 3 pontos, até 5 tentativas e mais que 3 você recebe um ponto. ");
+                    System.out.printf("cada dica custa 3 pontos (Atualmente você possui %d pontos), e elas são escolhidas de forma aleatória.", conhencimento);
+                    int r;
+                    do {
+                        System.out.println("Quer uma Dica? \n1) Sim\n2) Não");
+                        r = input.nextInt();
+                    } while (r < 1 || r > 2);
+                    if (r == 1) {
+                        conhencimento -=3;
+                        int aleatório = 1;
+                        switch (aleatório) {
+                            case 1:
+                                System.out.println("Ajuda");
+                                break;
+                            case 2:
+                                System.out.println("Ajuda");
+                                break;
+                            case 3:
+                                System.out.println("Ajuda");
+                                break;
+                        }
+                    }
+                }
+                n++;
             }
+            j++;
         }
-        
-        
+
     }
+
     //Função que define os créditos do jogo.
     public static void creditos() {
         System.out.println("CRÉDITOS");
         System.out.println("JOÃO PEDRO CARVALHO E SILVA\nJOÃO PEDRO SERIGNOLLI BORIN\nGABRIEL DE ASSIS SILVA\nCAIO ROBERTO MORAES DE OLIVEIRA\nIGOR LIMA CHARLES");
     }
+
     //Função para definir a mensagem que será imprimida ao fechar o jogo.
     public static void sair() {
         System.out.println("O Jogo está sendo fechado, Obrigado e Volte Sempre!");
     }
+
     //Função para definir o tempo de falas dos personagens.
     public static void Falas(String falas, TimeUnit unit, long tempo_mensagem) throws InterruptedException {
         for (char caractere : falas.toCharArray()) {
