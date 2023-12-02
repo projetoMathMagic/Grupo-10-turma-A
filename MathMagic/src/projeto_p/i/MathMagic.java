@@ -346,6 +346,38 @@ public class MathMagic {
         }
 
     }
+    public static void capitulo4(String[] names) {
+        Scanner input = new Scanner(System.in);
+        System.out.printf("Após finalmente derrotar o monstro,%s continuou a sua jornada", names[0]);
+        System.out.printf("%s: Nossa, batalhar contra esse monstro me deixou exausto! Preciso repor minha energias.", names[0]);
+        System.out.printf("Então %s avista um local que parece ter comida e vai em sua direção", names[0]);
+        System.out.printf("Ao chegar lá, %s percebe que era uma armadilha e acaba preso dentro de um quarto com uma porta mágica", names[0]);
+        System.out.printf("%s: Droga!, não acredito que caí nisso", names[0]);
+        System.out.printf("Olhando ao redor do quarto,¨%s nota que há uma equação de 1°grau escrita na parede e precisa do resultado para destrancar a porta", names[0]);
+        System.out.printf("%s: Hmmm, aqui na parede está a conta 2x + 5 = 11, preciso saber o valor de x. \n Alternativas: \n1- 5\n2- 2\n3- 3\n4- 6\n", names[0]);
+        while (true) {
+            int resposta = input.nextInt();
+            
+            if (resposta == 3) {
+                System.out.printf("%s: Boa! consegui destrancar a porta", names[0]);
+                break;
+            }else {
+                System.out.printf("%s: Ainda tenho mais chances, preciso manter a calma", names[0]);
+            }
+        }
+	System.out.printf("%s: Só o que me faltava, mais uma porta ~-~", names[0]);
+        System.out.print("%s: Aqui nessa parede está a conta 2x − 5 = 11. \n Alternativas: \n1- 8\n2- 7\n3- 16\n4- 4\n");
+        while (true) {
+            int resposta = input.nextInt();
+            
+            if (resposta == 1) {
+                System.out.printf("%s: Ufa, espero que essa seja a última", names[0]);
+                break;
+            }else {
+                System.out.printf("%s: Isso está muito difícil !", names[0]);
+            }
+        }
+    }
 
     //Função que define os créditos do jogo.
     public static void creditos() {
