@@ -21,10 +21,12 @@ public class MathMagic {
     public static void controlador(int op) {
         switch (op) {
             case 1 ->
-                historia();
+                instrucoes();
             case 2 ->
-                creditos();
+                historia();
             case 3 ->
+                creditos();
+            case 4 ->
                 sair();
         }
     }
@@ -35,17 +37,26 @@ public class MathMagic {
         int options = 0;
         do {
             System.out.println("*******MATHMAGIC*******");
-            System.out.println("1 - Jogar\n2 - Créditos\n3 - Sair");
+            System.out.println("\n1 - Instruções\n2 - Jogar\n3 - Créditos\n4 - Sair");
             options = input.nextInt();
 
-            if (options < 1 || options > 3) {
+            if (options < 1 || options > 4) {
                 System.out.println("Opção Inválida!");
                 System.out.println("Digite novamente!");
             }
-        } while (options < 1 || options > 3);
+        } while (options < 1 || options > 4);
         return options;
     }
 
+    public static void instrucoes() {
+        System.out.println("""
+                           Resolva desafios matemáticos e instaure a paz entre as duas vilas que se odeiam
+                            Dê um nome a seu personagem, pegue um arco ou uma espada e vamos à luta!
+                           O seu objetivo \u00e9 estabelecer a paz. Quanto mais você avança mais XP (conhecimento) você ganha""");
+        
+        
+        
+    }
     //Função
     public static void historia() {
         String[] names = capitulo1();
