@@ -1,5 +1,6 @@
 package projeto_p.i;
 
+import java.util.Random;
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
@@ -20,10 +21,12 @@ public class MathMagic {
     public static void controlador(int op) {
         switch (op) {
             case 1 ->
-                historia();
+                instrucoes();
             case 2 ->
-                creditos();
+                historia();
             case 3 ->
+                creditos();
+            case 4 ->
                 sair();
         }
     }
@@ -34,17 +37,26 @@ public class MathMagic {
         int options = 0;
         do {
             System.out.println("*******MATHMAGIC*******");
-            System.out.println("1 - Jogar\n2 - Créditos\n3 - Sair");
+            System.out.println("\n1 - Instruções\n2 - Jogar\n3 - Créditos\n4 - Sair");
             options = input.nextInt();
 
-            if (options < 1 || options > 3) {
+            if (options < 1 || options > 4) {
                 System.out.println("Opção Inválida!");
                 System.out.println("Digite novamente!");
             }
-        } while (options < 1 || options > 3);
+        } while (options < 1 || options > 4);
         return options;
     }
 
+    public static void instrucoes() {
+        System.out.println("""
+                           Resolva desafios matemáticos e instaure a paz entre as duas vilas que se odeiam
+                            Dê um nome a seu personagem, pegue um arco ou uma espada e vamos à luta!
+                           O seu objetivo \u00e9 estabelecer a paz. Quanto mais você avança mais XP (conhecimento) você ganha""");
+        
+        
+        
+    }
     //Função
     public static void historia() {
         String[] names = capitulo1();
@@ -149,18 +161,13 @@ public class MathMagic {
         System.out.printf("%s:E elas acertaram sem querer a cabeça dos meu soldados né? ", names[5]);
         System.out.printf("%s: Você não tem civilidade nenhuma!", names[5]);
         System.out.printf("%s: Eu sou mais civilizado que vocês, loucos dos números!", names[0]);
-        System.out.println("***********~~~~~~~~~~~~~~~~~~~~~~~~~~***********");
-        System.out.println("***********~~~~~~~~| |~~~~~~~~~***********");
-        System.out.println("***********~~~~~|        |~~~~~***********");
-        System.out.println("***********|                  |***********");
-        System.out.println("****|            lÓGIKI              |****");
+        System.out.printf("Math aprisiona %s em Mathema", names[0]);
+        
 
         System.out.printf("%s: Onde estou? QUE RAIOS DE LUGAR É ESSE?!", names[0]);
-        System.out.println("Math: Ué? você não era o bonzão?");
-        System.out.printf("%s: Também achava que eu era! Não sou mais, agora me tira daqui!", names[0]);
-        System.out.println("Math: Daqui só se saí com matem...");
-        System.out.printf("%s: Lá vem!!1 Vocês não cansam de números, lógica e blablabla não?", names[0]);
-        System.out.println("Math: ...ática");
+        System.out.println("Math: O lugar que seu povo condena");
+        System.out.printf("%s: ME TIRA DAQUI!", names[0]);
+        System.out.println("Math: Daqui só se saí com matemática");
         System.out.println("Math: Só sai com matemática ou você fica ai e nunca mais volta");
         System.out.printf("%s: Você precisa aprender a ameaçar mais as pessoas! Mas enfim, como volto?", names[0]);
         System.out.println("Math: O primeiro passo é matemática básica: potenciação!");
@@ -168,7 +175,7 @@ public class MathMagic {
         System.out.println("Math: \"A potenciação é uma operação matemática"
                 + "Utilizamos a potenciação para indicar multiplicações consecutivas de um mesmo número");
         System.out.printf("%s: Vamos tentar então!", names[0]);
-
+        System.out.println("");
         System.out.println("Math: Dois elevado a 3 é: ");
         int n = 0;
         while (true) {
@@ -184,7 +191,7 @@ public class MathMagic {
                 }
                 break;
             } else {
-                System.out.println("Math: Tente de novo!");
+                System.out.println("Math: Pense mais um pouco e tente de novo");
             }
             n++;
         }
@@ -227,18 +234,23 @@ public class MathMagic {
                 }
                 break;
             } else {
-                System.out.println("Math: Calma! Tente de novo!");
+                System.out.println("Math: Vamos lá! Você está indo bem, tente de novo!");
             }
             j++;
 
         }
 
+<<<<<<< HEAD
         System.out.printf("Pegou o jeito da coisa, agora é só continuar, %s.\n Como recompensa, aqui está um pedaço da escada para você voltar", names[0]);
         System.out.println(""
                 + "______-------");
 
         System.out.printf("%s: *voz sarcastica* Ah, que lindo, um degrau! Muito obrigado, viu? ~_~", names[0]);
         return conhecimento;
+=======
+        System.out.printf("Pegou o jeito da coisa, agora é só continuar, %s. Tem mais obstáculos a frente :D", names[0]);
+        return conhencimento;
+>>>>>>> b6a6daecdd18dd4bda4e5e9f2044170dd67cbbb2
     }
 
     //Terceiro capitulo do MathMagic RPG.  
@@ -446,5 +458,11 @@ public class MathMagic {
             System.out.print(caractere);
             unit.sleep(tempo_mensagem);
         }
+    }
+    
+    public static int numeroAleatorio (int numero) {
+        Random numAleatorio = new Random();
+        int num = numAleatorio.nextInt(numero);
+        return num;
     }
 }
