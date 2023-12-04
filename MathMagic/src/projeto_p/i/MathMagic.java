@@ -240,17 +240,14 @@ public class MathMagic {
 
         }
 
-<<<<<<< HEAD
         System.out.printf("Pegou o jeito da coisa, agora é só continuar, %s.\n Como recompensa, aqui está um pedaço da escada para você voltar", names[0]);
         System.out.println(""
                 + "______-------");
 
-        System.out.printf("%s: *voz sarcastica* Ah, que lindo, um degrau! Muito obrigado, viu? ~_~", names[0]);
-        return conhecimento;
-=======
+        System.out.printf("%s: *voz sarcastica* Ah, que lindo, um degrau! Muito obrigado, viu? ~_~", names[0]);;
+
         System.out.printf("Pegou o jeito da coisa, agora é só continuar, %s. Tem mais obstáculos a frente :D", names[0]);
-        return conhencimento;
->>>>>>> b6a6daecdd18dd4bda4e5e9f2044170dd67cbbb2
+        return conhecimento;
     }
 
     //Terceiro capitulo do MathMagic RPG.  
@@ -339,16 +336,16 @@ public class MathMagic {
                     } while (r < 1 || r > 2);
                     if (r == 1) {
                         conhecimento -= 3;
-                        int aleatório = 1;
+                        int aleatório = numeroAleatorio();
                         switch (aleatório) {
                             case 1:
-                                System.out.println("Ajuda");
+                                System.out.println("Ajuda1");
                                 break;
                             case 2:
-                                System.out.println("Ajuda");
+                                System.out.println("Ajuda2");
                                 break;
                             case 3:
-                                System.out.println("Ajuda");
+                                System.out.println("Ajuda3");
                                 break;
                         }
                     }
@@ -419,16 +416,16 @@ public class MathMagic {
                     } while (r < 1 || r > 2);
                     if (r == 1) {
                         conhecimento -= 3;
-                        int aleatório = 1;
+                        int aleatório = numeroAleatorio();
                         switch (aleatório) {
                             case 1:
-                                System.out.println("Ajuda");
+                                System.out.println("Ajuda1");
                                 break;
                             case 2:
-                                System.out.println("Ajuda");
+                                System.out.println("Ajuda2");
                                 break;
                             case 3:
-                                System.out.println("Ajuda");
+                                System.out.println("Ajuda3");
                                 break;
                         }
                     }
@@ -460,9 +457,9 @@ public class MathMagic {
         }
     }
     
-    public static int numeroAleatorio (int numero) {
+    public static int numeroAleatorio () {
         Random numAleatorio = new Random();
-        int num = numAleatorio.nextInt(numero);
+        int num = numAleatorio.nextInt(1,4);
         return num;
     }
 }
