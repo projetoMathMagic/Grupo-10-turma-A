@@ -50,7 +50,7 @@ public class MathMagic {
         String[] names = capitulo1();
         int conhecimento = capitulo2(names);
         int conhecimento2 = capitulo3(names, conhecimento);
-        capitulo4(names, conhecimento);
+        capitulo4(names, conhecimento2);
 
     }
 
@@ -127,7 +127,7 @@ public class MathMagic {
     //Segundo capitulo do MathMagic RPG.   
     public static int capitulo2(String[] names) {
         Scanner input = new Scanner(System.in);
-        int conhencimento = 0;
+        int conhecimento = 0;
         System.out.println("Após longos dias passando de viagem");
         System.out.printf("Por muitas vezes tendo que se esconder das tropas inimigas, finalmente %s chegou em Mathema.", names[0]);
         System.out.printf("%s: certo, preciso dar um jeito de invadir o castelo do Math.", names[0]);
@@ -178,7 +178,7 @@ public class MathMagic {
                 //Sistema de conhecimento (pontuação)
                 if (n <= 2) {
                     System.out.println("Math: Parabéns, você acertou!");
-                    conhencimento += 1;
+                    conhecimento += 1;
                 } else {
                     System.out.println("Math: Parabéns, você acertou!");
                 }
@@ -198,7 +198,7 @@ public class MathMagic {
                 //Sistema de conhecimento (pontuação)
                 if (i <= 2) {
                     System.out.println("Math: Muito bom, você acertou!");
-                    conhencimento += 1;
+                    conhecimento += 1;
                 } else {
                     System.out.println("Math: Muito bom, você acertou!");
                 }
@@ -218,10 +218,10 @@ public class MathMagic {
                 //Sistema de conhecimento (pontuação)
                 if (j <= 2) {
                     System.out.println("Math: Parabéns, você acertou!");
-                    conhencimento += 3;
+                    conhecimento += 3;
                 } else if (j > 2 && j <= 5) {
                     System.out.println("Math: Parabéns, você acertou!");
-                    conhencimento += 1;
+                    conhecimento += 1;
                 } else {
                     System.out.println("Math: Parabéns, você acertou!");
                 }
@@ -238,11 +238,11 @@ public class MathMagic {
                 + "______-------");
 
         System.out.printf("%s: *voz sarcastica* Ah, que lindo, um degrau! Muito obrigado, viu? ~_~", names[0]);
-        return conhencimento;
+        return conhecimento;
     }
 
     //Terceiro capitulo do MathMagic RPG.  
-    public static int capitulo3(String[] names, int conhencimento) {
+    public static int capitulo3(String[] names, int conhecimento) {
         Scanner input = new Scanner(System.in);
 
         System.out.printf("%s: Que droga de criatura é essa? Meus ataques não surtem efeito nessa coisa, deve ter algum truque por trás disso!", names[0]);
@@ -266,7 +266,7 @@ public class MathMagic {
                 //Sistema de conhecimento (pontuação)
                 if (n <= 2) {
                     System.out.printf("%s: Consegui causar dano!", names[0]);
-                    conhencimento += 1;
+                    conhecimento += 1;
                 } else {
                     System.out.printf("%s: Consegui causar dano!", names[0]);
                 }
@@ -285,7 +285,7 @@ public class MathMagic {
                 //Sistema de conhecimento (pontuação)
                 if (n <= 2) {
                     System.out.printf("%s: Ótimo, mais um golpe certeiro, mais um acerto e é o fim da linha para você!", names[0]);
-                    conhencimento += 1;
+                    conhecimento += 1;
                 } else {
                     System.out.printf("%s: Ótimo, mais um golpe certeiro, mais um acerto e é o fim da linha para você!", names[0]);
                 }
@@ -304,10 +304,10 @@ public class MathMagic {
                 //Sistema de conhecimento (pontuação)
                 if (j <= 2) {
                     System.out.printf("%s: Está acabado, finalmente consegui derrota-lo!", names[0]);
-                    conhencimento += 3;
+                    conhecimento += 3;
                 } else if (j > 2 && j <= 5) {
                     System.out.printf("%s: Está acabado, finalmente consegui derrota-lo!", names[0]);
-                    conhencimento += 1;
+                    conhecimento += 1;
                 } else {
                     System.out.printf("%s: Está acabado, finalmente consegui derrota-lo!", names[0]);
                 }
@@ -315,18 +315,18 @@ public class MathMagic {
             } else {
                 //Sistema de conhecimento (Ajuda)
                 System.out.printf("%s: Falhei em converter a base dele para decimal, mas não desistirei!", names[0]);
-                if (j == 3 || j == 5 && conhencimento > 3) {
+                if (j == 3 || j == 5 && conhecimento > 3) {
                     System.out.println("Que tal uma dica?");
                     System.out.println("Quando uma questão é acertada você adquiri pontos de conhecimento.");
                     System.out.println("Se for um acerto com menos de tententavias você recebe 3 pontos, até 5 tentativas e mais que 3 você recebe um ponto. ");
-                    System.out.printf("cada dica custa 3 pontos (Atualmente você possui %d pontos), e elas são escolhidas de forma aleatória.", conhencimento);
+                    System.out.printf("cada dica custa 3 pontos (Atualmente você possui %d pontos), e elas são escolhidas de forma aleatória.", conhecimento);
                     int r;
                     do {
                         System.out.println("Quer uma Dica? \n1) Sim\n2) Não");
                         r = input.nextInt();
                     } while (r < 1 || r > 2);
                     if (r == 1) {
-                        conhencimento -= 3;
+                        conhecimento -= 3;
                         int aleatório = 1;
                         switch (aleatório) {
                             case 1:
@@ -345,18 +345,18 @@ public class MathMagic {
             }
             j++;
         }
-        return conhencimento;
+        return conhecimento;
 
     }
 
-    public static int capitulo4(String[] names, int conhencimento) {
+    public static int capitulo4(String[] names, int conhecimento) {
         Scanner input = new Scanner(System.in);
-        System.out.printf("Após finalmente derrotar o monstro,%s continuou a sua jornada", names[0]);
-        System.out.printf("%s: Nossa, batalhar contra esse monstro me deixou exausto! Preciso repor minha energias.", names[0]);
-        System.out.printf("Então %s avista um local que parece ter comida e vai em sua direção", names[0]);
-        System.out.printf("Ao chegar lá, %s percebe que era uma armadilha e acaba preso dentro de um quarto com uma porta mágica", names[0]);
+        System.out.printf("Após finalmente derrotar o monstro,%s continuou a sua jornada\n", names[0]);
+        System.out.printf("%s: Nossa, batalhar contra esse monstro me deixou exausto! Preciso repor minha energias.\n", names[0]);
+        System.out.printf("Então %s avista um local que parece ter comida e vai em sua direção\n", names[0]);
+        System.out.printf("Ao chegar lá, %s percebe que era uma armadilha e acaba preso dentro de um quarto com uma porta mágica\n", names[0]);
         System.out.printf("%s: Droga!, não acredito que caí nisso", names[0]);
-        System.out.printf("Olhando ao redor do quarto,¨%s nota que há uma equação de 1°grau escrita na parede e precisa do resultado para destrancar a porta", names[0]);
+        System.out.printf("Olhando ao redor do quarto,¨%s nota que há uma equação de 1°grau escrita na parede e precisa do resultado para destrancar a porta\n", names[0]);
         int n = 0;
         while (true) {
             System.out.printf("%s: Hmmm, aqui na parede está a conta 2x + 5 = 11, preciso saber o valor de x. \n Alternativas: \n1- 5\n2- 2\n3- 3\n4- 6\n", names[0]);
@@ -365,7 +365,8 @@ public class MathMagic {
             if (resposta == 3) {
                 if (n <= 2) {
                     System.out.printf("%s: Boa! consegui destrancar a porta", names[0]);
-                    conhencimento += 1;
+                    conhecimento += 1;
+                     break;
                 } else {
                     System.out.printf("%s: Boa! consegui destrancar a porta", names[0]);
                     break;
@@ -384,28 +385,28 @@ public class MathMagic {
             if (resposta == 1) {
                 if (j <= 2) {
                     System.out.printf("%s: Ufa, espero que essa seja a última", names[0]);
-                    conhencimento += 3;
+                    conhecimento += 3;
                 } else if (j > 2 && j <= 5) {
                     System.out.printf("%s: Ufa, espero que essa seja a última", names[0]);
-                    conhencimento += 1;
+                    conhecimento += 1;
                 } else {
                     System.out.printf("%s: Ufa, espero que essa seja a última", names[0]);
                 }
                 break;
             } else {
                 System.out.printf("%s: Isso está muito difícil !", names[0]);
-                if (j == 3 || j == 5 && conhencimento > 3) {
+                if (j == 3 || j == 5 && conhecimento > 3) {
                     System.out.println("Que tal uma dica?");
                     System.out.println("Quando uma questão é acertada você adquiri pontos de conhecimento.");
                     System.out.println("Se for um acerto com menos de tententavias você recebe 3 pontos, até 5 tentativas e mais que 3 você recebe um ponto. ");
-                    System.out.printf("cada dica custa 3 pontos (Atualmente você possui %d pontos), e elas são escolhidas de forma aleatória.", conhencimento);
+                    System.out.printf("cada dica custa 3 pontos (Atualmente você possui %d pontos), e elas são escolhidas de forma aleatória.", conhecimento);
                     int r;
                     do {
                         System.out.println("Quer uma Dica? \n1) Sim\n2) Não");
                         r = input.nextInt();
                     } while (r < 1 || r > 2);
                     if (r == 1) {
-                        conhencimento -= 3;
+                        conhecimento -= 3;
                         int aleatório = 1;
                         switch (aleatório) {
                             case 1:
@@ -424,13 +425,14 @@ public class MathMagic {
             }
             j++;
         }
-        return conhencimento;
+        return conhecimento;
     }
     //Função que define os créditos do jogo.
 
     public static void creditos() {
         System.out.println("CRÉDITOS");
         System.out.println("JOÃO PEDRO CARVALHO E SILVA\nJOÃO PEDRO SERIGNOLLI BORIN\nGABRIEL DE ASSIS SILVA\nCAIO ROBERTO MORAES DE OLIVEIRA\nIGOR LIMA CHARLES");
+        
     }
 
     //Função para definir a mensagem que será imprimida ao fechar o jogo.
