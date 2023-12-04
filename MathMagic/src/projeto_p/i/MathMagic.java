@@ -1,5 +1,6 @@
 package projeto_p.i;
 
+import java.util.Random;
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
@@ -435,5 +436,11 @@ public class MathMagic {
             System.out.print(caractere);
             unit.sleep(tempo_mensagem);
         }
+    }
+    
+    public static int numeroAleatorio (int numero) {
+        Random numAleatorio = new Random();
+        int num = numAleatorio.nextInt(numero);
+        return num;
     }
 }
