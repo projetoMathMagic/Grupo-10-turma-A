@@ -9,16 +9,19 @@ public class MathMagic {
     Scanner input = new Scanner(System.in);
 
     // tempo das dialogs e falas dos personagens, para mudar o tempo apenas troque o valor.
-    static int temp_dialog = 70, temp_falas = 100;
+    
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
+        // tempo das dialogs e falas dos personagens, para mudar o tempo apenas troque o valor.
+        int temp_dialog = 70, temp_falas = 25;
+        
         int op = menu();
         //chama a função para o usuário escolher a opção desejada.
         controlador(op);
     }
 
     //Função que chama as opções escolhidas pelo jogador.
-    public static void controlador(int op) {
+    public static void controlador(int op) throws InterruptedException {
         switch (op) {
             case 1 ->
                 instrucoes();
@@ -48,7 +51,7 @@ public class MathMagic {
         return options;
     }
 
-    public static void instrucoes() {
+    public static void instrucoes() throws InterruptedException {
         System.out.println("""
                            Resolva desafios matemáticos e instaure a paz entre as duas vilas que se odeiam
                             Dê um nome a seu personagem, pegue um arco ou uma espada e vamos à luta!
@@ -57,7 +60,7 @@ public class MathMagic {
     }
 
     //Função
-    public static void historia() {
+    public static void historia() throws InterruptedException {
         String[] names = capitulo1();
         int conhecimento = capitulo2(names);
         int conhecimento2 = capitulo3(names, conhecimento);
@@ -68,7 +71,7 @@ public class MathMagic {
     }
 
     //Primeiro capitulo do MathMagic RPG.
-    public static String[] capitulo1() {
+    public static String[] capitulo1() throws InterruptedException {
         Scanner input = new Scanner(System.in);
         String[] names = new String[7];
         names[1] = "Jarvis";
@@ -139,7 +142,7 @@ public class MathMagic {
     }
 
     //Segundo capitulo do MathMagic RPG.   
-    public static int capitulo2(String[] names) {
+    public static int capitulo2(String[] names) throws InterruptedException {
         Scanner input = new Scanner(System.in);
         int conhecimento = 0;
         System.out.println("Após longos dias passando de viagem");
@@ -252,7 +255,7 @@ public class MathMagic {
     }
 
     //Terceiro capitulo do MathMagic RPG.  
-    public static int capitulo3(String[] names, int conhecimento) {
+    public static int capitulo3(String[] names, int conhecimento) throws InterruptedException {
         Scanner input = new Scanner(System.in);
         System.out.printf("%s é transportado para uma espécie de vale",names[0]);
         System.out.printf("%s: o que é aquilo ?",names[0]);
@@ -380,7 +383,7 @@ public class MathMagic {
 
     }
 
-    public static int capitulo4(String[] names, int conhecimento) {
+    public static int capitulo4(String[] names, int conhecimento) throws InterruptedException {
         Scanner input = new Scanner(System.in);
         System.out.printf("Após finalmente derrotar o monstro,%s continuou a sua jornada\n", names[0]);
         System.out.printf("%s: Nossa, batalhar contra esse monstro me deixou exausto! Preciso repor minha energias.\n", names[0]);
@@ -465,7 +468,7 @@ public class MathMagic {
         return conhecimento;
     }
 
-    public static int capitulo5(String[] names, int conhecimento) {
+    public static int capitulo5(String[] names, int conhecimento) throws InterruptedException {
         Scanner input = new Scanner(System.in);
         System.out.printf("%s: Finalmente vou poder descansar, e comer um pouco! ", names[0]);
         System.out.println("%s:Após algumas horas...");
@@ -577,7 +580,7 @@ public class MathMagic {
 
     }
 
-    public static void capitulo6(String[] names, int conhecimento) {
+    public static void capitulo6(String[] names, int conhecimento) throws InterruptedException {
         Scanner input = new Scanner(System.in);
         System.out.println("Após derrotar o Mago, surge uma porta.");
         System.out.println("Ao adentrar.");
@@ -660,14 +663,14 @@ public class MathMagic {
     }
 
     //Função que define os créditos do jogo.
-    public static void creditos() {
+    public static void creditos() throws InterruptedException {
         System.out.println("CRÉDITOS");
         System.out.println("JOÃO PEDRO CARVALHO E SILVA\nJOÃO PEDRO SERIGNOLLI BORIN\nGABRIEL DE ASSIS SILVA\nCAIO ROBERTO MORAES DE OLIVEIRA\nIGOR LIMA CHARLES");
 
     }
 
     //Função para definir a mensagem que será imprimida ao fechar o jogo.
-    public static void sair() {
+    public static void sair() throws InterruptedException {
         System.out.println("O Jogo está sendo fechado, Obrigado e Volte Sempre!");
     }
 
