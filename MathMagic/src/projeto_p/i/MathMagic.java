@@ -53,17 +53,17 @@ public class MathMagic {
                            Resolva desafios matemáticos e instaure a paz entre as duas vilas que se odeiam
                             Dê um nome a seu personagem, pegue um arco ou uma espada e vamos à luta!
                            O seu objetivo \u00e9 estabelecer a paz. Quanto mais você avança mais XP (conhecimento) você ganha""");
-        
-        
-        
+
     }
+
     //Função
     public static void historia() {
         String[] names = capitulo1();
         int conhecimento = capitulo2(names);
         int conhecimento2 = capitulo3(names, conhecimento);
-        capitulo4(names, conhecimento2);
-        capitulo6(names,conhecimento2);
+        int conhecimento3 = capitulo4(names, conhecimento2);
+        int conhecimento4 = capitulo5(names, conhecimento3);
+        capitulo6(names, conhecimento4);
 
     }
 
@@ -164,7 +164,6 @@ public class MathMagic {
         System.out.printf("%s: Você não tem civilidade nenhuma!", names[5]);
         System.out.printf("%s: Eu sou mais civilizado que vocês, loucos dos números!", names[0]);
         System.out.printf("Math aprisiona %s em Mathema", names[0]);
-        
 
         System.out.printf("%s: Onde estou? QUE RAIOS DE LUGAR É ESSE?!", names[0]);
         System.out.println("Math: O lugar que seu povo condena");
@@ -329,7 +328,7 @@ public class MathMagic {
                 if (j == 3 && conhecimento > 3 || j == 5 && conhecimento > 3) {
                     System.out.println("Que tal uma dica?");
                     System.out.println("Quando uma questão é acertada você adquiri pontos de conhecimento.");
-                    System.out.println("Se for um acerto com menos de tententavias você recebe 3 pontos, até 5 tentativas e mais que 3 você recebe um ponto. ");
+                    System.out.println("Se for um acerto com menos de tentativas você recebe 3 pontos, até 5 tentativas e mais que 3 você recebe um ponto. ");
                     System.out.printf("cada dica custa 3 pontos (Atualmente você possui %d pontos), e elas são escolhidas de forma aleatória.", conhecimento);
                     int r;
                     do {
@@ -383,7 +382,7 @@ public class MathMagic {
                 if (n <= 2) {
                     System.out.printf("%s: Boa! consegui destrancar a porta", names[0]);
                     conhecimento += 1;
-                     break;
+                    break;
                 } else {
                     System.out.printf("%s: Boa! consegui destrancar a porta", names[0]);
                     break;
@@ -394,7 +393,7 @@ public class MathMagic {
             n++;
         }
         System.out.printf("%s: Só o que me faltava, mais uma porta ~-~\n", names[0]);
-        int j =0;
+        int j = 0;
         while (true) {
             System.out.print("%s: Aqui nessa parede está a conta 2x − 5 = 11. \n Alternativas: \n1- 8\n2- 7\n3- 16\n4- 4\n");
             int resposta = input.nextInt();
@@ -415,7 +414,7 @@ public class MathMagic {
                 if (j == 3 && conhecimento > 3 || j == 5 && conhecimento > 3) {
                     System.out.println("Que tal uma dica?");
                     System.out.println("Quando uma questão é acertada você adquiri pontos de conhecimento.");
-                    System.out.println("Se for um acerto com menos de tententavias você recebe 3 pontos, até 5 tentativas e mais que 3 você recebe um ponto. ");
+                    System.out.println("Se for um acerto com menos de tentativas você recebe 3 pontos, até 5 tentativas e mais que 3 você recebe um ponto. ");
                     System.out.printf("cada dica custa 3 pontos (Atualmente você possui %d pontos), e elas são escolhidas de forma aleatória.", conhecimento);
                     int r;
                     do {
@@ -450,47 +449,78 @@ public class MathMagic {
         }
         return conhecimento;
     }
-    public static void capitulo6(String[] names, int conhecimento){
+
+    public static int capitulo5(String[] names, int conhecimento) {
         Scanner input = new Scanner(System.in);
-        System.out.printf("%s pensou: que espécie de estátua é essa? \n",names[0]);
-        System.out.println("Finalmente alguém, não aguentava mais ficar olhando para o nada... sou uma esfinge antes que me pergunte.");
-        System.out.printf("%s: %s me tirou da minha terra, o egito não sei se já ouviu falar.\n",names[6],names[5]);
-        System.out.printf("%s:ele se transportou para minha realidade e teve uma série de problemas com o meu faraó.\n",names[6]);
-        System.out.printf("%s:por punição vim parar aqui.\n",names[6]);
-        System.out.printf("%s: O que é um faraó?, aliás me chamo %s\n",names[0],names[0]);
-        System.out.printf("%s: faraó é o meu rei\n",names[6]);
-        System.out.printf("%s: Bem vamos logo ao ponto, antes que aquele velho venha me atormentar.\n",names[6]);
-        System.out.printf("%s: Desde que ele me trancou nesse lugar, %s me obriga a fazer uma pergunta aqueles que chegarem aqui.\n",names[6],names[5]);
-        System.out.printf("%s: Bem caso você acerte, está livre e pode voltar ao seu mundo\nCaso contrário irá esquecer tudo do que aconteceu\n e irá voltar para o dia em que decidiu atacar %s \n",names[6],names[5]);
-        System.out.printf("%s: E vai viver tudo de novo até chegar aqui, se chegar normalmente o pessoal não consegue pasar por todos os desafios de novo.\n",names[6]);
-        System.out.printf("%s: Foi assim com meu faraó.\n",names[6]);
-        System.out.printf("%s: Ao menos foi o que ele me disse, quando vocês saem daqui minha mémoria é apagada, só lembro do motivo de estar aqui.\n",names[6]);
-        System.out.printf("%s: Não posso reviver tudo isso de novo\n",names[0]);
-        System.out.printf("%s: Sinto muito por tudo que aconteceu com você\n",names[0]);
-        System.out.printf("%s: O maximo que posso fazer é te dar mais que uma oportunidade de responder\n",names[6]);
-        System.out.printf("%s: Como faz muito tempo que não converso com alguém e fui com sua cara, vou te dar 5 chances.\n",names[6]);
-        System.out.printf("%s: Você não pode simplesmente me passar ou me dar a resposta ?\n",names[0]);
-        System.out.printf("%s: %s sempre está de olho em tudo que acontece, ficam dezenas de outros magos vigiando tudo que está acontecendo nessa dimenção.\nQuanto a resposta ele fez um feitiço e eu não consigo falar a resposta.\nApenas se está certa ou não.",names[6],names[0]);
-        System.out.printf("%s:... A pergunta é a seguinte.\n",names[6]);
-        int j = 0;
+        System.out.printf("%s: Mais um problema, essa criatura parece ser um mago muito poderoso,\n que tipo de ataques ele vai usar?", names[0]);
+        System.out.printf("Mago guardião: Não pense que será fácil, você não é o primeiro a chegar aqui, e não será o último que cairá pelas minhas mãos!");
+        System.out.printf("Mago Guardião: Veja com seus próprios olhos,\n esses são as almas dos idiotas que sucumbiram perante minhas questões matemáticas.");
+        System.out.printf("%s: Era só o que faltava, essa coisa consegue invocar a alma de quem ele derrota?\n Não preciso ter medo, só preciso ser melhor do que os que vieram antes de mim!", names[0]);
+        System.out.printf("%s: Para conseguir atacar o mago diretamente primeiro tenho que tirar esses fantasmas do meu caminho!\n Eles estão fazendo questões matemáticas para mim, devem estar querendo me testar.\n Vou superar as questões que eles não foram capazes de resolver e vou dar um fim naquele mago!", names[0]);
+
+        int n = 0;
         while (true) {
-             System.out.printf("4 elevado a X é igual 16384, qual o x da equação ?\n",names[6]);
+            System.out.printf("Fantasma do derrotado: Resolva se você for capaz:\n Qual a solução de 3x -7 = 8? \n Alternativas: \n1- X=1/3\n2- x=-9\n3- x=3\n4- x=5\n");
             int resposta = input.nextInt();
 
-            if (resposta == 7) {
-               System.out.printf("%s: Resposta correta, foi um prazer te conhecer!\n",names[6]);
+            if (resposta == 4) {
+                //Sistema de conhecimento (pontuação)
+                if (n <= 2) {
+                    System.out.printf("%s: Consegui, que venha o próximo!", names[0]);
+                    conhecimento += 1;
+                } else {
+                    System.out.printf("%s: Consegui, que venha o próximo!", names[0]);
+                }
                 break;
             } else {
-                System.out.printf("%s: Resposta incorreta\n",names[6]);
-               if(j==5){
-                   System.out.printf("%s:Infeliz você retornará o seu caminho, foi um prazer te conhecer!\n",names[6]);
-                   System.out.println("========================================================================");
-                   historia();
-                   break;
-               }else{ if (j == 3 && conhecimento > 3) {
+                System.out.printf("%s: Errei! Droga, não vou desistir fantasma cabeçudo!", names[0]);
+            }
+            n++;
+        }
+        int i = 0;
+        while (true) {
+            System.out.printf("Fantasma do derrotado: Essa não será tão fácil, responda essa equação: x^2 -3x - 10 = 0\nAlternativas: \n1- x=6 e x=-4\n2- 22\n3- x=5 e x=-2\n4- x=2 e x=-5\n");
+            int resposta = input.nextInt();
+
+            if (resposta == 3) {
+                //Sistema de conhecimento (pontuação)
+                if (n <= 2) {
+                    System.out.printf("%s: Muito fácil, vocês realmente não eram de nada!", names[0]);
+                    conhecimento += 1;
+                } else {
+                    System.out.printf("%s: Muito fácil, vocês realmente não eram de nada!", names[0]);
+                }
+                break;
+            } else {
+                System.out.printf("%s: Errei alguma coisa no meu cálculo, mas isso não ficará assim!", names[0]);
+            }
+            i++;
+        }
+
+        int j = 0;
+        while (true) {
+            System.out.printf("Fantasma do derrotado: Encare a pergunta que me levou à derrota! 2y^2 + 5y -3 = 0\n Alternativas: \n1- y= -1/2 e y= 3 \n2- y= 3/2 e y= 6\n3- y= -13\n4- y= 5 e y= 1/4\n");
+            int resposta = input.nextInt();
+
+            if (resposta == 1) {
+                //Sistema de conhecimento (pontuação)
+                if (j <= 2) {
+                    System.out.printf("%s: Consegui, Esse foi o último! \n Agora é sua vez mago!\n O mago guardião que estava desprotegido sem seus fantasmas recebe um golpe certeiro na cabeça e é derrotado!", names[0]);
+                    conhecimento += 3;
+                } else if (j > 2 && j <= 5) {
+                    System.out.printf("%s: Consegui, Esse foi o último! \n Agora é sua vez mago!\n O mago guardião que estava desprotegido sem seus fantasmas recebe um golpe certeiro na cabeça e é derrotado!", names[0]);
+                    conhecimento += 1;
+                } else {
+                    System.out.printf("%s: Consegui, Esse foi o último! \n Agora é sua vez mago!\n O mago guardião que estava desprotegido sem seus fantasmas recebe um golpe certeiro na cabeça e é derrotado!", names[0]);
+                }
+                break;
+            } else {
+                //Sistema de conhecimento (Ajuda)
+                System.out.printf("%s: Droga, essa realmente é uma questão difícil, mas não cheguei tão longe para nada!", names[0]);
+                if (j == 3 && conhecimento > 3 || j == 5 && conhecimento > 3) {
                     System.out.println("Que tal uma dica?");
                     System.out.println("Quando uma questão é acertada você adquiri pontos de conhecimento.");
-                    System.out.println("Se for um acerto com menos de tententavias você recebe 3 pontos, até 5 tentativas e mais que 3 você recebe um ponto. ");
+                    System.out.println("Se for um acerto com menos de tentativas você recebe 3 pontos, até 5 tentativas e mais que 3 você recebe um ponto. ");
                     System.out.printf("cada dica custa 3 pontos (Atualmente você possui %d pontos), e elas são escolhidas de forma aleatória.", conhecimento);
                     int r;
                     do {
@@ -503,13 +533,13 @@ public class MathMagic {
                         switch (aleatório) {
                             case 1:
                                 System.out.println("=================================");
-                                System.out.println("A resposta é um número primo");
+                                System.out.println("Ajuda1");
                                 System.out.println("=================================");
                                 break;
                             case 2:
-                                System.out.println("====================================================================");
-                                System.out.println("Você consiguirá a resposta por meio de uma equação exponencial.");
-                                System.out.println("====================================================================");
+                                System.out.println("=================================");
+                                System.out.println("Ajuda2");
+                                System.out.println("=================================");
                                 break;
                             case 3:
                                 System.out.println("=================================");
@@ -519,17 +549,96 @@ public class MathMagic {
                         }
                     }
                 }
+                n++;
             }
             j++;
         }
-        
+        return conhecimento;
+
     }
+
+    public static void capitulo6(String[] names, int conhecimento) {
+        Scanner input = new Scanner(System.in);
+        System.out.printf("%s pensou: que espécie de estátua é essa? \n", names[0]);
+        System.out.println("Finalmente alguém, não aguentava mais ficar olhando para o nada... sou uma esfinge antes que me pergunte.");
+        System.out.printf("%s: %s me tirou da minha terra, o egito não sei se já ouviu falar.\n", names[6], names[5]);
+        System.out.printf("%s:ele se transportou para minha realidade e teve uma série de problemas com o meu faraó.\n", names[6]);
+        System.out.printf("%s:por punição vim parar aqui.\n", names[6]);
+        System.out.printf("%s: O que é um faraó?, aliás me chamo %s\n", names[0], names[0]);
+        System.out.printf("%s: faraó é o meu rei\n", names[6]);
+        System.out.printf("%s: Bem vamos logo ao ponto, antes que aquele velho venha me atormentar.\n", names[6]);
+        System.out.printf("%s: Desde que ele me trancou nesse lugar, %s me obriga a fazer uma pergunta aqueles que chegarem aqui.\n", names[6], names[5]);
+        System.out.printf("%s: Bem caso você acerte, está livre e pode voltar ao seu mundo\nCaso contrário irá esquecer tudo do que aconteceu\n e irá voltar para o dia em que decidiu atacar %s \n", names[6], names[5]);
+        System.out.printf("%s: E vai viver tudo de novo até chegar aqui, se chegar normalmente o pessoal não consegue pasar por todos os desafios de novo.\n", names[6]);
+        System.out.printf("%s: Foi assim com meu faraó.\n", names[6]);
+        System.out.printf("%s: Ao menos foi o que ele me disse, quando vocês saem daqui minha mémoria é apagada, só lembro do motivo de estar aqui.\n", names[6]);
+        System.out.printf("%s: Não posso reviver tudo isso de novo\n", names[0]);
+        System.out.printf("%s: Sinto muito por tudo que aconteceu com você\n", names[0]);
+        System.out.printf("%s: O maximo que posso fazer é te dar mais que uma oportunidade de responder\n", names[6]);
+        System.out.printf("%s: Como faz muito tempo que não converso com alguém e fui com sua cara, vou te dar 5 chances.\n", names[6]);
+        System.out.printf("%s: Você não pode simplesmente me passar ou me dar a resposta ?\n", names[0]);
+        System.out.printf("%s: %s sempre está de olho em tudo que acontece, ficam dezenas de outros magos vigiando tudo que está acontecendo nessa dimenção.\nQuanto a resposta ele fez um feitiço e eu não consigo falar a resposta.\nApenas se está certa ou não.", names[6], names[0]);
+        System.out.printf("%s:... A pergunta é a seguinte.\n", names[6]);
+        int j = 0;
+        while (true) {
+            System.out.printf("4 elevado a X é igual 16384, qual o x da equação ?\n", names[6]);
+            int resposta = input.nextInt();
+
+            if (resposta == 7) {
+                System.out.printf("%s: Resposta correta, foi um prazer te conhecer!\n", names[6]);
+                break;
+            } else {
+                System.out.printf("%s: Resposta incorreta\n", names[6]);
+                if (j == 5) {
+                    System.out.printf("%s:Infeliz você retornará o seu caminho, foi um prazer te conhecer!\n", names[6]);
+                    System.out.println("========================================================================");
+                    historia();
+                    break;
+                } else {
+                    if (j == 3 && conhecimento > 3) {
+                        System.out.println("Que tal uma dica?");
+                        System.out.println("Quando uma questão é acertada você adquiri pontos de conhecimento.");
+                        System.out.println("Se for um acerto com menos de tentativas você recebe 3 pontos, até 5 tentativas e mais que 3 você recebe um ponto. ");
+                        System.out.printf("cada dica custa 3 pontos (Atualmente você possui %d pontos), e elas são escolhidas de forma aleatória.", conhecimento);
+                        int r;
+                        do {
+                            System.out.println("Quer uma Dica? \n1) Sim\n2) Não");
+                            r = input.nextInt();
+                        } while (r < 1 || r > 2);
+                        if (r == 1) {
+                            conhecimento -= 3;
+                            int aleatório = numeroAleatorio();
+                            switch (aleatório) {
+                                case 1:
+                                    System.out.println("=================================");
+                                    System.out.println("A resposta é um número primo");
+                                    System.out.println("=================================");
+                                    break;
+                                case 2:
+                                    System.out.println("====================================================================");
+                                    System.out.println("Você consiguirá a resposta por meio de uma equação exponencial.");
+                                    System.out.println("====================================================================");
+                                    break;
+                                case 3:
+                                    System.out.println("=================================");
+                                    System.out.println("Ajuda3");
+                                    System.out.println("=================================");
+                                    break;
+                            }
+                        }
+                    }
+                }
+                j++;
+            }
+
+        }
     }
+
     //Função que define os créditos do jogo.
     public static void creditos() {
         System.out.println("CRÉDITOS");
         System.out.println("JOÃO PEDRO CARVALHO E SILVA\nJOÃO PEDRO SERIGNOLLI BORIN\nGABRIEL DE ASSIS SILVA\nCAIO ROBERTO MORAES DE OLIVEIRA\nIGOR LIMA CHARLES");
-        
+
     }
 
     //Função para definir a mensagem que será imprimida ao fechar o jogo.
@@ -544,10 +653,11 @@ public class MathMagic {
             unit.sleep(tempo_mensagem);
         }
     }
+
     //Função para gerar números aleatórios.
-    public static int numeroAleatorio () {
+    public static int numeroAleatorio() {
         Random numAleatorio = new Random();
-        int num = numAleatorio.nextInt(1,4);
+        int num = numAleatorio.nextInt(1, 4);
         return num;
     }
 }
