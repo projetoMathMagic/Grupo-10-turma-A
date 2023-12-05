@@ -254,8 +254,23 @@ public class MathMagic {
     //Terceiro capitulo do MathMagic RPG.  
     public static int capitulo3(String[] names, int conhecimento) {
         Scanner input = new Scanner(System.in);
-
-        System.out.printf("%s: Que droga de criatura é essa? Meus ataques não surtem efeito nessa coisa, deve ter algum truque por trás disso!", names[0]);
+        System.out.printf("%s é transportado para uma espécie de vale",names[0]);
+        System.out.printf("%s: o que é aquilo ?",names[0]);
+        System.out.printf("%s encontra vários armamentos no chão.",names[0]);
+        if (names[4] == "Arqueiro") {
+            System.out.printf("%s: Que flechas diferentes.\n", names[0]);
+            System.out.printf("%s: Pelo visto cada tipo de flecha tem uma base numérica.\n", names[0]);
+            System.out.printf("%s: Nessa aula de matemática eu não faltei.\n", names[0]);
+        } else {
+            System.out.printf("%s: Que espadas diferentes.\n", names[0]);
+            System.out.printf("%s: Pelo visto cada tipo tem uma base numérica.\n", names[0]);
+            System.out.printf("%s: Nessa aula de matemática eu não faltei.\n", names[0]);
+        }
+        System.out.printf("%s: Sue barulho é esse?\n",names[0]);
+        System.out.printf("%s Se vira e olha para as árvores ao fundo.\n",names[0]);
+        System.out.printf("%s: Que droga de criatura é essa?\n", names[0]);
+        System.out.printf("A criatura se aproxima correndo, e %s percebe que é um golem\nEle tenta atacar ela.", names[0]);
+        System.out.printf("%s:Meus ataques não surtem efeito nessa coisa, deve ter algum truque por trás disso!", names[0]);
         if (names[4] == "Arqueiro") {
             System.out.printf("%s: Minhas flechas de base hexadecimal não estão causando dano,\n vou testar com outro tipo de flechas!", names[0]);
         } else {
@@ -265,7 +280,7 @@ public class MathMagic {
 
         System.out.printf("%s: Vou tentar algo arriscado, acho que meus ataques não estão surtindo efeito,\n pois esse golem está se adaptando a base numérica dos meus ataques no momento em que eles vão atingi-lo!", names[0]);
 
-        System.out.printf("%s: Para superar essa habilidade, preciso usar minha magia para alterar a base numérica dele no momento que meus ataques forem acertar!\n Assim ele não vai conseguir se adaptar e conseguirei causar dano,\n para isso terei que resolver o cálculo necessário para alterar sua base numérica.", names[0]);
+        System.out.printf("%s: Para superar essa habilidade, preciso usar a magia das minhas armas para alterar a base numérica dele no momento que meus ataques forem acertar!\n Assim ele não vai conseguir se adaptar e conseguirei causar dano,\n para isso terei que resolver o cálculo necessário para alterar sua base numérica.", names[0]);
 
         int n = 0;
         while (true) {
@@ -452,10 +467,14 @@ public class MathMagic {
 
     public static int capitulo5(String[] names, int conhecimento) {
         Scanner input = new Scanner(System.in);
-        System.out.printf("%s: Mais um problema, essa criatura parece ser um mago muito poderoso,\n que tipo de ataques ele vai usar?", names[0]);
-        System.out.printf("Mago guardião: Não pense que será fácil, você não é o primeiro a chegar aqui, e não será o último que cairá pelas minhas mãos!");
-        System.out.printf("Mago Guardião: Veja com seus próprios olhos,\n esses são as almas dos idiotas que sucumbiram perante minhas questões matemáticas.");
-        System.out.printf("%s: Era só o que faltava, essa coisa consegue invocar a alma de quem ele derrota?\n Não preciso ter medo, só preciso ser melhor do que os que vieram antes de mim!", names[0]);
+        System.out.printf("%s: Finalmente vou poder descansar, e comer um pouco! ", names[0]);
+        System.out.println("%s:Após algumas horas...");
+        System.out.printf("%s sente que algo está se aproximando.\n", names[0]);
+        System.out.printf("%s:Que legal...",names[0]);
+        System.out.printf("%s: Mais um problema, essa criatura parece ser um mago muito poderoso,\n que tipo de ataques ele vai usar?\n", names[0]);
+        System.out.printf("Mago guardião: Não pense que será fácil, você não é o primeiro a chegar aqui, e não será o último que cairá pelas minhas mãos!\n");
+        System.out.printf("Mago Guardião: Veja com seus próprios olhos,\n esses são as almas dos idiotas que sucumbiram perante minhas questões matemáticas.\n");
+        System.out.printf("%s: Era só o que faltava, essa coisa consegue invocar a alma de quem ele derrota?\n Não preciso ter medo, só preciso ser melhor do que os que vieram antes de mim!\n", names[0]);
         System.out.printf("%s: Para conseguir atacar o mago diretamente primeiro tenho que tirar esses fantasmas do meu caminho!\n Eles estão fazendo questões matemáticas para mim, devem estar querendo me testar.\n Vou superar as questões que eles não foram capazes de resolver e vou dar um fim naquele mago!", names[0]);
 
         int n = 0;
@@ -505,13 +524,13 @@ public class MathMagic {
             if (resposta == 1) {
                 //Sistema de conhecimento (pontuação)
                 if (j <= 2) {
-                    System.out.printf("%s: Consegui, Esse foi o último! \n Agora é sua vez mago!\n O mago guardião que estava desprotegido sem seus fantasmas recebe um golpe certeiro na cabeça e é derrotado!", names[0]);
+                    System.out.printf("%s: Consegui, Esse foi o último! \n Agora é sua vez mago!\n O mago guardião que estava desprotegido sem seus fantasmas recebe um golpe certeiro na cabeça e é derrotado!\n", names[0]);
                     conhecimento += 3;
                 } else if (j > 2 && j <= 5) {
-                    System.out.printf("%s: Consegui, Esse foi o último! \n Agora é sua vez mago!\n O mago guardião que estava desprotegido sem seus fantasmas recebe um golpe certeiro na cabeça e é derrotado!", names[0]);
+                    System.out.printf("%s: Consegui, Esse foi o último! \n Agora é sua vez mago!\n O mago guardião que estava desprotegido sem seus fantasmas recebe um golpe certeiro na cabeça e é derrotado!\n", names[0]);
                     conhecimento += 1;
                 } else {
-                    System.out.printf("%s: Consegui, Esse foi o último! \n Agora é sua vez mago!\n O mago guardião que estava desprotegido sem seus fantasmas recebe um golpe certeiro na cabeça e é derrotado!", names[0]);
+                    System.out.printf("%s: Consegui, Esse foi o último! \n Agora é sua vez mago!\n O mago guardião que estava desprotegido sem seus fantasmas recebe um golpe certeiro na cabeça e é derrotado!\n", names[0]);
                 }
                 break;
             } else {
@@ -560,6 +579,11 @@ public class MathMagic {
 
     public static void capitulo6(String[] names, int conhecimento) {
         Scanner input = new Scanner(System.in);
+        System.out.println("Após derrotar o Mago, surge uma porta.");
+        System.out.println("Ao adentrar.");
+        System.out.println("Sai em um lugar todo escuro...");
+        System.out.println("Derrepente uma luz acende, e tudo fica claro.");
+        System.out.println("E surge uma estátua gigantesca.");
         System.out.printf("%s pensou: que espécie de estátua é essa? \n", names[0]);
         System.out.println("Finalmente alguém, não aguentava mais ficar olhando para o nada... sou uma esfinge antes que me pergunte.");
         System.out.printf("%s: %s me tirou da minha terra, o egito não sei se já ouviu falar.\n", names[6], names[5]);
