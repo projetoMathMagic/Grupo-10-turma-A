@@ -340,19 +340,19 @@ public class MathMagic {
                         int aleatório = numeroAleatorio();
                         switch (aleatório) {
                             case 1:
-                                System.out.println("=================================");
-                                System.out.println("Ajuda1");
+                            	System.out.println("=================================");
+                                System.out.println("A 2 e 3 estão ERRADAS");
                                 System.out.println("=================================");
                                 break;
                             case 2:
-                                System.out.println("=================================");
-                                System.out.println("Ajuda2");
-                                System.out.println("=================================");
+                                System.out.println("====================================================================");
+                                System.out.println("Use essa fórmula: (3 X 16^2) + (15 x 16^1) + (6 x 16^0)");
+                                System.out.println("====================================================================");
                                 break;
                             case 3:
-                                System.out.println("=================================");
-                                System.out.println("Ajuda3");
-                                System.out.println("=================================");
+                                System.out.println("===================================================================================================================");
+                                System.out.println("Os pesos são potências de 16 (1, 16, 256 ...) mulplique 6 com 1, F(15) com 16, 3 com 256 e some todos os resultados");
+                                System.out.println("===================================================================================================================");
                                 break;
                         }
                     }
@@ -426,19 +426,19 @@ public class MathMagic {
                         int aleatório = numeroAleatorio();
                         switch (aleatório) {
                             case 1 -> {
-                                System.out.println("=================================");
-                                System.out.println("Ajuda1");
+                            	System.out.println("=================================");
+                                System.out.println("A 2 e a 3 estão ERRADAS");
                                 System.out.println("=================================");
                             }
                             case 2 -> {
-                                System.out.println("=================================");
-                                System.out.println("Ajuda2");
-                                System.out.println("=================================");
+                                System.out.println("===============================================================================================");
+                                System.out.println("Primeiro isole o 2x e passe o 5 para o outro lado mudando seu sinal, some 5 e 11 e divida por 2");
+                                System.out.println("===============================================================================================");
                             }
                             case 3 -> {
-                                System.out.println("=================================");
-                                System.out.println("Ajuda3");
-                                System.out.println("=================================");
+                                System.out.println("============================================");
+                                System.out.println("A resposta é menor que 10 e um múltiplo de 2");
+                                System.out.println("============================================");
                             }
                         }
                     }
@@ -532,20 +532,21 @@ public class MathMagic {
                         int aleatório = numeroAleatorio();
                         switch (aleatório) {
                             case 1:
-                                System.out.println("=================================");
-                                System.out.println("Ajuda1");
+                            	System.out.println("=================================");
+                                System.out.println("A 2 e 4 estão ERRADAS");
                                 System.out.println("=================================");
                                 break;
                             case 2:
                                 System.out.println("=================================");
-                                System.out.println("Ajuda2");
+                                System.out.println("O valor de delta é 49");
                                 System.out.println("=================================");
                                 break;
                             case 3:
                                 System.out.println("=================================");
-                                System.out.println("Ajuda3");
+                                System.out.println("Faça y = (-5 +- √49)/4");
                                 System.out.println("=================================");
                                 break;
+
                         }
                     }
                 }
@@ -616,13 +617,13 @@ public class MathMagic {
                                     break;
                                 case 2:
                                     System.out.println("====================================================================");
-                                    System.out.println("Você consiguirá a resposta por meio de uma equação exponencial.");
+                                    System.out.println("Você conseguirá a resposta por meio de uma equação exponencial.");
                                     System.out.println("====================================================================");
                                     break;
                                 case 3:
-                                    System.out.println("=================================");
-                                    System.out.println("Ajuda3");
-                                    System.out.println("=================================");
+                                    System.out.println("===================================================");
+                                    System.out.println("Você pode usar logaritmo para descobrir o resultado");
+                                    System.out.println("===================================================");
                                     break;
                             }
                         }
