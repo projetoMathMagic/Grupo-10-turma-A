@@ -9,7 +9,7 @@ public class MathMagic {
     Scanner input = new Scanner(System.in);
 
     // tempo das dialogs e falas dos personagens, para mudar o tempo apenas troque o valor.
-    static int temp_dialog = 70, temp_falas = 25;
+    static int temp_dialog = 70, temp_falas = 25, temp_instrucoes = 20;
 
     public static void main(String[] args) throws InterruptedException {
         int op = menu();
@@ -37,7 +37,7 @@ public class MathMagic {
         int options = 0;
         do {
             Falas("*******MATHMAGIC*******", TimeUnit.MILLISECONDS, temp_dialog);
-            Falas("\n1 - Instruções\n2 - Jogar\n3 - Créditos\n4 - Sair", TimeUnit.MILLISECONDS, temp_dialog);
+            Falas("\n1 - Instruções\n2 - Jogar\n3 - Créditos\n4 - Sair\n", TimeUnit.MILLISECONDS, temp_dialog);
             options = input.nextInt();
 
             if (options < 1 || options > 4) {
@@ -49,10 +49,10 @@ public class MathMagic {
     }
 
     public static void instrucoes() throws InterruptedException {
-        System.out.println("""
+        Falas("""
                            Resolva desafios matemáticos e instaure a paz entre as duas vilas que se odeiam
                             Dê um nome a seu personagem, pegue um arco ou uma espada e vamos à luta!
-                           O seu objetivo \u00e9 estabelecer a paz. Quanto mais você avança mais XP (conhecimento) você ganha""");
+                           O seu objetivo \u00e9 estabelecer a paz. Quanto mais você avança mais XP (conhecimento) você ganha""", TimeUnit.MILLISECONDS, temp_instrucoes);
 
     }
 
@@ -78,28 +78,28 @@ public class MathMagic {
         names[5] = "Math";
         names[6] = "Esfinge";
 
-        System.out.println("Para Iniciarmos nossa Jornada bravo guerreiro me diga seu nome.");
-        System.out.println("Digite seu Nome: ");
+        Falas("Para Iniciarmos nossa Jornada bravo guerreiro me diga seu nome.", TimeUnit.MILLISECONDS, temp_falas);
+        Falas("Digite seu Nome: ", TimeUnit.MILLISECONDS, temp_falas);
         names[0] = input.next();
-        System.out.println("Em uma manhã em Ánthropos, " + names[0] + " acorda assustado com seu pai (" + names[2] + ") mandando ele ir para um abrigo seguro!");
-        System.out.println(names[2] + ": Anda levanta a vila está sendo atacada!\n"
+        Falas("Em uma manhã em Ánthropos, " + names[0] + " acorda assustado com seu pai (" + names[2] + ") mandando ele ir para um abrigo seguro!", TimeUnit.MILLISECONDS, temp_falas);
+        Falas(names[2] + ": Anda levanta a vila está sendo atacada!\n"
                 + "maldito exército de Mathema, pegaram a gente de surpresa\n"
                 + "Leva sua mãe para um abrigo!\n"
-                + "Vou para o fronte de batalha com o exército, depois a gente se encontra.");
-        System.out.println("Ório é o Líder da vila, Ánthropos é a vila de humanas que está em guerra com Mathema a anos, sendo sincero não sabemos o motivo até hoje.");
-        System.out.println(names[0] + ": Vamos mãe (" + names[3] + ") estamos sendo atacados, vou levar a senhora para o abrigo!");
-        System.out.println(names[0] + " Sai de casa com sua mãe , e vê dezenas de casas pegando fogo, flechas voando, saqueadores invadindo casas! ");
-        System.out.println("No caminho encontram um soldado guiando o caminho,'Venham por aqui descendo as escadas encontrarão o abrigo!'");
-        System.out.println("Chegando no local, " + names[0] + " encontrou dezenas de civis feridos, alguns inclusive pareciam ter sido atingidos por Magia!");
-        System.out.println(names[0] + ": Já que deixei a senhora aqui vou para o fronte.");
-        System.out.println(names[0] + ": Não!, Você é muito jovem para ir para guerra!");
-        System.out.println(names[0] + "é meu dever, tenho q defender meu povo!");
-        System.out.println(names[0] + "deixa sua mãe no abrigo, ela o puxa pelo braço pedindo par ele não ir.\n"
-                + "Mas ele se solta da um beijo em seu rosto para se despedir\n e vai em direção a saida do abrigo e pede uma arma a um arqueiro q estava distribuindo armas, para os que estavam indo para o fronte.");
-        System.out.println(names[0] + ":Amigo, preciso de uma arma.");
-        System.out.println("Soldado: Qual Você quer ? ");
+                + "Vou para o fronte de batalha com o exército, depois a gente se encontra.", TimeUnit.MILLISECONDS, temp_falas);
+        Falas("Ório é o Líder da vila, Ánthropos é a vila de humanas que está em guerra com Mathema a anos, sendo sincero não sabemos o motivo até hoje.", TimeUnit.MILLISECONDS, temp_falas);
+        Falas(names[0] + ": Vamos mãe (" + names[3] + ") estamos sendo atacados, vou levar a senhora para o abrigo!", TimeUnit.MILLISECONDS, temp_falas);
+        Falas(names[0] + " Sai de casa com sua mãe , e vê dezenas de casas pegando fogo, flechas voando, saqueadores invadindo casas! ", TimeUnit.MILLISECONDS, temp_falas);
+        Falas("No caminho encontram um soldado guiando o caminho,'Venham por aqui descendo as escadas encontrarão o abrigo!'", TimeUnit.MILLISECONDS, temp_falas);
+        Falas("Chegando no local, " + names[0] + " encontrou dezenas de civis feridos, alguns inclusive pareciam ter sido atingidos por Magia!", TimeUnit.MILLISECONDS, temp_falas);
+        Falas(names[0] + ": Já que deixei a senhora aqui vou para o fronte.", TimeUnit.MILLISECONDS, temp_falas);
+        Falas(names[0] + ": Não!, Você é muito jovem para ir para guerra!", TimeUnit.MILLISECONDS, temp_falas);
+        Falas(names[0] + "é meu dever, tenho q defender meu povo!", TimeUnit.MILLISECONDS, temp_falas);
+        Falas(names[0] + "deixa sua mãe no abrigo, ela o puxa pelo braço pedindo par ele não ir.\n"
+                + "Mas ele se solta da um beijo em seu rosto para se despedir\n e vai em direção a saida do abrigo e pede uma arma a um arqueiro q estava distribuindo armas, para os que estavam indo para o fronte.", TimeUnit.MILLISECONDS, temp_falas);
+        Falas(names[0] + ":Amigo, preciso de uma arma.", TimeUnit.MILLISECONDS, temp_falas);
+        Falas("Soldado: Qual Você quer ? ", TimeUnit.MILLISECONDS, temp_falas);
         do {
-            System.out.println("Escolha sua arma: \n1)Espada \n2)Arco");
+            Falas("Escolha sua arma: \n1)Espada \n2)Arco", TimeUnit.MILLISECONDS, temp_dialog);
             coletaDados = input.nextInt();
             if (coletaDados == 1) {
                 names[4] = "Bárbaro";
@@ -107,33 +107,33 @@ public class MathMagic {
                 names[4] = "Arqueiro";
             }
         } while (coletaDados < 1 || coletaDados > 2);
-        System.out.println("Soldado: Que Falta de Educação a minha me chamo " + names[1] + "!\n"
-                + "Boa Sorte, Bravo " + names[4] + ", as tropas de apoio se encontram a 10km daqui, tem um grupo de soldados se preparando para ir também, é só seguir a trilha");
-        System.out.println(names[4] + ": Certo");
-        System.out.println("Após quase uma hora indo com seu grupo a direção das tropas, " + names[0] + " houve um som muito alto, se vira e vê o abrigo pegando fogo.");
-        System.out.println("O grupo ficou muito abalado, mas decidiu continuar seu caminho, " + names[0] + " por outro lado, pensando em sua mãe, decidiu  voltar ao abrigo.");
-        System.out.println("O grupo e " + names[0] + " entraram em discussão, eles não queriam que ele voltasse sozinho, e que continuasse com o grupo.");
-        System.out.println("Porém, ele voltou mesmo assim.");
-        System.out.println("Chegando lá, o exército inimigo já não estava mais lá, só tinha destroços do abrigo.");
-        System.out.println("Após muita procura, ele encontra o corpo de sua mãe.");
-        System.out.println(names[0] + ": Não!!!!\n"
+        Falas("Soldado: Que Falta de Educação a minha me chamo " + names[1] + "!\n"
+                + "Boa Sorte, Bravo " + names[4] + ", as tropas de apoio se encontram a 10km daqui, tem um grupo de soldados se preparando para ir também, é só seguir a trilha", TimeUnit.MILLISECONDS, temp_falas);
+        Falas(names[4] + ": Certo", TimeUnit.MILLISECONDS, temp_falas);
+        Falas("Após quase uma hora indo com seu grupo a direção das tropas, " + names[0] + " houve um som muito alto, se vira e vê o abrigo pegando fogo.", TimeUnit.MILLISECONDS, temp_falas);
+        Falas("O grupo ficou muito abalado, mas decidiu continuar seu caminho, " + names[0] + " por outro lado, pensando em sua mãe, decidiu  voltar ao abrigo.", TimeUnit.MILLISECONDS, temp_falas);
+        Falas("O grupo e " + names[0] + " entraram em discussão, eles não queriam que ele voltasse sozinho, e que continuasse com o grupo.", TimeUnit.MILLISECONDS, temp_falas);
+        Falas("Porém, ele voltou mesmo assim.", TimeUnit.MILLISECONDS, temp_falas);
+        Falas("Chegando lá, o exército inimigo já não estava mais lá, só tinha destroços do abrigo.", TimeUnit.MILLISECONDS, temp_falas);
+        Falas("Após muita procura, ele encontra o corpo de sua mãe.", TimeUnit.MILLISECONDS, temp_falas);
+        Falas(names[0] + ": Não!!!!\n"
                 + "Não pode ser!\n"
-                + "gritou chorando.");
-        System.out.println("Eu juro que vou me vingar!!");
-        System.out.println("***********Duas semanas depois***********");
-        System.out.println(names[0] + ": acordou em sua cabana, no acampamento de batalha ");
-        System.out.println(names[0] + ": estava decidido a colocar um fim nisso, mas não sabia com quem conversar.");
-        System.out.println(names[0] + ": Será que aquele velhote chamado Math ainda existe?");
-        System.out.println(names[0] + ": decide ir para cabana onde estão sendi decididas as táticas de guerra.");
-        System.out.println(names[0] + ": pai eu vou até Mathema, vou me vingar daquele povo!");
-        System.out.println(names[2] + ": Não, você não vai!");
-        System.out.println(names[0] + ": eu vou de qualquer jeito");
-        System.out.println("Disse " + names[0] + " saindo da cabana!");
-        System.out.println("Durante a tarde ele encontrou o " + names[1] + " e pediu ajuda para saber onde ficavam as saidas do acampamento.");
-        System.out.println(names[1] + ": O que você está pretendendo fazer ?");
-        System.out.println(names[0] + ": Só estou fazendo uma pesquisa para saber onde melhorar a segurança do acampamento.");
-        System.out.println(names[1] + ": Entendo.");
-        System.out.println("Durante a Madrugada ele entrou no estábulo roubou um cavalo,e com levou sua armadura e arma.");
+                + "gritou chorando.", TimeUnit.MILLISECONDS, temp_falas);
+        Falas("Eu juro que vou me vingar!!", TimeUnit.MILLISECONDS, temp_falas);
+        Falas("***********Duas semanas depois***********", TimeUnit.MILLISECONDS, temp_falas);
+        Falas(names[0] + ": acordou em sua cabana, no acampamento de batalha ", TimeUnit.MILLISECONDS, temp_falas);
+        Falas(names[0] + ": estava decidido a colocar um fim nisso, mas não sabia com quem conversar.", TimeUnit.MILLISECONDS, temp_falas);
+        Falas(names[0] + ": Será que aquele velhote chamado Math ainda existe?", TimeUnit.MILLISECONDS, temp_falas);
+        Falas(names[0] + ": decide ir para cabana onde estão sendi decididas as táticas de guerra.", TimeUnit.MILLISECONDS, temp_falas);
+        Falas(names[0] + ": pai eu vou até Mathema, vou me vingar daquele povo!", TimeUnit.MILLISECONDS, temp_falas);
+        Falas(names[2] + ": Não, você não vai!", TimeUnit.MILLISECONDS, temp_falas);
+        Falas(names[0] + ": eu vou de qualquer jeito", TimeUnit.MILLISECONDS, temp_falas);
+        Falas("Disse " + names[0] + " saindo da cabana!", TimeUnit.MILLISECONDS, temp_falas);
+        Falas("Durante a tarde ele encontrou o " + names[1] + " e pediu ajuda para saber onde ficavam as saidas do acampamento.", TimeUnit.MILLISECONDS, temp_falas);
+        Falas(names[1] + ": O que você está pretendendo fazer ?", TimeUnit.MILLISECONDS, temp_falas);
+        Falas(names[0] + ": Só estou fazendo uma pesquisa para saber onde melhorar a segurança do acampamento.", TimeUnit.MILLISECONDS, temp_falas);
+        Falas(names[1] + ": Entendo.", TimeUnit.MILLISECONDS, temp_falas);
+        Falas("Durante a Madrugada ele entrou no estábulo roubou um cavalo,e com levou sua armadura e arma.", TimeUnit.MILLISECONDS, temp_falas);
 
         return names;
     }
