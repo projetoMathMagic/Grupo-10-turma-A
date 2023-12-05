@@ -9,12 +9,9 @@ public class MathMagic {
     Scanner input = new Scanner(System.in);
 
     // tempo das dialogs e falas dos personagens, para mudar o tempo apenas troque o valor.
-    
+    static int temp_dialog = 70, temp_falas = 25;
 
     public static void main(String[] args) throws InterruptedException {
-        // tempo das dialogs e falas dos personagens, para mudar o tempo apenas troque o valor.
-        int temp_dialog = 70, temp_falas = 25;
-        
         int op = menu();
         //chama a função para o usuário escolher a opção desejada.
         controlador(op);
@@ -35,12 +32,12 @@ public class MathMagic {
     }
 
     //Menu com as opções iniciais do jogo.
-    public static int menu() {
+    public static int menu() throws InterruptedException {
         Scanner input = new Scanner(System.in);
         int options = 0;
         do {
-            System.out.println("*******MATHMAGIC*******");
-            System.out.println("\n1 - Instruções\n2 - Jogar\n3 - Créditos\n4 - Sair");
+            Falas("*******MATHMAGIC*******", TimeUnit.MILLISECONDS, temp_dialog);
+            Falas("\n1 - Instruções\n2 - Jogar\n3 - Créditos\n4 - Sair", TimeUnit.MILLISECONDS, temp_dialog);
             options = input.nextInt();
 
             if (options < 1 || options > 4) {
@@ -683,7 +680,7 @@ public class MathMagic {
     }
 
     //Função para gerar números aleatórios.
-    public static int numeroAleatorio() {
+    public static int numeroAleatorio() throws InterruptedException {
         Random numAleatorio = new Random();
         int num = numAleatorio.nextInt(1, 4);
         return num;
