@@ -152,44 +152,44 @@ public class MathMagic {
         Scanner input = new Scanner(System.in);
         int conhecimento = 0;
         System.out.println("\n");
-         System.out.println("===================================================================================================================");
+        System.out.println("===================================================================================================================");
         System.out.println("*************************************************CAPÍTULO 2*******************************************************");
         System.out.println("===================================================================================================================");
         System.out.println("\n");
-        System.out.println("Após longos dias passando de viagem\n");
-        System.out.printf("Por muitas vezes tendo que se esconder das tropas inimigas, finalmente %s chegou em Mathema.\n", names[0]);
-        System.out.printf("%s: certo, preciso dar um jeito de invadir o castelo do Math.\n", names[0]);
-        System.out.printf("Após algumas horas estudando o castelo de longe,decidiu entrar pela área de serviços.\n");
-        System.out.printf("%s consegui entrar pela área de serviço, após nocautear um cozinheiro e pegar a roupa dele.\n", names[0]);
-        System.out.printf("%s subiu vários andares pelas as escadas, até que encontrou um guarda,\n o atacou pelas costa e seguiu seu caminho.\n", names[0]);
-        System.out.printf("Ele só não esperava de encontraria %s em um dos andares,\n se escondeu em uma das salas do corredor e ficou o observando de longe.\n", names[5]);
-        System.out.printf("Do nada Math se vira e olha para a porta, e questão de segundos %s apaga\n", names[0]);
-        System.out.printf("%s acordou amarrado em uma sala que parecia ter um trono no meio dela.\n", names[0]);
-        System.out.printf("%s:Finalmente acordou, pensei que nunca iria acordar\n", names[5]);
-        System.out.printf("%s:Realmente achou que invadiria meu castelo e eu não sentiria sua presença?\n", names[5]);
-        System.out.printf("%s:Vou dar uma dica para você meu caro, jamais subestime os poderes de um mago,\n se esconder se esconder dentro da minha sala de poções ?\n", names[5]);
-        System.out.printf("%s:Chega a ser hilário, e ainda tenta atacar minha vila sozinho.\n", names[5]);
-        System.out.printf("%s: %s, maldita insolência, como ousou atacar a minha vila e achar que sairiam impune?\n", names[5], names[0]);
-        System.out.printf("%s: Onde eu ataquei a sua vila? Prove!\n", names[0]);
-        System.out.printf("%s: prove, velhote! Você e esses seus cabelos brancos não significam NADA, N-A-D-A\n", names[0]);
-        System.out.printf("%s: Essa maldita guerra,\n ela não estaria acontecendo se você não tivesse atacado o meu povo com a sua ignorância\n", names[5]);
-        System.out.printf("%s: Eu taquei pedras para descontrair. Nada demais, são só pedras!\n", names[0]);
-        System.out.printf("%s:E elas acertaram sem querer a cabeça dos meu soldados né?\n", names[5]);
-        System.out.printf("%s: Você não tem civilidade nenhuma!\n", names[5]);
-        System.out.printf("%s: Eu sou mais civilizado que vocês, loucos dos números!\n", names[0]);
-        System.out.printf("Math aprisiona %s em Mathema\n", names[0]);
-        System.out.printf("%s: Onde estou? QUE RAIOS DE LUGAR É ESSE?!\n", names[0]);
-        System.out.println("Math: O lugar que seu povo condena\n");
-        System.out.printf("%s: ME TIRA DAQUI!\n", names[0]);
-        System.out.println("Math: Daqui só se saí com matemática\n");
-        System.out.println("Math: Só sai com matemática ou você fica ai e nunca mais volta\n");
-        System.out.printf("%s: Você precisa aprender a ameaçar mais as pessoas! Mas enfim, como volto?\n", names[0]);
-        System.out.println("Math: O primeiro passo é matemática básica: potenciação!\n");
-        System.out.printf("%s: E o que raios é isso?\n", names[0]);
-        System.out.println("Math: \"A potenciação é uma operação matemática\n"
-                + "Utilizamos a potenciação para indicar multiplicações consecutivas de um mesmo número\n");
-        System.out.printf("%s: Vamos tentar então!\n", names[0]);
-        System.out.println("Math: Dois elevado a 3 é: \n");
+        Falas("Após longos dias passando de viagem\n", TimeUnit.MILLISECONDS, temp_falas);
+        System.out.printf("Por muitas vezes tendo que se esconder das tropas inimigas, finalmente %s chegou em Mathema.\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
+        System.out.printf("%s: certo, preciso dar um jeito de invadir o castelo do Math.\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
+        System.out.printf("Após algumas horas estudando o castelo de longe,decidiu entrar pela área de serviços.\n", TimeUnit.MILLISECONDS, temp_falas);
+        System.out.printf("%s consegui entrar pela área de serviço, após nocautear um cozinheiro e pegar a roupa dele.\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
+        System.out.printf("%s subiu vários andares pelas as escadas, até que encontrou um guarda,\n o atacou pelas costa e seguiu seu caminho.\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
+        System.out.printf("Ele só não esperava de encontraria %s em um dos andares,\n se escondeu em uma das salas do corredor e ficou o observando de longe.\n", names[5], TimeUnit.MILLISECONDS, temp_falas);
+        System.out.printf("Do nada Math se vira e olha para a porta, e questão de segundos %s apaga\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
+        System.out.printf("%s acordou amarrado em uma sala que parecia ter um trono no meio dela.\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
+        System.out.printf("%s:Finalmente acordou, pensei que nunca iria acordar\n", names[5], TimeUnit.MILLISECONDS, temp_falas);
+        System.out.printf("%s:Realmente achou que invadiria meu castelo e eu não sentiria sua presença?\n", names[5], TimeUnit.MILLISECONDS, temp_falas);
+        System.out.printf("%s:Vou dar uma dica para você meu caro, jamais subestime os poderes de um mago,\n se esconder se esconder dentro da minha sala de poções ?\n", names[5], TimeUnit.MILLISECONDS, temp_falas);
+        System.out.printf("%s:Chega a ser hilário, e ainda tenta atacar minha vila sozinho.\n", names[5], TimeUnit.MILLISECONDS, temp_falas);
+        System.out.printf("%s: %s, maldita insolência, como ousou atacar a minha vila e achar que sairiam impune?\n", names[5], names[0], TimeUnit.MILLISECONDS, temp_falas);
+        System.out.printf("%s: Onde eu ataquei a sua vila? Prove!\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
+        System.out.printf("%s: prove, velhote! Você e esses seus cabelos brancos não significam NADA, N-A-D-A\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
+        System.out.printf("%s: Essa maldita guerra,\n ela não estaria acontecendo se você não tivesse atacado o meu povo com a sua ignorância\n", names[5], TimeUnit.MILLISECONDS, temp_falas);
+        System.out.printf("%s: Eu taquei pedras para descontrair. Nada demais, são só pedras!\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
+        System.out.printf("%s:E elas acertaram sem querer a cabeça dos meu soldados né?\n", names[5], TimeUnit.MILLISECONDS, temp_falas);
+        System.out.printf("%s: Você não tem civilidade nenhuma!\n", names[5], TimeUnit.MILLISECONDS, temp_falas);
+        System.out.printf("%s: Eu sou mais civilizado que vocês, loucos dos números!\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
+        System.out.printf("Math aprisiona %s em Mathema\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
+        System.out.printf("%s: Onde estou? QUE RAIOS DE LUGAR É ESSE?!\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
+        Falas("Math: O lugar que seu povo condena\n", TimeUnit.MILLISECONDS, temp_falas);
+        System.out.printf("%s: ME TIRA DAQUI!\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
+        Falas("Math: Daqui só se saí com matemática\n", TimeUnit.MILLISECONDS, temp_falas);
+        Falas("Math: Só sai com matemática ou você fica ai e nunca mais volta\n", TimeUnit.MILLISECONDS, temp_falas);
+        System.out.printf("%s: Você precisa aprender a ameaçar mais as pessoas! Mas enfim, como volto?\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
+        Falas("Math: O primeiro passo é matemática básica: potenciação!\n", TimeUnit.MILLISECONDS, temp_falas);
+        System.out.printf("%s: E o que raios é isso?\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
+        Falas("Math: \"A potenciação é uma operação matemática\n"
+                + "Utilizamos a potenciação para indicar multiplicações consecutivas de um mesmo número\n", TimeUnit.MILLISECONDS, temp_falas);
+        System.out.printf("%s: Vamos tentar então!\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
+        Falas("Math: Dois elevado a 3 é: \n", TimeUnit.MILLISECONDS, temp_falas);
         int n = 0;
         while (true) {
             int resposta = input.nextInt();
@@ -197,10 +197,10 @@ public class MathMagic {
             if (resposta == 8) {
                 //Sistema de conhecimento (pontuação)
                 if (n <= 2) {
-                    System.out.println("Math: Parabéns, você acertou!");
+                    Falas("Math: Parabéns, você acertou!", TimeUnit.MILLISECONDS, temp_dialog);
                     conhecimento += 1;
                 } else {
-                    System.out.println("Math: Parabéns, você acertou!");
+                    Falas("Math: Parabéns, você acertou!", TimeUnit.MILLISECONDS, temp_dialog);
                 }
                 break;
             } else {
@@ -217,10 +217,10 @@ public class MathMagic {
             if (resposta == 128) {
                 //Sistema de conhecimento (pontuação)
                 if (i <= 2) {
-                    System.out.println("Math: Muito bom, você acertou!");
+                    Falas("Math: Muito bom, você acertou!", TimeUnit.MILLISECONDS, temp_dialog);
                     conhecimento += 1;
                 } else {
-                    System.out.println("Math: Muito bom, você acertou!");
+                    Falas("Math: Muito bom, você acertou!", TimeUnit.MILLISECONDS, temp_dialog);
                 }
                 break;
             } else {
@@ -237,17 +237,17 @@ public class MathMagic {
             if (resposta == 3125) {
                 //Sistema de conhecimento (pontuação)
                 if (j <= 2) {
-                    System.out.println("Math: Parabéns, você acertou!");
+                    Falas("Math: Parabéns, você acertou!", TimeUnit.MILLISECONDS, temp_dialog);
                     conhecimento += 3;
                 } else if (j > 2 && j <= 5) {
-                    System.out.println("Math: Parabéns, você acertou!");
+                    Falas("Math: Parabéns, você acertou!", TimeUnit.MILLISECONDS, temp_dialog);
                     conhecimento += 1;
                 } else {
-                    System.out.println("Math: Parabéns, você acertou!");
+                    Falas("Math: Parabéns, você acertou!", TimeUnit.MILLISECONDS, temp_dialog);
                 }
                 break;
             } else {
-                System.out.println("Math: Vamos lá! Você está indo bem, tente de novo!");
+                Falas("Math: Vamos lá! Você está indo bem, tente de novo!", TimeUnit.MILLISECONDS, temp_dialog);
             }
             j++;
 
