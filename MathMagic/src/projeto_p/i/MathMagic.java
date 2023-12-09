@@ -16,6 +16,7 @@ public class MathMagic {
         int op = menu();
         //chama a função para o usuário escolher a opção desejada.
         controlador(op);
+        historia();
     }
 
     //Função que chama as opções escolhidas pelo jogador.
@@ -68,7 +69,8 @@ public class MathMagic {
         int conhecimento3 = capitulo4(names, conhecimento2);
         int conhecimento4 = capitulo5(names, conhecimento3);
         int n = capitulo6(names, conhecimento4);
-        capitulo7(names, n);
+        int c = capitulo7(names, n);
+        System.exit(c);
 
     }
 
@@ -615,7 +617,7 @@ public class MathMagic {
         System.out.println("Após derrotar o Mago, surge uma porta.");
         System.out.println("Ao adentrar.");
         System.out.println("Sai em um lugar todo escuro...");
-        System.out.println("Derrepente uma luz acende, e tudo fica claro.");
+        System.out.println("De repente uma luz acende, e tudo fica claro.");
         System.out.println("E surge uma estátua gigantesca.");
         System.out.printf("%s pensou: que espécie de estátua é essa?\n", names[0]);
         System.out.println("Finalmente alguém, não aguentava mais ficar olhando para o nada... sou uma esfinge antes que me pergunte.");
@@ -694,7 +696,7 @@ public class MathMagic {
         }
         return n;
     }
-    public static void capitulo7(String[] names, int n) throws InterruptedException {
+    public static int capitulo7(String[] names, int n) throws InterruptedException {
         if (n == 1) {
             System.out.println("\n");
             System.out.println("===================================================================================================================");
@@ -797,6 +799,7 @@ public class MathMagic {
             System.out.println("\n");
         }
 
+        return 0;
     }
 
     //Função que define os créditos do jogo.
