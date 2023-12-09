@@ -9,7 +9,7 @@ public class MathMagic {
     Scanner input = new Scanner(System.in);
 
     // tempo das dialogs e falas dos personagens, para mudar o tempo apenas troque o valor.
-    static int temp_dialog = 0, temp_falas = 0, temp_instrucoes = 0;
+    static int temp_dialog = 10, temp_falas = 5, temp_instrucoes = 0;
     // temp_dialog = 70, temp_falas = 25, temp_instrucoes = 20;
 
     public static void main(String[] args) throws InterruptedException {
@@ -197,14 +197,14 @@ public class MathMagic {
             if (resposta == 8) {
                 //Sistema de conhecimento (pontuação)
                 if (n <= 2) {
-                    Falas("Math: Parabéns, você acertou!", TimeUnit.MILLISECONDS, temp_dialog);
+                    Falas("Math: Parabéns, você acertou!\n", TimeUnit.MILLISECONDS, temp_dialog);
                     conhecimento += 1;
                 } else {
-                    Falas("Math: Parabéns, você acertou!", TimeUnit.MILLISECONDS, temp_dialog);
+                    Falas("Math: Parabéns, você acertou!\n", TimeUnit.MILLISECONDS, temp_dialog);
                 }
                 break;
             } else {
-                System.out.println("Math: Pense mais um pouco e tente de novo");
+                Falas("Math: Pense mais um pouco e tente de novo\n", TimeUnit.MILLISECONDS, temp_dialog);
             }
             n++;
         }
@@ -217,10 +217,10 @@ public class MathMagic {
             if (resposta == 128) {
                 //Sistema de conhecimento (pontuação)
                 if (i <= 2) {
-                    Falas("Math: Muito bom, você acertou!", TimeUnit.MILLISECONDS, temp_dialog);
+                    Falas("Math: Muito bom, você acertou!\n", TimeUnit.MILLISECONDS, temp_dialog);
                     conhecimento += 1;
                 } else {
-                    Falas("Math: Muito bom, você acertou!", TimeUnit.MILLISECONDS, temp_dialog);
+                    Falas("Math: Muito bom, você acertou!\n", TimeUnit.MILLISECONDS, temp_dialog);
                 }
                 break;
             } else {
@@ -237,17 +237,17 @@ public class MathMagic {
             if (resposta == 3125) {
                 //Sistema de conhecimento (pontuação)
                 if (j <= 2) {
-                    Falas("Math: Parabéns, você acertou!", TimeUnit.MILLISECONDS, temp_dialog);
+                    Falas("Math: Parabéns, você acertou!\n", TimeUnit.MILLISECONDS, temp_dialog);
                     conhecimento += 3;
                 } else if (j > 2 && j <= 5) {
-                    Falas("Math: Parabéns, você acertou!", TimeUnit.MILLISECONDS, temp_dialog);
+                    Falas("Math: Parabéns, você acertou!\n", TimeUnit.MILLISECONDS, temp_dialog);
                     conhecimento += 1;
                 } else {
-                    Falas("Math: Parabéns, você acertou!", TimeUnit.MILLISECONDS, temp_dialog);
+                    Falas("Math: Parabéns, você acertou!\n", TimeUnit.MILLISECONDS, temp_dialog);
                 }
                 break;
             } else {
-                Falas("Math: Vamos lá! Você está indo bem, tente de novo!", TimeUnit.MILLISECONDS, temp_dialog);
+                Falas("Math: Vamos lá! Você está indo bem, tente de novo!\n", TimeUnit.MILLISECONDS, temp_dialog);
             }
             j++;
 
@@ -265,30 +265,30 @@ public class MathMagic {
 
     //Terceiro capitulo do MathMagic RPG.  
     public static int capitulo3(String[] names, int conhecimento) throws InterruptedException {
+        Scanner input = new Scanner(System.in);
         System.out.println("\n");
-         System.out.println("===================================================================================================================");
+        System.out.println("===================================================================================================================");
         System.out.println("*************************************************CAPÍTULO 3*******************************************************");
         System.out.println("===================================================================================================================");
         System.out.println("\n");
-        Scanner input = new Scanner(System.in);
-        System.out.printf("%s é transportado para uma espécie de vale", names[0]);
-        System.out.printf("%s: o que é aquilo ?", names[0]);
-        System.out.printf("%s encontra vários armamentos no chão.", names[0]);
+        System.out.printf("%s é transportado para uma espécie de vale\n", names[0]);
+        System.out.printf("%s: o que é aquilo ?\n", names[0]);
+        System.out.printf("%s encontra vários armamentos no chão.\n", names[0]);
         if (names[4] == "Arqueiro") {
             System.out.printf("%s: Que flechas diferentes.\n", names[0]);
             System.out.printf("%s: Pelo visto cada tipo de flecha tem uma base numérica.\n", names[0]);
             System.out.printf("%s: Nessa aula de matemática eu não faltei.\n", names[0]);
         } else {
-            System.out.printf("%s: Que espadas diferentes.\n", names[0]);
-            System.out.printf("%s: Pelo visto cada tipo tem uma base numérica.\n", names[0]);
+            System.out.printf("%s: Que espada diferentes.\n", names[0]);
+            System.out.printf("%s: Pelo visto cada tipo de ataque tem uma base numérica.\n", names[0]);
             System.out.printf("%s: Nessa aula de matemática eu não faltei.\n", names[0]);
         }
         System.out.printf("%s: Sue barulho é esse?\n", names[0]);
         System.out.printf("%s Se vira e olha para as árvores ao fundo.\n", names[0]);
         System.out.printf("%s: Que droga de criatura é essa?\n", names[0]);
-        System.out.printf("A criatura se aproxima correndo, e %s percebe que é um golem\nEle tenta atacar ela.", names[0]);
-        System.out.printf("%s:Meus ataques não surtem efeito nessa coisa, deve ter algum truque por trás disso!", names[0]);
-        if (names[4] == "Arqueiro") {
+        System.out.printf("A criatura se aproxima correndo, e %s percebe que é um golem\nEle tenta atacar ela.\n", names[0]);
+        System.out.printf("%s:Meus ataques não surtem efeito nessa coisa, deve ter algum truque por trás disso!\n", names[0]);
+        if ("Arqueiro".equals(names[4])) {
             System.out.printf("%s: Minhas flechas de base hexadecimal não estão causando dano,\nvou testar com outro tipo de flechas!\n", names[0]);
         } else {
             System.out.printf("%s: Meus golpes de base hexadecimal não estão surtindo efeito,\nvou testar com outro tipo de base\n", names[0]);
@@ -307,33 +307,33 @@ public class MathMagic {
             if (resposta == 1) {
                 //Sistema de conhecimento (pontuação)
                 if (n <= 2) {
-                    System.out.printf("%s: Consegui causar dano!", names[0]);
+                    System.out.printf("%s: Consegui causar dano!\n", names[0]);
                     conhecimento += 1;
                 } else {
-                    System.out.printf("%s: Consegui causar dano!", names[0]);
+                    System.out.printf("%s: Consegui causar dano!\n", names[0]);
                 }
                 break;
             } else {
-                System.out.printf("%s: O cálculo está errado, não consegui alterar a base numérica dele!", names[0]);
+                System.out.printf("%s: O cálculo está errado, não consegui alterar a base numérica dele!\n", names[0]);
             }
             n++;
         }
         int i = 0;
         while (true) {
-            System.out.printf("%s: Ele alterou a base numérica novamente,agora a base numérica dele é o número octal 47,\n dessa vez vou usar um ataque de base hexadecimal, preciso converter a base dele!\nAlternativas: \n1- 32\n2- 54\n3- 27\n4- 11\n", names[0]);
+            System.out.printf("%s: Ele alterou a base numérica novamente,agora a base numérica dele é o número octal 47,\ndessa vez vou usar um ataque de base hexadecimal, preciso converter a base dele!\nAlternativas: \n1- 32\n2- 54\n3- 27\n4- 11\n", names[0]);
             int resposta = input.nextInt();
 
             if (resposta == 3) {
                 //Sistema de conhecimento (pontuação)
                 if (n <= 2) {
-                    System.out.printf("%s: Ótimo, mais um golpe certeiro, mais um acerto e é o fim da linha para você!", names[0]);
+                    System.out.printf("%s: Ótimo, mais um golpe certeiro, mais um acerto e é o fim da linha para você!\n", names[0]);
                     conhecimento += 1;
                 } else {
-                    System.out.printf("%s: Ótimo, mais um golpe certeiro, mais um acerto e é o fim da linha para você!", names[0]);
+                    System.out.printf("%s: Ótimo, mais um golpe certeiro, mais um acerto e é o fim da linha para você!\n", names[0]);
                 }
                 break;
             } else {
-                System.out.printf("%s: Droga, não consegui converter a base dele para a base decimal e ele conseguiu absorver meu ataque!", names[0]);
+                System.out.printf("%s: Droga, não consegui converter a base dele para a base decimal e ele conseguiu absorver meu ataque!\n", names[0]);
             }
             i++;
         }
@@ -371,21 +371,21 @@ public class MathMagic {
                         conhecimento -= 3;
                         int aleatório = numeroAleatorio();
                         switch (aleatório) {
-                            case 1:
+                            case 1 -> {
                                 System.out.println("=================================");
                                 System.out.println("A 2 e 3 estão ERRADAS");
                                 System.out.println("=================================");
-                                break;
-                            case 2:
+                            }
+                            case 2 -> {
                                 System.out.println("====================================================================");
                                 System.out.println("Use essa fórmula: (3 X 16^2) + (15 x 16^1) + (6 x 16^0)");
                                 System.out.println("====================================================================");
-                                break;
-                            case 3:
+                            }
+                            case 3 -> {
                                 System.out.println("===================================================================================================================");
                                 System.out.println("Os pesos são potências de 16 (1, 16, 256 ...) mulplique 6 com 1, F(15) com 16, 3 com 256 e some todos os resultados");
                                 System.out.println("===================================================================================================================");
-                                break;
+                            }
                         }
                     }
                 }
@@ -400,7 +400,7 @@ public class MathMagic {
     public static int capitulo4(String[] names, int conhecimento) throws InterruptedException {
         Scanner input = new Scanner(System.in);
         System.out.println("\n");
-         System.out.println("===================================================================================================================");
+        System.out.println("===================================================================================================================");
         System.out.println("*************************************************CAPÍTULO 4*******************************************************");
         System.out.println("===================================================================================================================");
         System.out.println("\n");
@@ -490,7 +490,7 @@ public class MathMagic {
     public static int capitulo5(String[] names, int conhecimento) throws InterruptedException {
         Scanner input = new Scanner(System.in);
         System.out.println("\n");
-         System.out.println("===================================================================================================================");
+        System.out.println("===================================================================================================================");
         System.out.println("*************************************************CAPÍTULO 5*******************************************************");
         System.out.println("===================================================================================================================");
         System.out.println("\n");
@@ -608,7 +608,7 @@ public class MathMagic {
         Scanner input = new Scanner(System.in);
         int n;
         System.out.println("\n");
-         System.out.println("===================================================================================================================");
+        System.out.println("===================================================================================================================");
         System.out.println("*************************************************CAPÍTULO 6*******************************************************");
         System.out.println("===================================================================================================================");
         System.out.println("\n");
@@ -694,14 +694,107 @@ public class MathMagic {
         }
         return n;
     }
-
-    public static void capitulo7(String[] names, int n) {
+    public static void capitulo7(String[] names, int n) throws InterruptedException {
         if (n == 1) {
             System.out.println("\n");
-         System.out.println("===================================================================================================================");
-        System.out.println("*************************************************CAPÍTULO 7*******************************************************");
-        System.out.println("===================================================================================================================");
-        System.out.println("\n");
+            System.out.println("===================================================================================================================");
+            System.out.println("*************************************************CAPÍTULO 7*******************************************************");
+            System.out.println("===================================================================================================================");
+            System.out.println("\n");
+            System.out.printf("%s foi transportado de volta!", names[0]);
+            System.out.printf("%s: Finalmente, estou de volta !\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
+            System.out.printf("%s: Quanto barulho é esse ? \n", names[0], TimeUnit.MILLISECONDS, temp_falas);
+            System.out.printf("%s  olha pela janela e reconhece o exército de Ánthropos\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
+            System.out.printf("De longe vê seu pai(%s) lutando com %s\n", names[2], names[5], TimeUnit.MILLISECONDS, temp_falas);
+            System.out.printf("%s decide se procurar um lugar com uma melhor visão.\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
+            System.out.printf("Acabou encontrando uma janela.\ne viu que o exército das duas vilas estavão batalhando.", TimeUnit.MILLISECONDS, temp_falas);
+            System.out.printf("Chegando no meio batalha econtra %s.\n", names[1], TimeUnit.MILLISECONDS, temp_falas);
+            System.out.printf("%s: Quanto tempo!\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
+            System.out.printf("%s: Bom te ver, cuidado!\n", names[1], TimeUnit.MILLISECONDS, temp_falas);
+            System.out.printf("Uma flecha passa raspando sua orelha.\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
+            System.out.printf("%s: essa foi por pouco!\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
+            if (names[4] == "Arqueiro") {
+                System.out.printf("%s se vira e acerta uma flecha no soldado inimigo!\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
+                System.out.printf("%s: Nesse tempo que fiquei fora, não perdi o jeito!\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
+            } else {
+                System.out.printf("%s se vira e arremessa a espada no soldado inimigo!\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
+                System.out.printf("%s: Nesse tempo que fiquei fora, não perdi o jeito!\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
+                System.out.printf("%s pega a espada de volta.\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
+
+            }
+            System.out.printf("%s: Achamos que você tinha morrido, já fazem 3 meses que que sumiu!\n", names[1], TimeUnit.MILLISECONDS, temp_falas);
+            System.out.printf("%s: aquele velho %s ... fez que eu tirasse... digamos um período sabático.\n", names[0], names[5], TimeUnit.MILLISECONDS, temp_falas);
+            System.out.printf("%s: Que ?!\n", names[1], TimeUnit.MILLISECONDS, temp_falas);
+            System.out.printf("%s: Depois te explico!\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
+            System.out.printf("%s: Preciso encontrar meu pai!\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
+            System.out.printf("%s: Acho que ele está lá na praça principal!\n", names[1], TimeUnit.MILLISECONDS, temp_falas);
+            System.out.printf("%s: Vou lá, depois a gente se encontra!\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
+            System.out.printf("%s atravessa aquela multidão de soldados, desviando de ataques e atacando inimigos\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
+            System.out.printf("Seu pai ainda estava batalhando, mas %s estava prestes a dar seu último golpe!\n", names[5], TimeUnit.MILLISECONDS, temp_falas);
+            if (names[4] == "Arqueiro") {
+                System.out.printf("%s Pega seu arco mira na direção de %s!\n", names[0], names[5], TimeUnit.MILLISECONDS, temp_falas);
+            } else {
+                System.out.printf("%s Pega sua espada e corre na direção de %s!\n", names[0], names[5], TimeUnit.MILLISECONDS, temp_falas);
+            }
+            System.out.printf("E como já tinha ocorrido\n", names[0], names[5], TimeUnit.MILLISECONDS, temp_falas);
+            System.out.printf("Tudo fica escuro\n", names[0], names[5], TimeUnit.MILLISECONDS, temp_falas);
+            System.out.printf("%s está ser ar, ele está flutuando no ar!\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
+            System.out.printf("Com uma mão %s deixa %s no ar, e com a outra batalha!\n", names[5], names[0], TimeUnit.MILLISECONDS, temp_falas);
+            System.out.printf("%s: Meu filho está vivo!\n", names[2], TimeUnit.MILLISECONDS, temp_falas);
+            System.out.printf("%s: Não sei como esse tolo, conseguiu voltar para nossa dimensão!\n", names[5], TimeUnit.MILLISECONDS, temp_falas);
+            System.out.printf("%s: E como de costume se escondendo como um rato!\n", names[5], TimeUnit.MILLISECONDS, temp_falas);
+            System.out.printf("%s: Achou mesmo que não saberia que me atacaria pelas costas? !\n", names[5], TimeUnit.MILLISECONDS, temp_falas);
+            System.out.printf("%s: Sou bom de mais, em dar a oportunidade de sairem da minha armadilha!\n", names[5], TimeUnit.MILLISECONDS, temp_falas);
+            System.out.printf("%s: Achei que pelo menos sairiam de lá como pessoas descentes!\n", names[5], TimeUnit.MILLISECONDS, temp_falas);
+            System.out.printf("%s: Quem eu achei que teria menos chances de sair de lá consegiu!\n", names[5], TimeUnit.MILLISECONDS, temp_falas);
+            System.out.printf("%s: Nem o idiota do faraó, que por sinal é muito bom e matemática, saiu vivo de lá!\n", names[5], TimeUnit.MILLISECONDS, temp_falas);
+            System.out.printf("%s: Mas pode deixar que eu mesmo acabo com isso!\n", names[5], TimeUnit.MILLISECONDS, temp_falas);
+            System.out.printf("%s nesse momento o tentou o atacar, %s conseguiu desviar !\n", names[2], names[5], TimeUnit.MILLISECONDS, temp_falas);
+            System.out.printf("%s pegou seu escudo que estava no chão,e acertou %s!\n", names[2], names[5], TimeUnit.MILLISECONDS, temp_falas);
+            System.out.printf("%s caiu no chão\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
+            System.out.printf("%s: ainda quero saber onde conseguiu esse escudo mágico!\n", names[5], TimeUnit.MILLISECONDS, temp_falas);
+            System.out.printf("%s: e sua espada também, quem foi o que me traiu e contou o segredo dos Magos?\n", names[5], TimeUnit.MILLISECONDS, temp_falas);
+            System.out.printf("%s: Foram anos de estudos dos meus melhores cientistas!\n", names[2], TimeUnit.MILLISECONDS, temp_falas);
+            System.out.printf("%s: Duvido que esse povo conseguiria fazer algo desse tipo!\n", names[5], TimeUnit.MILLISECONDS, temp_falas);
+            System.out.printf("%s: Imagina eu, tomando ataques de %s e ele conseguindo se defender!\n", names[5], TimeUnit.MILLISECONDS, temp_falas);
+            System.out.printf("%s: Parece até piada!\n", names[5], TimeUnit.MILLISECONDS, temp_falas);
+            System.out.printf("%s: Como nunca fiquei sabendo disso? !\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
+            System.out.printf("%s: Tem coisas que só vai saber quando se tornar líder da vila!\n", names[2], TimeUnit.MILLISECONDS, temp_falas);
+            System.out.printf("%s e %s discutiam em quanto batalhavam!\n", names[5], names[2], TimeUnit.MILLISECONDS, temp_falas);
+            System.out.printf("%s fez um escudo em volta de %s e ele não consegui sair de dentro!\n", names[5], TimeUnit.MILLISECONDS, temp_falas);
+            System.out.printf("%s: Primeiro vou acabar com você, depois com seu filho!\n", names[5], TimeUnit.MILLISECONDS, temp_falas);
+            if (names[4] == "Arqueiro") {
+                System.out.printf("%s lembrou que ainda tinha as flechas de base númerica!\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
+                System.out.printf("%s atirou uma delas e o escudo se despedaçou\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
+                System.out.printf("%s estava tão concentrada no batalha que nem percebeu que %s estava livre \n", names[5], names[0], TimeUnit.MILLISECONDS, temp_falas);
+                System.out.printf("%s mira, a flecha solta raios acerta na cabeça de %s!\n", names[0], names[5], TimeUnit.MILLISECONDS, temp_falas);
+                System.out.printf("%s Cai já desacordado no chão!\n", names[5], TimeUnit.MILLISECONDS, temp_falas);
+                System.out.printf("%s aparentemente o efeito delas no mundo real, são diferentes!\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
+                System.out.printf("%s gostei dos meus novos brinquedos!\n", names[5], TimeUnit.MILLISECONDS, temp_falas);
+            } else {
+                System.out.printf("%s lembrou que ainda tinha a espada de base númerica!\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
+                System.out.printf("%s resolveu atacar o escudo com ela e o escudo se despedaçou\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
+                System.out.printf("%s estava tão concentrada no batalha que nem percebeu que %s estava livre \n", names[5], names[0], TimeUnit.MILLISECONDS, temp_falas);
+                System.out.printf("%s faz um ataque e raios acertam o coração de %s pelas costas!\n", names[0], names[5], TimeUnit.MILLISECONDS, temp_falas);
+                System.out.printf("%s Cai já desacordado no chão!\n", names[5], TimeUnit.MILLISECONDS, temp_falas);
+                System.out.printf("%s aparentemente o efeito dela no mundo real, é diferente!\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
+                System.out.printf("%s goste do meu novo brinquedo!\n", names[5], TimeUnit.MILLISECONDS, temp_falas);
+            }
+            System.out.printf("%s: ele me dá oque preciso para derrotá-lo e o tolo sou eu!\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
+            System.out.printf("%s: Está tudo acabado, vencemos a guerra!\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
+            System.out.printf("%s: Pela minha Mãe!!!\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
+            System.out.printf("%s: Agora vamos voltar Ánthropos!\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
+            System.out.printf("O exército grita o nome de %s repetidas vezes!\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
+            System.out.printf("Voltando para Ánthropos em cima de seu cavalo, à vista a vila de longe fica apreciando o por do sol sobre ela\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
+            System.out.printf("%s: ainda não acredito que está vivo, não sabe como está sendo dificíl sem sua mãe.\n", names[2], TimeUnit.MILLISECONDS, temp_falas);
+            System.out.printf("%s: e ainda perder você.\n", names[2], TimeUnit.MILLISECONDS, temp_falas);
+            System.out.printf("%s: Eu imagino pai, mas tudo vai melhorar.\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
+            System.out.printf("%s: Agora vamos voltar Ánthropos!\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
+            System.out.println("\n");
+            System.out.println("===================================================================================================================");
+            System.out.println("*******************************************************FIM*********************************************************");
+            System.out.println("===================================================================================================================");
+            System.out.println("\n");
         }
 
     }
