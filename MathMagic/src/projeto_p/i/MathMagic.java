@@ -7,7 +7,7 @@ import java.util.concurrent.TimeUnit;
 public class MathMagic {
 
     // tempo das dialogs e falas dos personagens, para mudar o tempo apenas troque o valor.
-    static int temp_dialog = 20, temp_falas = 15, temp_instrucoes = 10;
+    static int temp_dialog = 20, temp_falas = 15, temp_instrucoes = 15;
     // temp_dialog = 70, temp_falas = 25, temp_instrucoes = 20;
 
     public static void main(String[] args) throws InterruptedException {
@@ -117,7 +117,7 @@ public class MathMagic {
         } while (coletaDados < 1 || coletaDados > 2);
         Falas("Soldado: Que Falta de Educação a minha me chamo " + names[1] + "!\n"
                 + "Boa Sorte, Bravo " + names[4] + ", as tropas de apoio se encontram a 10km daqui, tem um grupo de soldados se preparando para ir também, é só seguir a trilha\n", TimeUnit.MILLISECONDS, temp_falas);
-        Falas(names[4] + ": Certo\n", TimeUnit.MILLISECONDS, temp_falas);
+        Falas(names[0] + ": Certo\n", TimeUnit.MILLISECONDS, temp_falas);
         Falas("Após quase uma hora indo com seu grupo a direção das tropas, " + names[0] + " houve um som muito alto, se vira e vê o abrigo pegando fogo.\n", TimeUnit.MILLISECONDS, temp_falas);
         Falas("O grupo ficou muito abalado, mas decidiu continuar seu caminho, " + names[0] + " por outro lado, pensando em sua mãe, decidiu  voltar ao abrigo.\n", TimeUnit.MILLISECONDS, temp_falas);
         Falas("O grupo e " + names[0] + " entraram em discussão, eles não queriam que ele voltasse sozinho, e que continuasse com o grupo.", TimeUnit.MILLISECONDS, temp_falas);
@@ -156,7 +156,7 @@ public class MathMagic {
         System.out.println("===================================================================================================================");
         System.out.println("\n");
         Falas("Após longos dias passando de viagem\n", TimeUnit.MILLISECONDS, temp_falas);
-        Falas("Por muitas vezes tendo que se esconder das tropas inimigas, finalmente "+names[0]+"chegou em Mathema.\n", TimeUnit.MILLISECONDS, temp_falas);
+        Falas("Por muitas vezes tendo que se esconder das tropas inimigas, finalmente "+names[0]+" chegou em Mathema.\n", TimeUnit.MILLISECONDS, temp_falas);
         Falas(names[0] + ": certo, preciso dar um jeito de invadir o castelo do Math.\n", TimeUnit.MILLISECONDS, temp_falas);
         Falas("Após algumas horas estudando o castelo de longe,decidiu entrar pela área de serviços.\n", TimeUnit.MILLISECONDS, temp_falas);
         Falas(names[0] + " consegui entrar pela área de serviço, após nocautear um cozinheiro e pegar a roupa dele.\n",  TimeUnit.MILLISECONDS, temp_falas);
@@ -166,12 +166,12 @@ public class MathMagic {
         Falas(names[0] + " acordou amarrado em uma sala que parecia ter um trono no meio dela.\n", TimeUnit.MILLISECONDS, temp_falas);
         Falas(names[5] + ": Finalmente acordou, pensei que nunca iria acordar\n", TimeUnit.MILLISECONDS, temp_falas);
         Falas(names[5] + " Realmente achou que invadiria meu castelo e eu não sentiria sua presença?\n",TimeUnit.MILLISECONDS, temp_falas);
-        Falas(names[5] + ": Vou dar uma dica para você meu caro, jamais subestime os poderes de um mago,\n se esconder se esconder dentro da minha sala de poções ?\n", TimeUnit.MILLISECONDS, temp_falas);
+        Falas(names[5] + ": Vou dar uma dica para você meu caro, jamais subestime os poderes de um mago,\nse esconder se esconder dentro da minha sala de poções ?\n", TimeUnit.MILLISECONDS, temp_falas);
         Falas(names[5] + ": Chega a ser hilário, e ainda tenta atacar minha vila sozinho.\n",  TimeUnit.MILLISECONDS, temp_falas);
         Falas(names[5] + ": " +names[0] + ", maldita insolência, como ousou atacar a minha vila e achar que sairiam impune?\n", TimeUnit.MILLISECONDS, temp_falas);
         Falas(names[0] + ": Onde eu ataquei a sua vila? Prove!\n",  TimeUnit.MILLISECONDS, temp_falas);
         Falas(names[0] + ": prove, velhote! Você e esses seus cabelos brancos não significam NADA, N-A-D-A\n", TimeUnit.MILLISECONDS, temp_falas);
-        Falas(names[5] + ": Essa maldita guerra,\n ela não estaria acontecendo se você não tivesse atacado o meu povo com a sua ignorância\n", TimeUnit.MILLISECONDS, temp_falas);
+        Falas(names[5] + ": Essa maldita guerra,\nela não estaria acontecendo se você não tivesse atacado o meu povo com a sua ignorância\n", TimeUnit.MILLISECONDS, temp_falas);
         Falas(names[0] + ": Eu taquei pedras para descontrair. Nada demais, são só pedras!\n",  TimeUnit.MILLISECONDS, temp_falas);
         Falas(names[5] + ": E elas acertaram sem querer a cabeça dos meus soldados né?\n",  TimeUnit.MILLISECONDS, temp_falas);
         Falas(names[5] + ": Você não tem civilidade nenhuma!\n", TimeUnit.MILLISECONDS, temp_falas);
@@ -265,91 +265,91 @@ public class MathMagic {
         System.out.println("===================================================================================================================");
         System.out.println("\n");
         Falas(names[0] + " é transportado para uma espécie de vale\n", TimeUnit.MILLISECONDS, temp_falas);
-        Falas(names[0] + ":  o que é aquilo ?\n", TimeUnit.MILLISECONDS, temp_falas);
+        Falas(names[0] + ": o que é aquilo ?\n", TimeUnit.MILLISECONDS, temp_falas);
         Falas(names[0] + " encontra vários armamentos no chão.\n", TimeUnit.MILLISECONDS, temp_falas);
         if (names[4] == "Arqueiro") {
-            Falas(names[0] + ":  Que flechas diferentes.\n", TimeUnit.MILLISECONDS, temp_falas);
-            Falas(names[0] + ":  Pelo visto cada tipo de flecha tem uma base numérica.\n", TimeUnit.MILLISECONDS, temp_falas);
+            Falas(names[0] + ": Que flechas diferentes.\n", TimeUnit.MILLISECONDS, temp_falas);
+            Falas(names[0] + ": Pelo visto cada tipo de flecha tem uma base numérica.\n", TimeUnit.MILLISECONDS, temp_falas);
             Falas(names[0] + ": Nessa aula de matemática eu não faltei.\n", TimeUnit.MILLISECONDS, temp_falas);
         } else {
-            Falas(names[0] + ":  Que espada diferentes.\n", TimeUnit.MILLISECONDS, temp_falas);
+            Falas(names[0] + ": Que espada diferentes.\n", TimeUnit.MILLISECONDS, temp_falas);
             Falas(names[0] + ": Pelo visto cada tipo de ataque tem uma base numérica.\n", TimeUnit.MILLISECONDS, temp_falas);
-            Falas(names[0] + ":  Nessa aula de matemática eu não faltei.\n", TimeUnit.MILLISECONDS, temp_falas);
+            Falas(names[0] + ": Nessa aula de matemática eu não faltei.\n", TimeUnit.MILLISECONDS, temp_falas);
         }
-        Falas(names[0] + ":  Sue barulho é esse?\n", TimeUnit.MILLISECONDS, temp_falas);
-        Falas(names[0] + ":  Se vira e olha para as árvores ao fundo.\n", TimeUnit.MILLISECONDS, temp_falas);
-        Falas(names[0] + ":  Que droga de criatura é essa?\n", TimeUnit.MILLISECONDS, temp_falas);
+        Falas(names[0] + ": Sue barulho é esse?\n", TimeUnit.MILLISECONDS, temp_falas);
+        Falas(names[0] + ": Se vira e olha para as árvores ao fundo.\n", TimeUnit.MILLISECONDS, temp_falas);
+        Falas(names[0] + ": Que droga de criatura é essa?\n", TimeUnit.MILLISECONDS, temp_falas);
         Falas("A criatura se aproxima correndo, e " + names[0] + " percebe que é um golem\nEle tenta atacar ela.\n", TimeUnit.MILLISECONDS, temp_falas);
         Falas(names[0] + ": Meus ataques não surtem efeito nessa coisa, deve ter algum truque por trás disso!\n", TimeUnit.MILLISECONDS, temp_falas);
         if ("Arqueiro".equals(names[4])) {
-            Falas(names[0] + ":  Minhas flechas de base hexadecimal não estão causando dano,\nvou testar com outro tipo de flechas!\n", TimeUnit.MILLISECONDS, temp_falas);
+            Falas(names[0] + ": Minhas flechas de base hexadecimal não estão causando dano,\nvou testar com outro tipo de flechas!\n", TimeUnit.MILLISECONDS, temp_falas);
         } else {
-            Falas(names[0] + ":  Meus golpes de base hexadecimal não estão surtindo efeito,\nvou testar com outro tipo de base\n", TimeUnit.MILLISECONDS, temp_falas);
+            Falas(names[0] + ": Meus golpes de base hexadecimal não estão surtindo efeito,\nvou testar com outro tipo de base\n", TimeUnit.MILLISECONDS, temp_falas);
         }
-        Falas(names[0] + ":  Meus ataques com outras bases também não estão causando dano nesse golem,\npreciso pensar em algo rápido!\n", TimeUnit.MILLISECONDS, temp_falas);
+        Falas(names[0] + ": Meus ataques com outras bases também não estão causando dano nesse golem,\npreciso pensar em algo rápido!\n", TimeUnit.MILLISECONDS, temp_falas);
 
-        Falas(names[0] + ":  Vou tentar algo arriscado, acho que meus ataques não estão surtindo efeito,\npois esse golem está se adaptando a base numérica dos meus ataques no momento em que eles vão atingi-lo!\n", TimeUnit.MILLISECONDS, temp_falas);
+        Falas(names[0] + ": Vou tentar algo arriscado, acho que meus ataques não estão surtindo efeito,\npois esse golem está se adaptando a base numérica dos meus ataques no momento em que eles vão atingi-lo!\n", TimeUnit.MILLISECONDS, temp_falas);
 
         Falas("Para superar essa habilidade, preciso usar a magia das minhas armas para alterar a base numérica dele no momento que meus ataques forem acertar!\nAssim ele não vai conseguir se adaptar e conseguirei causar dano,\npara isso terei que resolver o cálculo necessário para alterar sua base numérica.\n", TimeUnit.MILLISECONDS, temp_falas);
 
         int n = 0;
         while (true) {
-            Falas(names[0] + ":  A base numérica do golem é o número hexadecimal 2A, preciso passar essa base para um número binário:\n Alternativas:\n1- 101010\n2- 001001\n3- 111000\n4- 010101\n", TimeUnit.MILLISECONDS, temp_falas);
+            Falas(names[0] + ": A base numérica do golem é o número hexadecimal 2A, preciso passar essa base para um número binário:\nAlternativas:\n1- 101010\n2- 001001\n3- 111000\n4- 010101\n", TimeUnit.MILLISECONDS, temp_falas);
             int resposta = input.nextInt();
 
             if (resposta == 1) {
                 //Sistema de conhecimento (pontuação)
                 if (n <= 2) {
-                    Falas(names[0] + ":  Consegui causar dano!\n", TimeUnit.MILLISECONDS, temp_falas);
+                    Falas(names[0] + ": Consegui causar dano!\n", TimeUnit.MILLISECONDS, temp_falas);
                     conhecimento += 1;
                 } else {
-                    Falas(names[0] + ":  Consegui causar dano!\n", TimeUnit.MILLISECONDS, temp_falas);
+                    Falas(names[0] + ": Consegui causar dano!\n", TimeUnit.MILLISECONDS, temp_falas);
                 }
                 break;
             } else {
-                Falas(names[0] + ":  O cálculo está errado, não consegui alterar a base numérica dele!\n", TimeUnit.MILLISECONDS, temp_falas);
+                Falas(names[0] + ": O cálculo está errado, não consegui alterar a base numérica dele!\n", TimeUnit.MILLISECONDS, temp_falas);
             }
             n++;
         }
         int i = 0;
         while (true) {
-            Falas(names[0] + ":  Ele alterou a base numérica novamente,agora a base numérica dele é o número octal 47,\ndessa vez vou usar um ataque de base hexadecimal, preciso converter a base dele!\nAlternativas: \n1- 32\n2- 54\n3- 27\n4- 11\n", TimeUnit.MILLISECONDS, temp_falas);
+            Falas(names[0] + ": Ele alterou a base numérica novamente,agora a base numérica dele é o número octal 47,\ndessa vez vou usar um ataque de base hexadecimal, preciso converter a base dele!\nAlternativas:\n1- 32\n2- 54\n3- 27\n4- 11\n", TimeUnit.MILLISECONDS, temp_falas);
             int resposta = input.nextInt();
 
             if (resposta == 3) {
                 //Sistema de conhecimento (pontuação)
                 if (n <= 2) {
-                    Falas(names[0] + ":  Ótimo, mais um golpe certeiro, mais um acerto e é o fim da linha para você!\n", TimeUnit.MILLISECONDS, temp_falas);
+                    Falas(names[0] + ": Ótimo, mais um golpe certeiro, mais um acerto e é o fim da linha para você!\n", TimeUnit.MILLISECONDS, temp_falas);
                     conhecimento += 1;
                 } else {
-                    Falas(names[0] + ":  Ótimo, mais um golpe certeiro, mais um acerto e é o fim da linha para você!\n", TimeUnit.MILLISECONDS, temp_falas);
+                    Falas(names[0] + ": Ótimo, mais um golpe certeiro, mais um acerto e é o fim da linha para você!\n", TimeUnit.MILLISECONDS, temp_falas);
                 }
                 break;
             } else {
-                Falas(names[0] + ":  Droga, não consegui converter a base dele para a base decimal e ele conseguiu absorver meu ataque!\n", TimeUnit.MILLISECONDS, temp_falas);
+                Falas(names[0] + ": Droga, não consegui converter a base dele para a base decimal e ele conseguiu absorver meu ataque!\n", TimeUnit.MILLISECONDS, temp_falas);
             }
             i++;
         }
         int j = 0;
         while (true) {
-            Falas(names[0] + ":  Preciso acertar esse golpe final! A base numérica dele agora é o número 3F6 na base hexadecimal,\n vou usar um ataque de base decimal para finaliza-lo.\n Alternativas: \n1- 2030\n2- 1013\n3- 1050\n4- 1014\n", TimeUnit.MILLISECONDS, temp_falas);
+            Falas(names[0] + ": Preciso acertar esse golpe final! A base numérica dele agora é o número 3F6 na base hexadecimal,\nvou usar um ataque de base decimal para finaliza-lo.\nAlternativas:\n1- 2030\n2- 1013\n3- 1050\n4- 1014\n", TimeUnit.MILLISECONDS, temp_falas);
             int resposta = input.nextInt();
 
             if (resposta == 4) {
                 //Sistema de conhecimento (pontuação)
                 if (j <= 2) {
-                    Falas(names[0] + ":  Está acabado, finalmente consegui derrota-lo!", TimeUnit.MILLISECONDS, temp_falas);
+                    Falas(names[0] + ": Está acabado, finalmente consegui derrota-lo!", TimeUnit.MILLISECONDS, temp_falas);
                     conhecimento += 3;
                 } else if (j > 2 && j <= 5) {
-                    Falas(names[0] + ":  Está acabado, finalmente consegui derrota-lo!", TimeUnit.MILLISECONDS, temp_falas);
+                    Falas(names[0] + ": Está acabado, finalmente consegui derrota-lo!", TimeUnit.MILLISECONDS, temp_falas);
                     conhecimento += 1;
                 } else {
-                    Falas(names[0] + ":  Está acabado, finalmente consegui derrota-lo!", TimeUnit.MILLISECONDS, temp_falas);
+                    Falas(names[0] + ": Está acabado, finalmente consegui derrota-lo!", TimeUnit.MILLISECONDS, temp_falas);
                 }
                 break;
             } else {
                 //Sistema de conhecimento (Ajuda)
-                Falas(names[0] + ":  Falhei em converter a base dele para decimal, mas não desistirei!", TimeUnit.MILLISECONDS, temp_falas);
+                Falas(names[0] + ": Falhei em converter a base dele para decimal, mas não desistirei!", TimeUnit.MILLISECONDS, temp_falas);
                 if (j == 3 && conhecimento > 3 || j == 5 && conhecimento > 3) {
                     Falas("Que tal uma dica?", TimeUnit.MILLISECONDS, temp_falas);
                     Falas("Quando uma questão é acertada você adquiri pontos de conhecimento.", TimeUnit.MILLISECONDS, temp_falas);
@@ -405,7 +405,7 @@ public class MathMagic {
         Falas("Olhando ao redor do quarto," + names[0] + "nota que há uma equação de 1°grau escrita na parede e precisa do resultado para destrancar a porta\n", TimeUnit.MILLISECONDS, temp_falas);
         int n = 0;
         while (true) {
-            Falas(names[0] + ": Hmmm, aqui na parede está a conta 2x + 5 = 11, preciso saber o valor de x. \n Alternativas: \n1- 5\n2- 2\n3- 3\n4- 6\n", TimeUnit.MILLISECONDS, temp_falas);
+            Falas(names[0] + ": Hmmm, aqui na parede está a conta 2x + 5 = 11, preciso saber o valor de x. \nAlternativas: \n1- 5\n2- 2\n3- 3\n4- 6\n", TimeUnit.MILLISECONDS, temp_falas);
             int resposta = input.nextInt();
 
             if (resposta == 3) {
@@ -425,7 +425,7 @@ public class MathMagic {
         Falas(names[0] + ": Só o que me faltava, mais uma porta ~-~\n", TimeUnit.MILLISECONDS, temp_falas);
         int j = 0;
         while (true) {
-            Falas(names[0] + ": Aqui nessa parede está a conta 2x − 5 = 11. \n Alternativas: \n1- 8\n2- 7\n3- 16\n4- 4\n", TimeUnit.MILLISECONDS, temp_falas);
+            Falas(names[0] + ": Aqui nessa parede está a conta 2x − 5 = 11. \nAlternativas: \n1- 8\n2- 7\n3- 16\n4- 4\n", TimeUnit.MILLISECONDS, temp_falas);
             int resposta = input.nextInt();
 
             if (resposta == 1) {
@@ -488,7 +488,7 @@ public class MathMagic {
         System.out.println("===================================================================================================================");
         System.out.println("\n");
         Falas(names[0] + ": Finalmente vou poder descansar, e comer um pouco!\n", TimeUnit.MILLISECONDS, temp_falas);
-        Falas("*Após algumas horas...*\n", TimeUnit.MILLISECONDS, temp_falas);
+        Falas("Após algumas horas...*\n", TimeUnit.MILLISECONDS, temp_falas);
         Falas(names[0] + " sente que algo está se aproximando.\n", TimeUnit.MILLISECONDS, temp_falas);
         Falas(names[0] + ": Que legal...\n", TimeUnit.MILLISECONDS, temp_falas);
         Falas(names[0] + ": Mais um problema, essa criatura parece ser um mago muito poderoso,\nque tipo de ataques ele vai usar?\n", TimeUnit.MILLISECONDS, temp_falas);
@@ -499,7 +499,7 @@ public class MathMagic {
 
         int n = 0;
         while (true) {
-            Falas("Fantasma do derrotado: Resolva se você for capaz:\n Qual a solução de 3x -7 = 8? \n Alternativas: \n1- X=1/3\n2- x=-9\n3- x=3\n4- x=5\n", TimeUnit.MILLISECONDS, temp_falas);
+            Falas("Fantasma do derrotado: Resolva se você for capaz:\nQual a solução de 3x -7 = 8?\nAlternativas:\n1- X=1/3\n2- x=-9\n3- x=3\n4- x=5\n", TimeUnit.MILLISECONDS, temp_falas);
             int resposta = input.nextInt();
 
             if (resposta == 4) {
@@ -518,7 +518,7 @@ public class MathMagic {
         }
         int i = 0;
         while (true) {
-            Falas("Fantasma do derrotado: Essa não será tão fácil \n responda essa equação: x^2 -3x - 10 = 0\nAlternativas: \n1- x=6 e x=-4\n2- 22\n3- x=5 e x=-2\n4- x=2 e x=-5\n", TimeUnit.MILLISECONDS, temp_falas);
+            Falas("Fantasma do derrotado: Essa não será tão fácil \nresponda essa equação: x^2 -3x - 10 = 0\nAlternativas: \n1- x=6 e x=-4\n2- 22\n3- x=5 e x=-2\n4- x=2 e x=-5\n", TimeUnit.MILLISECONDS, temp_falas);
             int resposta = input.nextInt();
 
             if (resposta == 3) {
@@ -538,19 +538,19 @@ public class MathMagic {
 
         int j = 0;
         while (true) {
-            Falas("Fantasma do derrotado: Encare a pergunta que me levou à derrota! \n 2y^2 + 5y -3 = 0\n Alternativas: \n1- y= -1/2 e y= 3 \n2- y= 3/2 e y= 6\n3- y= -13\n4- y= 5 e y= 1/4\n", TimeUnit.MILLISECONDS, temp_falas);
+            Falas("Fantasma do derrotado: Encare a pergunta que me levou à derrota!\n2y^2 + 5y -3 = 0\nAlternativas:\n1- y= -1/2 e y= 3 \n2- y= 3/2 e y= 6\n3- y= -13\n4- y= 5 e y= 1/4\n", TimeUnit.MILLISECONDS, temp_falas);
             int resposta = input.nextInt();
 
             if (resposta == 1) {
                 //Sistema de conhecimento (pontuação)
                 if (j <= 2) {
-                    Falas(names[0] + ": Consegui, Esse foi o último!\n Agora é sua vez mago!\nO mago guardião que estava desprotegido sem seus fantasmas recebe um golpe certeiro na cabeça e é derrotado!\n", TimeUnit.MILLISECONDS, temp_falas);
+                    Falas(names[0] + ": Consegui, Esse foi o último!\nAgora é sua vez mago!\nO mago guardião que estava desprotegido sem seus fantasmas recebe um golpe certeiro na cabeça e é derrotado!\n", TimeUnit.MILLISECONDS, temp_falas);
                     conhecimento += 3;
                 } else if (j > 2 && j <= 5) {
-                    Falas(names[0] + ": Consegui, Esse foi o último!\n Agora é sua vez mago!\nO mago guardião que estava desprotegido sem seus fantasmas recebe um golpe certeiro na cabeça e é derrotado!\n", TimeUnit.MILLISECONDS, temp_falas);
+                    Falas(names[0] + ": Consegui, Esse foi o último!\nAgora é sua vez mago!\nO mago guardião que estava desprotegido sem seus fantasmas recebe um golpe certeiro na cabeça e é derrotado!\n", TimeUnit.MILLISECONDS, temp_falas);
                     conhecimento += 1;
                 } else {
-                    Falas(names[0] + ": Consegui, Esse foi o último!\n Agora é sua vez mago!\nO mago guardião que estava desprotegido sem seus fantasmas recebe um golpe certeiro na cabeça e é derrotado!\n", TimeUnit.MILLISECONDS, temp_falas);
+                    Falas(names[0] + ": Consegui, Esse foi o último!\nAgora é sua vez mago!\nO mago guardião que estava desprotegido sem seus fantasmas recebe um golpe certeiro na cabeça e é derrotado!\n", TimeUnit.MILLISECONDS, temp_falas);
                 }
                 break;
             } else {
@@ -615,11 +615,11 @@ public class MathMagic {
         Falas(names[6] + ": " + names[5] + " me tirou da minha terra, o egito não sei se já ouviu falar.\n", TimeUnit.MILLISECONDS, temp_falas);
         Falas(names[6] + ": ele se transportou para minha realidade e teve uma série de problemas com o meu faraó.\n", TimeUnit.MILLISECONDS, temp_falas);
         Falas(names[6] + ": por punição vim parar aqui.\n", TimeUnit.MILLISECONDS, temp_falas);
-        Falas(names[0] + ": O que é um faraó?, aliás me chamo" + names[0] + "\n", TimeUnit.MILLISECONDS, temp_falas);
+        Falas(names[0] + ": O que é um faraó?, aliás me chamo " + names[0] + "\n", TimeUnit.MILLISECONDS, temp_falas);
         Falas(names[6] + ": faraó é o meu rei\n", TimeUnit.MILLISECONDS, temp_falas);
         Falas(names[6] + ": Bem vamos logo ao ponto, antes que aquele velho venha me atormentar.\n", TimeUnit.MILLISECONDS, temp_falas);
         Falas(names[6] + ": Desde que ele me trancou nesse lugar, " + names[5] + " me obriga a fazer uma pergunta aqueles que chegarem aqui.\n", TimeUnit.MILLISECONDS, temp_falas);
-        Falas(names[6] + ": Bem caso você acerte, está livre e pode voltar ao seu mundo\nCaso contrário irá esquecer tudo do que aconteceu\ne irá voltar para o dia em que decidiu atacar" + names[5] + "\n", TimeUnit.MILLISECONDS, temp_falas);
+        Falas(names[6] + ": Bem caso você acerte, está livre e pode voltar ao seu mundo\nCaso contrário irá esquecer tudo do que aconteceu\ne irá voltar para o dia em que decidiu atacar " + names[5] + "\n", TimeUnit.MILLISECONDS, temp_falas);
         Falas(names[6] + ": E vai viver tudo de novo até chegar aqui, se chegar normalmente o pessoal não consegue pasar por todos os desafios de novo.\n", TimeUnit.MILLISECONDS, temp_falas);
         Falas(names[6] + ": Foi assim com meu faraó.\n", TimeUnit.MILLISECONDS, temp_falas);
         Falas(names[6] + ": Ao menos foi o que ele me disse, quando vocês saem daqui minha mémoria é apagada, só lembro do motivo de estar aqui.\n", TimeUnit.MILLISECONDS, temp_falas);
@@ -719,7 +719,7 @@ public class MathMagic {
 
             }
             Falas(names[1] + ": Achamos que você tivesse morrido. Faz 3 meses que que sumiu!\n", TimeUnit.MILLISECONDS, temp_falas);
-            Falas(names[0] + ": aquele velho " + names[5] + "fez que eu tirasse... digamos um período sabático.\n", TimeUnit.MILLISECONDS, temp_falas);
+            Falas(names[0] + ": aquele velho " + names[5] + " fez que eu tirasse... digamos um período sabático.\n", TimeUnit.MILLISECONDS, temp_falas);
             Falas(names[1] + ": Que ?!\n", TimeUnit.MILLISECONDS, temp_falas);
             Falas(names[0] + ": Depois te explico!\n", TimeUnit.MILLISECONDS, temp_falas);
             Falas(names[0] + ": Preciso encontrar meu pai!\n", TimeUnit.MILLISECONDS, temp_falas);
@@ -735,7 +735,7 @@ public class MathMagic {
             Falas("E como já tinha ocorrido\n", TimeUnit.MILLISECONDS, temp_falas);
             Falas("Tudo fica escuro\n", TimeUnit.MILLISECONDS, temp_falas);
             Falas(names[0] + " está ser ar, ele está flutuando no ar!\n", TimeUnit.MILLISECONDS, temp_falas);
-            Falas("Com uma mão" + names[5] + "deixa " + names[0] + " no ar, e com a outra batalha!\n", TimeUnit.MILLISECONDS, temp_falas);
+            Falas("Com uma mão " + names[5] + " deixa " + names[0] + " no ar, e com a outra batalha!\n", TimeUnit.MILLISECONDS, temp_falas);
             Falas(names[2] + ": Meu filho está vivo!\n", TimeUnit.MILLISECONDS, temp_falas);
             Falas(names[5] + ": Não sei como esse tolo, conseguiu voltar para nossa dimensão!\n", TimeUnit.MILLISECONDS, temp_falas);
             Falas(names[5] + ": E como de costume se escondendo como um rato!\n", TimeUnit.MILLISECONDS, temp_falas);
