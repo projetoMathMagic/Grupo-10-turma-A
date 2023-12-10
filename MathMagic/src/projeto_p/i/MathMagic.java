@@ -96,7 +96,7 @@ public class MathMagic {
                 + "Vou para o fronte de batalha com o exército, depois a gente se encontra.\n", TimeUnit.MILLISECONDS, temp_falas);
         Falas("Ório é o Líder da vila, Ánthropos é a vila de humanas que está em guerra com Mathema a anos, sendo sincero não sabemos o motivo até hoje.\n", TimeUnit.MILLISECONDS, temp_falas);
         Falas(names[0] + ": Vamos mãe (" + names[3] + ") estamos sendo atacados, vou levar a senhora para o abrigo!\n", TimeUnit.MILLISECONDS, temp_falas);
-        Falas(names[0] + " Sai de casa com sua mãe , e vê dezenas de casas pegando fogo, flechas voando, saqueadores invadindo casas!\n", TimeUnit.MILLISECONDS, temp_falas);
+        Falas(names[0] + " sai de casa com sua mãe , e vê dezenas de casas pegando fogo, flechas voando, saqueadores invadindo casas!\n", TimeUnit.MILLISECONDS, temp_falas);
         Falas("No caminho encontram um soldado guiando o caminho,'Venham por aqui descendo as escadas encontrarão o abrigo!\n", TimeUnit.MILLISECONDS, temp_falas);
         Falas("Chegando no local, " + names[0] + " encontrou dezenas de civis feridos, alguns inclusive pareciam ter sido atingidos por Magia!\n", TimeUnit.MILLISECONDS, temp_falas);
         Falas(names[0] + ": Já que deixei a senhora aqui vou para o fronte.\n", TimeUnit.MILLISECONDS, temp_falas);
@@ -104,7 +104,7 @@ public class MathMagic {
         Falas(names[0] + "é meu dever, tenho q defender meu povo!\n", TimeUnit.MILLISECONDS, temp_falas);
         Falas(names[0] + " deixa sua mãe no abrigo, ela o puxa pelo braço pedindo par ele não ir.\n"
                 + "Mas ele se solta da um beijo em seu rosto para se despedir\ne vai em direção a saida do abrigo e pede uma arma a um arqueiro q estava distribuindo armas, para os que estavam indo para o fronte.\n", TimeUnit.MILLISECONDS, temp_falas);
-        Falas(names[0] + ":Amigo, preciso de uma arma.\n", TimeUnit.MILLISECONDS, temp_falas);
+        Falas(names[0] + ": Amigo, preciso de uma arma.\n", TimeUnit.MILLISECONDS, temp_falas);
         Falas("Soldado: Qual Você quer ? \n", TimeUnit.MILLISECONDS, temp_falas);
         do {
             Falas("Escolha sua arma: \n1)Espada \n2)Arco\n", TimeUnit.MILLISECONDS, temp_dialog);
@@ -792,8 +792,9 @@ public class MathMagic {
             System.out.println("===================================================================================================================\n");
             System.out.println("\n");
         }
-
-        return 0;
+        
+        creditos();
+        return 0;       
     }
 
     //Função que define os créditos do jogo.
