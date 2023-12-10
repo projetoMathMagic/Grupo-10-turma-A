@@ -252,12 +252,6 @@ public class MathMagic {
 
         }
 
-        Falas(names[5] + ": Como recompensa, aqui está um pedaço da escada para você voltar\n",TimeUnit.MILLISECONDS, temp_falas);
-        System.out.println(""
-                + "______-------\n");
-
-        Falas(names[0] + ":  *voz sarcastica* Ah, que lindo, um degrau! Muito obrigado, viu? ~_~\n", TimeUnit.MILLISECONDS, temp_falas);
-
         Falas("Pegou o jeito da coisa, agora é só continuar," + names[0] + "Tem mais obstáculos a frente.\n", TimeUnit.MILLISECONDS, temp_falas);
         return conhecimento;
     }
@@ -724,7 +718,7 @@ public class MathMagic {
                 Falas(names[0] + " pega a espada de volta.\n", TimeUnit.MILLISECONDS, temp_falas);
 
             }
-            Falas(names[1] + ": Achamos que você tinha morrido, já fazem 3 meses que que sumiu!\n", TimeUnit.MILLISECONDS, temp_falas);
+            Falas(names[1] + ": Achamos que você tivesse morrido. Faz 3 meses que que sumiu!\n", TimeUnit.MILLISECONDS, temp_falas);
             Falas(names[0] + ": aquele velho " + names[5] + "fez que eu tirasse... digamos um período sabático.\n", TimeUnit.MILLISECONDS, temp_falas);
             Falas(names[1] + ": Que ?!\n", TimeUnit.MILLISECONDS, temp_falas);
             Falas(names[0] + ": Depois te explico!\n", TimeUnit.MILLISECONDS, temp_falas);
