@@ -828,4 +828,30 @@ public class MathMagic {
         int num = numAleatorio.nextInt(1, 4);
         return num;
     }
+    
+        public static void assertNotNull(Object object) {
+        if (object == null) {
+            throw new AssertionError("O objeto NÃO pode ser nulo.");
+        }
+    }
+
+    public static void assertTrue(boolean condition) {
+        if (!condition) {
+            throw new AssertionError("A condição DEVE ser VERDADEIRA.");
+        }
+    }
+
+    public static void assertFalse(boolean condition) {
+        if (condition) {
+            throw new AssertionError("A condição deve ser FALSA.");
+        }
+    }
+
+
+    public MathMagic testChapters() throws InterruptedException {
+        MathMagic jogo = new MathMagic();
+
+        assertNotNull(jogo != null);
+        return jogo;
+    }
 }
