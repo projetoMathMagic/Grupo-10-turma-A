@@ -6,7 +6,6 @@ import java.util.concurrent.TimeUnit;
 
 public class MathMagic {
 
-    Scanner input = new Scanner(System.in);
 
     // tempo das dialogs e falas dos personagens, para mudar o tempo apenas troque o valor.
     static int temp_dialog = 10, temp_falas = 5, temp_instrucoes = 0;
@@ -610,17 +609,17 @@ public class MathMagic {
         Scanner input = new Scanner(System.in);
         int n;
         Falas("\n",TimeUnit.MILLISECONDS, temp_falas);
-        Falas("===================================================================================================================",TimeUnit.MILLISECONDS, temp_falas);
-        Falas("*************************************************CAPÍTULO 6*******************************************************",TimeUnit.MILLISECONDS, temp_falas);
-        Falas("===================================================================================================================",TimeUnit.MILLISECONDS, temp_falas);
+        Falas("===================================================================================================================\n",TimeUnit.MILLISECONDS, temp_falas);
+        Falas("*************************************************CAPÍTULO 6*******************************************************\n",TimeUnit.MILLISECONDS, temp_falas);
+        Falas("===================================================================================================================\n",TimeUnit.MILLISECONDS, temp_falas);
         Falas("\n",TimeUnit.MILLISECONDS, temp_falas);
-        Falas("Após derrotar o Mago, surge uma porta.",TimeUnit.MILLISECONDS, temp_falas);
-        Falas("Ao adentrar.",TimeUnit.MILLISECONDS, temp_falas);
-        Falas("Sai em um lugar todo escuro...",TimeUnit.MILLISECONDS, temp_falas);
-        Falas("De repente uma luz acende, e tudo fica claro.",TimeUnit.MILLISECONDS, temp_falas);
-        Falas("E surge uma estátua gigantesca.",TimeUnit.MILLISECONDS, temp_falas);
+        Falas("Após derrotar o Mago, surge uma porta.\n",TimeUnit.MILLISECONDS, temp_falas);
+        Falas("Ao adentrar.\n",TimeUnit.MILLISECONDS, temp_falas);
+        Falas("Sai em um lugar todo escuro...\n",TimeUnit.MILLISECONDS, temp_falas);
+        Falas("De repente uma luz acende, e tudo fica claro.\n",TimeUnit.MILLISECONDS, temp_falas);
+        Falas("E surge uma estátua gigantesca.\n",TimeUnit.MILLISECONDS, temp_falas);
         System.out.printf("%s pensou: que espécie de estátua é essa?\n", names[0],TimeUnit.MILLISECONDS, temp_falas);
-        Falas("Finalmente alguém, não aguentava mais ficar olhando para o nada... sou uma esfinge antes que me pergunte.",TimeUnit.MILLISECONDS, temp_falas);
+        Falas("Finalmente alguém, não aguentava mais ficar olhando para o nada... sou uma esfinge antes que me pergunte.\n",TimeUnit.MILLISECONDS, temp_falas);
         System.out.printf("%s: %s me tirou da minha terra, o egito não sei se já ouviu falar.\n", names[6], names[5],TimeUnit.MILLISECONDS, temp_falas);
         System.out.printf("%s:ele se transportou para minha realidade e teve uma série de problemas com o meu faraó.\n", names[6],TimeUnit.MILLISECONDS, temp_falas);
         System.out.printf("%s:por punição vim parar aqui.\n", names[6],TimeUnit.MILLISECONDS, temp_falas);
@@ -637,7 +636,7 @@ public class MathMagic {
         System.out.printf("%s: O maximo que posso fazer é te dar mais que uma oportunidade de responder\n", names[6],TimeUnit.MILLISECONDS, temp_falas);
         System.out.printf("%s: Como faz muito tempo que não converso com alguém e fui com sua cara, vou te dar 5 chances.\n", names[6],TimeUnit.MILLISECONDS, temp_falas);
         System.out.printf("%s: Você não pode simplesmente me passar ou me dar a resposta ?\n", names[0],TimeUnit.MILLISECONDS, temp_falas);
-        System.out.printf("%s: %s sempre está de olho em tudo que acontece, ficam dezenas de outros magos vigiando tudo que está acontecendo nessa dimenção.\nQuanto a resposta ele fez um feitiço e eu não consigo falar a resposta.\nApenas se está certa ou não.", names[6], names[0],TimeUnit.MILLISECONDS, temp_falas);
+        System.out.printf("%s: %s sempre está de olho em tudo que acontece, ficam dezenas de outros magos vigiando tudo que está acontecendo nessa dimenção.\nQuanto a resposta ele fez um feitiço e eu não consigo falar a resposta.\nApenas se está certa ou não.\n", names[6], names[0],TimeUnit.MILLISECONDS, temp_falas);
         System.out.printf("%s:... A pergunta é a seguinte.\n", names[6],TimeUnit.MILLISECONDS, temp_falas);
         int j = 0;
         while (true) {
@@ -699,11 +698,11 @@ public class MathMagic {
     public static int capitulo7(String[] names, int n) throws InterruptedException {
         if (n == 1) {
             System.out.println("\n");
-            System.out.println("===================================================================================================================");
-            System.out.println("*************************************************CAPÍTULO 7*******************************************************");
-            System.out.println("===================================================================================================================");
+            System.out.println("===================================================================================================================\n");
+            System.out.println("*************************************************CAPÍTULO 7*******************************************************\n");
+            System.out.println("===================================================================================================================\n");
             System.out.println("\n");
-            System.out.printf("%s foi transportado de volta!", names[0]);
+            System.out.printf("%s foi transportado de volta!\n", names[0]);
             System.out.printf("%s: Finalmente, estou de volta !\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
             System.out.printf("%s: Quanto barulho é esse ? \n", names[0], TimeUnit.MILLISECONDS, temp_falas);
             System.out.printf("%s  olha pela janela e reconhece o exército de Ánthropos\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
