@@ -499,7 +499,7 @@ public class MathMagic {
 
         int n = 0;
         while (true) {
-            Falas("Fantasma do derrotado: Resolva se você for capaz:\nQual a solução de 3x -7 = 8? \nAlternativas: \n1- X=1/3\n2- x=-9\n3- x=3\n4- x=5\n", TimeUnit.MILLISECONDS, temp_falas);
+            Falas("Fantasma do derrotado: Resolva se você for capaz:\n Qual a solução de 3x -7 = 8? \n Alternativas: \n1- X=1/3\n2- x=-9\n3- x=3\n4- x=5\n", TimeUnit.MILLISECONDS, temp_falas);
             int resposta = input.nextInt();
 
             if (resposta == 4) {
@@ -518,16 +518,16 @@ public class MathMagic {
         }
         int i = 0;
         while (true) {
-            Falas("Fantasma do derrotado: Essa não será tão fácil, responda essa equação: x^2 -3x - 10 = 0\nAlternativas: \n1- x=6 e x=-4\n2- 22\n3- x=5 e x=-2\n4- x=2 e x=-5\n", TimeUnit.MILLISECONDS, temp_falas);
+            Falas("Fantasma do derrotado: Essa não será tão fácil \n responda essa equação: x^2 -3x - 10 = 0\nAlternativas: \n1- x=6 e x=-4\n2- 22\n3- x=5 e x=-2\n4- x=2 e x=-5\n", TimeUnit.MILLISECONDS, temp_falas);
             int resposta = input.nextInt();
 
             if (resposta == 3) {
                 //Sistema de conhecimento (pontuação)
                 if (n <= 2) {
-                    Falas(names[0] + ": Muito fácil, vocês realmente não eram de nada!", TimeUnit.MILLISECONDS, temp_falas);
+                    Falas(names[0] + ": Muito fácil, vocês realmente não eram de nada!\n", TimeUnit.MILLISECONDS, temp_falas);
                     conhecimento += 1;
                 } else {
-                    Falas(names[0] + ": Muito fácil, vocês realmente não eram de nada!", TimeUnit.MILLISECONDS, temp_falas);
+                    Falas(names[0] + ": Muito fácil, vocês realmente não eram de nada!\n", TimeUnit.MILLISECONDS, temp_falas);
                 }
                 break;
             } else {
@@ -538,7 +538,7 @@ public class MathMagic {
 
         int j = 0;
         while (true) {
-            Falas("Fantasma do derrotado: Encare a pergunta que me levou à derrota! 2y^2 + 5y -3 = 0\n Alternativas: \n1- y= -1/2 e y= 3 \n2- y= 3/2 e y= 6\n3- y= -13\n4- y= 5 e y= 1/4\n", TimeUnit.MILLISECONDS, temp_falas);
+            Falas("Fantasma do derrotado: Encare a pergunta que me levou à derrota! \n 2y^2 + 5y -3 = 0\n Alternativas: \n1- y= -1/2 e y= 3 \n2- y= 3/2 e y= 6\n3- y= -13\n4- y= 5 e y= 1/4\n", TimeUnit.MILLISECONDS, temp_falas);
             int resposta = input.nextInt();
 
             if (resposta == 1) {
