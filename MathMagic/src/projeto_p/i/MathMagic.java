@@ -406,55 +406,55 @@ public class MathMagic {
         System.out.println("*************************************************CAPÍTULO 4*******************************************************");
         System.out.println("===================================================================================================================");
         System.out.println("\n");
-        System.out.printf("Após finalmente derrotar o monstro,%s continuou a sua jornada\n", names[0]);
-        System.out.printf("%s: Nossa, batalhar contra esse monstro me deixou exausto! Preciso repor minha energias.\n", names[0]);
-        System.out.printf("Então %s avista um local que parece ter comida e vai em sua direção\n", names[0]);
-        System.out.printf("Ao chegar lá, %s percebe que era uma armadilha e acaba preso dentro de um quarto com uma porta mágica\n", names[0]);
-        System.out.printf("%s: Droga!, não acredito que caí nisso\n", names[0]);
-        System.out.printf("Olhando ao redor do quarto,¨%s nota que há uma equação de 1°grau escrita na parede e precisa do resultado para destrancar a porta\n", names[0]);
+        System.out.printf("Após finalmente derrotar o monstro,%s continuou a sua jornada\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
+        System.out.printf("%s: Nossa, batalhar contra esse monstro me deixou exausto! Preciso repor minha energias.\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
+        System.out.printf("Então %s avista um local que parece ter comida e vai em sua direção\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
+        System.out.printf("Ao chegar lá, %s percebe que era uma armadilha e acaba preso dentro de um quarto com uma porta mágica\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
+        System.out.printf("%s: Droga!, não acredito que caí nisso\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
+        System.out.printf("Olhando ao redor do quarto,¨%s nota que há uma equação de 1°grau escrita na parede e precisa do resultado para destrancar a porta\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
         int n = 0;
         while (true) {
-            System.out.printf("%s: Hmmm, aqui na parede está a conta 2x + 5 = 11, preciso saber o valor de x. \n Alternativas: \n1- 5\n2- 2\n3- 3\n4- 6\n", names[0]);
+            System.out.printf("%s: Hmmm, aqui na parede está a conta 2x + 5 = 11, preciso saber o valor de x. \n Alternativas: \n1- 5\n2- 2\n3- 3\n4- 6\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
             int resposta = input.nextInt();
 
             if (resposta == 3) {
                 if (n <= 2) {
-                    System.out.printf("%s: Boa! consegui destrancar a porta", names[0]);
+                    System.out.printf("%s: Boa! consegui destrancar a porta", names[0], TimeUnit.MILLISECONDS, temp_falas);
                     conhecimento += 1;
                     break;
                 } else {
-                    System.out.printf("%s: Boa! consegui destrancar a porta", names[0]);
+                    System.out.printf("%s: Boa! consegui destrancar a porta", names[0], TimeUnit.MILLISECONDS, temp_falas);
                     break;
                 }
             } else {
-                System.out.printf("%s: Ainda tenho mais chances, preciso manter a calma\n", names[0]);
+                System.out.printf("%s: Ainda tenho mais chances, preciso manter a calma\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
             }
             n++;
         }
-        System.out.printf("%s: Só o que me faltava, mais uma porta ~-~\n", names[0]);
+        System.out.printf("%s: Só o que me faltava, mais uma porta ~-~\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
         int j = 0;
         while (true) {
-            System.out.printf("%s: Aqui nessa parede está a conta 2x − 5 = 11. \n Alternativas: \n1- 8\n2- 7\n3- 16\n4- 4\n", names[0]);
+            System.out.printf("%s: Aqui nessa parede está a conta 2x − 5 = 11. \n Alternativas: \n1- 8\n2- 7\n3- 16\n4- 4\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
             int resposta = input.nextInt();
 
             if (resposta == 1) {
                 if (j <= 2) {
-                    System.out.printf("%s: Ufa, espero que essa seja a última\n", names[0]);
+                    System.out.printf("%s: Ufa, espero que essa seja a última\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
                     conhecimento += 3;
                 } else if (j > 2 && j <= 5) {
-                    System.out.printf("%s: Ufa, espero que essa seja a última\n", names[0]);
+                    System.out.printf("%s: Ufa, espero que essa seja a última\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
                     conhecimento += 1;
                 } else {
-                    System.out.printf("%s: Ufa, espero que essa seja a última\n", names[0]);
+                    System.out.printf("%s: Ufa, espero que essa seja a última\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
                 }
                 break;
             } else {
                 System.out.printf("%s: Isso está muito difícil !\n", names[0]);
                 if (j == 3 && conhecimento > 3 || j == 5 && conhecimento > 3) {
-                    System.out.println("Que tal uma dica?");
-                    System.out.println("Quando uma questão é acertada você adquiri pontos de conhecimento.");
-                    System.out.println("Se for um acerto com menos de tentativas você recebe 3 pontos, até 5 tentativas e mais que 3 você recebe um ponto. ");
-                    System.out.printf("cada dica custa 3 pontos (Atualmente você possui %d pontos), e elas são escolhidas de forma aleatória.", conhecimento);
+                    Falas("Que tal uma dica?", TimeUnit.MILLISECONDS, temp_falas);
+                    Falas("Quando uma questão é acertada você adquiri pontos de conhecimento.", TimeUnit.MILLISECONDS, temp_falas);
+                    Falas("Se for um acerto com menos de tentativas você recebe 3 pontos, até 5 tentativas e mais que 3 você recebe um ponto. ", TimeUnit.MILLISECONDS, temp_falas);
+                    System.out.printf("cada dica custa 3 pontos (Atualmente você possui %d pontos), e elas são escolhidas de forma aleatória.", conhecimento, TimeUnit.MILLISECONDS, temp_falas);
                     int r;
                     do {
                         System.out.println("Quer uma Dica? \n1) Sim\n2) Não");
@@ -496,80 +496,80 @@ public class MathMagic {
         System.out.println("*************************************************CAPÍTULO 5*******************************************************");
         System.out.println("===================================================================================================================");
         System.out.println("\n");
-        System.out.printf("%s: Finalmente vou poder descansar, e comer um pouco!\n", names[0]);
-        System.out.println("%s:Após algumas horas...\n");
-        System.out.printf("%s sente que algo está se aproximando.\n", names[0]);
-        System.out.printf("%s:Que legal...\n", names[0]);
-        System.out.printf("%s: Mais um problema, essa criatura parece ser um mago muito poderoso,\nque tipo de ataques ele vai usar?\n", names[0]);
-        System.out.printf("Mago guardião: Não pense que será fácil, você não é o primeiro a chegar aqui, e não será o último que cairá pelas minhas mãos!\n");
-        System.out.printf("Mago Guardião: Veja com seus próprios olhos,\nesses são as almas dos idiotas que sucumbiram perante minhas questões matemáticas.\n");
-        System.out.printf("%s: Era só o que faltava, essa coisa consegue invocar a alma de quem ele derrota?\nNão preciso ter medo, só preciso ser melhor do que os que vieram antes de mim!\n", names[0]);
-        System.out.printf("%s: Para conseguir atacar o mago diretamente primeiro tenho que tirar esses fantasmas do meu caminho!\nEles estão fazendo questões matemáticas para mim, devem estar querendo me testar.\nVou superar as questões que eles não foram capazes de resolver e vou dar um fim naquele mago!", names[0]);
+        System.out.printf("%s: Finalmente vou poder descansar, e comer um pouco!\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
+        Falas("%s:Após algumas horas...\n", TimeUnit.MILLISECONDS, temp_falas);
+        System.out.printf("%s sente que algo está se aproximando.\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
+        System.out.printf("%s:Que legal...\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
+        System.out.printf("%s: Mais um problema, essa criatura parece ser um mago muito poderoso,\nque tipo de ataques ele vai usar?\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
+        System.out.printf("Mago guardião: Não pense que será fácil, você não é o primeiro a chegar aqui, e não será o último que cairá pelas minhas mãos!\n", TimeUnit.MILLISECONDS, temp_falas);
+        System.out.printf("Mago Guardião: Veja com seus próprios olhos,\nesses são as almas dos idiotas que sucumbiram perante minhas questões matemáticas.\n", TimeUnit.MILLISECONDS, temp_falas);
+        System.out.printf("%s: Era só o que faltava, essa coisa consegue invocar a alma de quem ele derrota?\nNão preciso ter medo, só preciso ser melhor do que os que vieram antes de mim!\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
+        System.out.printf("%s: Para conseguir atacar o mago diretamente primeiro tenho que tirar esses fantasmas do meu caminho!\nEles estão fazendo questões matemáticas para mim, devem estar querendo me testar.\nVou superar as questões que eles não foram capazes de resolver e vou dar um fim naquele mago!", names[0], TimeUnit.MILLISECONDS, temp_falas);
 
         int n = 0;
         while (true) {
-            System.out.printf("Fantasma do derrotado: Resolva se você for capaz:\nQual a solução de 3x -7 = 8? \nAlternativas: \n1- X=1/3\n2- x=-9\n3- x=3\n4- x=5\n");
+            System.out.printf("Fantasma do derrotado: Resolva se você for capaz:\nQual a solução de 3x -7 = 8? \nAlternativas: \n1- X=1/3\n2- x=-9\n3- x=3\n4- x=5\n", TimeUnit.MILLISECONDS, temp_falas);
             int resposta = input.nextInt();
 
             if (resposta == 4) {
                 //Sistema de conhecimento (pontuação)
                 if (n <= 2) {
-                    System.out.printf("%s: Consegui, que venha o próximo!", names[0]);
+                    System.out.printf("%s: Consegui, que venha o próximo!", names[0], TimeUnit.MILLISECONDS, temp_falas);
                     conhecimento += 1;
                 } else {
-                    System.out.printf("%s: Consegui, que venha o próximo!", names[0]);
+                    System.out.printf("%s: Consegui, que venha o próximo!", names[0], TimeUnit.MILLISECONDS, temp_falas);
                 }
                 break;
             } else {
-                System.out.printf("%s: Errei! Droga, não vou desistir fantasma cabeçudo!", names[0]);
+                System.out.printf("%s: Errei! Droga, não vou desistir fantasma cabeçudo!", names[0], TimeUnit.MILLISECONDS, temp_falas);
             }
             n++;
         }
         int i = 0;
         while (true) {
-            System.out.printf("Fantasma do derrotado: Essa não será tão fácil, responda essa equação: x^2 -3x - 10 = 0\nAlternativas: \n1- x=6 e x=-4\n2- 22\n3- x=5 e x=-2\n4- x=2 e x=-5\n");
+            System.out.printf("Fantasma do derrotado: Essa não será tão fácil, responda essa equação: x^2 -3x - 10 = 0\nAlternativas: \n1- x=6 e x=-4\n2- 22\n3- x=5 e x=-2\n4- x=2 e x=-5\n", TimeUnit.MILLISECONDS, temp_falas);
             int resposta = input.nextInt();
 
             if (resposta == 3) {
                 //Sistema de conhecimento (pontuação)
                 if (n <= 2) {
-                    System.out.printf("%s: Muito fácil, vocês realmente não eram de nada!", names[0]);
+                    System.out.printf("%s: Muito fácil, vocês realmente não eram de nada!", names[0], TimeUnit.MILLISECONDS, temp_falas);
                     conhecimento += 1;
                 } else {
-                    System.out.printf("%s: Muito fácil, vocês realmente não eram de nada!", names[0]);
+                    System.out.printf("%s: Muito fácil, vocês realmente não eram de nada!", names[0], TimeUnit.MILLISECONDS, temp_falas);
                 }
                 break;
             } else {
-                System.out.printf("%s: Errei alguma coisa no meu cálculo, mas isso não ficará assim!", names[0]);
+                System.out.printf("%s: Errei alguma coisa no meu cálculo, mas isso não ficará assim!", names[0], TimeUnit.MILLISECONDS, temp_falas);
             }
             i++;
         }
 
         int j = 0;
         while (true) {
-            System.out.printf("Fantasma do derrotado: Encare a pergunta que me levou à derrota! 2y^2 + 5y -3 = 0\n Alternativas: \n1- y= -1/2 e y= 3 \n2- y= 3/2 e y= 6\n3- y= -13\n4- y= 5 e y= 1/4\n");
+            System.out.printf("Fantasma do derrotado: Encare a pergunta que me levou à derrota! 2y^2 + 5y -3 = 0\n Alternativas: \n1- y= -1/2 e y= 3 \n2- y= 3/2 e y= 6\n3- y= -13\n4- y= 5 e y= 1/4\n", TimeUnit.MILLISECONDS, temp_falas);
             int resposta = input.nextInt();
 
             if (resposta == 1) {
                 //Sistema de conhecimento (pontuação)
                 if (j <= 2) {
-                    System.out.printf("%s: Consegui, Esse foi o último!\n Agora é sua vez mago!\nO mago guardião que estava desprotegido sem seus fantasmas recebe um golpe certeiro na cabeça e é derrotado!\n", names[0]);
+                    System.out.printf("%s: Consegui, Esse foi o último!\n Agora é sua vez mago!\nO mago guardião que estava desprotegido sem seus fantasmas recebe um golpe certeiro na cabeça e é derrotado!\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
                     conhecimento += 3;
                 } else if (j > 2 && j <= 5) {
-                    System.out.printf("%s: Consegui, Esse foi o último!\n Agora é sua vez mago!\nO mago guardião que estava desprotegido sem seus fantasmas recebe um golpe certeiro na cabeça e é derrotado!\n", names[0]);
+                    System.out.printf("%s: Consegui, Esse foi o último!\n Agora é sua vez mago!\nO mago guardião que estava desprotegido sem seus fantasmas recebe um golpe certeiro na cabeça e é derrotado!\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
                     conhecimento += 1;
                 } else {
-                    System.out.printf("%s: Consegui, Esse foi o último!\n Agora é sua vez mago!\nO mago guardião que estava desprotegido sem seus fantasmas recebe um golpe certeiro na cabeça e é derrotado!\n", names[0]);
+                    System.out.printf("%s: Consegui, Esse foi o último!\n Agora é sua vez mago!\nO mago guardião que estava desprotegido sem seus fantasmas recebe um golpe certeiro na cabeça e é derrotado!\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
                 }
                 break;
             } else {
                 //Sistema de conhecimento (Ajuda)
-                System.out.printf("%s: Droga, essa realmente é uma questão difícil, mas não cheguei tão longe para nada!", names[0]);
+                System.out.printf("%s: Droga, essa realmente é uma questão difícil, mas não cheguei tão longe para nada!", names[0], TimeUnit.MILLISECONDS, temp_falas);
                 if (j == 3 && conhecimento > 3 || j == 5 && conhecimento > 3) {
-                    System.out.println("Que tal uma dica?");
-                    System.out.println("Quando uma questão é acertada você adquiri pontos de conhecimento.");
-                    System.out.println("Se for um acerto com menos de tentativas você recebe 3 pontos, até 5 tentativas e mais que 3 você recebe um ponto. ");
-                    System.out.printf("cada dica custa 3 pontos (Atualmente você possui %d pontos), e elas são escolhidas de forma aleatória.", conhecimento);
+                    Falas("Que tal uma dica?", TimeUnit.MILLISECONDS, temp_falas);
+                    Falas("Quando uma questão é acertada você adquiri pontos de conhecimento.", TimeUnit.MILLISECONDS, temp_falas);
+                    Falas("Se for um acerto com menos de tentativas você recebe 3 pontos, até 5 tentativas e mais que 3 você recebe um ponto. ", TimeUnit.MILLISECONDS, temp_falas);
+                    System.out.printf("cada dica custa 3 pontos (Atualmente você possui %d pontos), e elas são escolhidas de forma aleatória.", conhecimento, TimeUnit.MILLISECONDS, temp_falas);
                     int r;
                     do {
                         System.out.println("Quer uma Dica?\n1) Sim\n2) Não");
