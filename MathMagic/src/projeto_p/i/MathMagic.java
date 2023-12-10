@@ -276,7 +276,7 @@ public class MathMagic {
             Falas(names[0] + ": Pelo visto cada tipo de ataque tem uma base numérica.\n", TimeUnit.MILLISECONDS, temp_falas);
             Falas(names[0] + ":  Nessa aula de matemática eu não faltei.\n", TimeUnit.MILLISECONDS, temp_falas);
         }
-        Falas("names[0] + \":  Sue barulho é esse?\n", TimeUnit.MILLISECONDS, temp_falas);
+        Falas(names[0] + ":  Sue barulho é esse?\n", TimeUnit.MILLISECONDS, temp_falas);
         Falas(names[0] + ":  Se vira e olha para as árvores ao fundo.\n", TimeUnit.MILLISECONDS, temp_falas);
         Falas(names[0] + ":  Que droga de criatura é essa?\n", TimeUnit.MILLISECONDS, temp_falas);
         Falas("A criatura se aproxima correndo, e " + names[0] + " percebe que é um golem\nEle tenta atacar ela.\n", TimeUnit.MILLISECONDS, temp_falas);
