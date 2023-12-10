@@ -273,97 +273,97 @@ public class MathMagic {
         System.out.println("*************************************************CAPÍTULO 3*******************************************************");
         System.out.println("===================================================================================================================");
         System.out.println("\n");
-        System.out.printf("%s é transportado para uma espécie de vale\n", names[0]);
-        System.out.printf("%s: o que é aquilo ?\n", names[0]);
-        System.out.printf("%s encontra vários armamentos no chão.\n", names[0]);
+        System.out.printf("%s é transportado para uma espécie de vale\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
+        System.out.printf("%s: o que é aquilo ?\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
+        System.out.printf("%s encontra vários armamentos no chão.\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
         if (names[4] == "Arqueiro") {
-            System.out.printf("%s: Que flechas diferentes.\n", names[0]);
-            System.out.printf("%s: Pelo visto cada tipo de flecha tem uma base numérica.\n", names[0]);
-            System.out.printf("%s: Nessa aula de matemática eu não faltei.\n", names[0]);
+            System.out.printf("%s: Que flechas diferentes.\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
+            System.out.printf("%s: Pelo visto cada tipo de flecha tem uma base numérica.\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
+            System.out.printf("%s: Nessa aula de matemática eu não faltei.\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
         } else {
-            System.out.printf("%s: Que espada diferentes.\n", names[0]);
-            System.out.printf("%s: Pelo visto cada tipo de ataque tem uma base numérica.\n", names[0]);
-            System.out.printf("%s: Nessa aula de matemática eu não faltei.\n", names[0]);
+            System.out.printf("%s: Que espada diferentes.\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
+            System.out.printf("%s: Pelo visto cada tipo de ataque tem uma base numérica.\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
+            System.out.printf("%s: Nessa aula de matemática eu não faltei.\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
         }
-        System.out.printf("%s: Sue barulho é esse?\n", names[0]);
-        System.out.printf("%s Se vira e olha para as árvores ao fundo.\n", names[0]);
-        System.out.printf("%s: Que droga de criatura é essa?\n", names[0]);
-        System.out.printf("A criatura se aproxima correndo, e %s percebe que é um golem\nEle tenta atacar ela.\n", names[0]);
-        System.out.printf("%s:Meus ataques não surtem efeito nessa coisa, deve ter algum truque por trás disso!\n", names[0]);
+        System.out.printf("%s: Sue barulho é esse?\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
+        System.out.printf("%s Se vira e olha para as árvores ao fundo.\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
+        System.out.printf("%s: Que droga de criatura é essa?\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
+        System.out.printf("A criatura se aproxima correndo, e %s percebe que é um golem\nEle tenta atacar ela.\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
+        System.out.printf("%s:Meus ataques não surtem efeito nessa coisa, deve ter algum truque por trás disso!\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
         if ("Arqueiro".equals(names[4])) {
-            System.out.printf("%s: Minhas flechas de base hexadecimal não estão causando dano,\nvou testar com outro tipo de flechas!\n", names[0]);
+            System.out.printf("%s: Minhas flechas de base hexadecimal não estão causando dano,\nvou testar com outro tipo de flechas!\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
         } else {
-            System.out.printf("%s: Meus golpes de base hexadecimal não estão surtindo efeito,\nvou testar com outro tipo de base\n", names[0]);
+            System.out.printf("%s: Meus golpes de base hexadecimal não estão surtindo efeito,\nvou testar com outro tipo de base\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
         }
-        System.out.printf("%s: Meus ataques com outras bases também não estão causando dano nesse golem,\npreciso pensar em algo rápido!\n", names[0]);
+        System.out.printf("%s: Meus ataques com outras bases também não estão causando dano nesse golem,\npreciso pensar em algo rápido!\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
 
-        System.out.printf("%s: Vou tentar algo arriscado, acho que meus ataques não estão surtindo efeito,\npois esse golem está se adaptando a base numérica dos meus ataques no momento em que eles vão atingi-lo!\n", names[0]);
+        System.out.printf("%s: Vou tentar algo arriscado, acho que meus ataques não estão surtindo efeito,\npois esse golem está se adaptando a base numérica dos meus ataques no momento em que eles vão atingi-lo!\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
 
-        System.out.printf("%s: Para superar essa habilidade, preciso usar a magia das minhas armas para alterar a base numérica dele no momento que meus ataques forem acertar!\nAssim ele não vai conseguir se adaptar e conseguirei causar dano,\npara isso terei que resolver o cálculo necessário para alterar sua base numérica.\n", names[0]);
+        System.out.printf("%s: Para superar essa habilidade, preciso usar a magia das minhas armas para alterar a base numérica dele no momento que meus ataques forem acertar!\nAssim ele não vai conseguir se adaptar e conseguirei causar dano,\npara isso terei que resolver o cálculo necessário para alterar sua base numérica.\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
 
         int n = 0;
         while (true) {
-            System.out.printf("%s: A base numérica do golem é o número hexadecimal 2A, preciso passar essa base para um número binário:\n Alternativas:\n1- 101010\n2- 001001\n3- 111000\n4- 010101\n", names[0]);
+            System.out.printf("%s: A base numérica do golem é o número hexadecimal 2A, preciso passar essa base para um número binário:\n Alternativas:\n1- 101010\n2- 001001\n3- 111000\n4- 010101\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
             int resposta = input.nextInt();
 
             if (resposta == 1) {
                 //Sistema de conhecimento (pontuação)
                 if (n <= 2) {
-                    System.out.printf("%s: Consegui causar dano!\n", names[0]);
+                    System.out.printf("%s: Consegui causar dano!\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
                     conhecimento += 1;
                 } else {
-                    System.out.printf("%s: Consegui causar dano!\n", names[0]);
+                    System.out.printf("%s: Consegui causar dano!\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
                 }
                 break;
             } else {
-                System.out.printf("%s: O cálculo está errado, não consegui alterar a base numérica dele!\n", names[0]);
+                System.out.printf("%s: O cálculo está errado, não consegui alterar a base numérica dele!\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
             }
             n++;
         }
         int i = 0;
         while (true) {
-            System.out.printf("%s: Ele alterou a base numérica novamente,agora a base numérica dele é o número octal 47,\ndessa vez vou usar um ataque de base hexadecimal, preciso converter a base dele!\nAlternativas: \n1- 32\n2- 54\n3- 27\n4- 11\n", names[0]);
+            System.out.printf("%s: Ele alterou a base numérica novamente,agora a base numérica dele é o número octal 47,\ndessa vez vou usar um ataque de base hexadecimal, preciso converter a base dele!\nAlternativas: \n1- 32\n2- 54\n3- 27\n4- 11\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
             int resposta = input.nextInt();
 
             if (resposta == 3) {
                 //Sistema de conhecimento (pontuação)
                 if (n <= 2) {
-                    System.out.printf("%s: Ótimo, mais um golpe certeiro, mais um acerto e é o fim da linha para você!\n", names[0]);
+                    System.out.printf("%s: Ótimo, mais um golpe certeiro, mais um acerto e é o fim da linha para você!\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
                     conhecimento += 1;
                 } else {
-                    System.out.printf("%s: Ótimo, mais um golpe certeiro, mais um acerto e é o fim da linha para você!\n", names[0]);
+                    System.out.printf("%s: Ótimo, mais um golpe certeiro, mais um acerto e é o fim da linha para você!\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
                 }
                 break;
             } else {
-                System.out.printf("%s: Droga, não consegui converter a base dele para a base decimal e ele conseguiu absorver meu ataque!\n", names[0]);
+                System.out.printf("%s: Droga, não consegui converter a base dele para a base decimal e ele conseguiu absorver meu ataque!\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
             }
             i++;
         }
         int j = 0;
         while (true) {
-            System.out.printf("%s: Preciso acertar esse golpe final! A base numérica dele agora é o número 3F6 na base hexadecimal,\n vou usar um ataque de base decimal para finaliza-lo.\n Alternativas: \n1- 2030\n2- 1013\n3- 1050\n4- 1014\n", names[0]);
+            System.out.printf("%s: Preciso acertar esse golpe final! A base numérica dele agora é o número 3F6 na base hexadecimal,\n vou usar um ataque de base decimal para finaliza-lo.\n Alternativas: \n1- 2030\n2- 1013\n3- 1050\n4- 1014\n", names[0], TimeUnit.MILLISECONDS, temp_falas);
             int resposta = input.nextInt();
 
             if (resposta == 4) {
                 //Sistema de conhecimento (pontuação)
                 if (j <= 2) {
-                    System.out.printf("%s: Está acabado, finalmente consegui derrota-lo!", names[0]);
+                    System.out.printf("%s: Está acabado, finalmente consegui derrota-lo!", names[0], TimeUnit.MILLISECONDS, temp_falas);
                     conhecimento += 3;
                 } else if (j > 2 && j <= 5) {
-                    System.out.printf("%s: Está acabado, finalmente consegui derrota-lo!", names[0]);
+                    System.out.printf("%s: Está acabado, finalmente consegui derrota-lo!", names[0], TimeUnit.MILLISECONDS, temp_falas);
                     conhecimento += 1;
                 } else {
-                    System.out.printf("%s: Está acabado, finalmente consegui derrota-lo!", names[0]);
+                    System.out.printf("%s: Está acabado, finalmente consegui derrota-lo!", names[0], TimeUnit.MILLISECONDS, temp_falas);
                 }
                 break;
             } else {
                 //Sistema de conhecimento (Ajuda)
-                System.out.printf("%s: Falhei em converter a base dele para decimal, mas não desistirei!", names[0]);
+                System.out.printf("%s: Falhei em converter a base dele para decimal, mas não desistirei!", names[0], TimeUnit.MILLISECONDS, temp_falas);
                 if (j == 3 && conhecimento > 3 || j == 5 && conhecimento > 3) {
-                    System.out.println("Que tal uma dica?");
-                    System.out.println("Quando uma questão é acertada você adquiri pontos de conhecimento.");
-                    System.out.println("Se for um acerto com menos de tentativas você recebe 3 pontos, até 5 tentativas e mais que 3 você recebe um ponto. ");
-                    System.out.printf("cada dica custa 3 pontos (Atualmente você possui %d pontos), e elas são escolhidas de forma aleatória.", conhecimento);
+                    Falas("Que tal uma dica?", TimeUnit.MILLISECONDS, temp_falas);
+                    Falas("Quando uma questão é acertada você adquiri pontos de conhecimento.", TimeUnit.MILLISECONDS, temp_falas);
+                    Falas("Se for um acerto com menos de tentativas você recebe 3 pontos, até 5 tentativas e mais que 3 você recebe um ponto. ", TimeUnit.MILLISECONDS, temp_falas);
+                    System.out.printf("cada dica custa 3 pontos (Atualmente você possui %d pontos), e elas são escolhidas de forma aleatória.", conhecimento, TimeUnit.MILLISECONDS, temp_falas);
                     int r;
                     do {
                         System.out.println("Quer uma Dica? \n1) Sim\n2) Não");
