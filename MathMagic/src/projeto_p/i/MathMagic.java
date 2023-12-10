@@ -290,7 +290,7 @@ public class MathMagic {
 
         Falas(names[0] + ":  Vou tentar algo arriscado, acho que meus ataques não estão surtindo efeito,\npois esse golem está se adaptando a base numérica dos meus ataques no momento em que eles vão atingi-lo!\n", TimeUnit.MILLISECONDS, temp_falas);
 
-        Falas("%s: Para superar essa habilidade, preciso usar a magia das minhas armas para alterar a base numérica dele no momento que meus ataques forem acertar!\nAssim ele não vai conseguir se adaptar e conseguirei causar dano,\npara isso terei que resolver o cálculo necessário para alterar sua base numérica.\n", TimeUnit.MILLISECONDS, temp_falas);
+        Falas("Para superar essa habilidade, preciso usar a magia das minhas armas para alterar a base numérica dele no momento que meus ataques forem acertar!\nAssim ele não vai conseguir se adaptar e conseguirei causar dano,\npara isso terei que resolver o cálculo necessário para alterar sua base numérica.\n", TimeUnit.MILLISECONDS, temp_falas);
 
         int n = 0;
         while (true) {
@@ -488,7 +488,7 @@ public class MathMagic {
         System.out.println("===================================================================================================================");
         System.out.println("\n");
         Falas(names[0] + ": Finalmente vou poder descansar, e comer um pouco!\n", TimeUnit.MILLISECONDS, temp_falas);
-        Falas("%s:Após algumas horas...\n", TimeUnit.MILLISECONDS, temp_falas);
+        Falas("*Após algumas horas...*\n", TimeUnit.MILLISECONDS, temp_falas);
         Falas(names[0] + " sente que algo está se aproximando.\n", TimeUnit.MILLISECONDS, temp_falas);
         Falas(names[0] + ": Que legal...\n", TimeUnit.MILLISECONDS, temp_falas);
         Falas(names[0] + ": Mais um problema, essa criatura parece ser um mago muito poderoso,\nque tipo de ataques ele vai usar?\n", TimeUnit.MILLISECONDS, temp_falas);
@@ -702,7 +702,7 @@ public class MathMagic {
             Falas(names[0] + ": Quanto barulho é esse ? \n", TimeUnit.MILLISECONDS, temp_falas);
             Falas(names[0] + " olha pela janela e reconhece o exército de Ánthropos\n", TimeUnit.MILLISECONDS, temp_falas);
             Falas("De longe vê seu pai(" + names[2] + ") lutando com (" + names[5], TimeUnit.MILLISECONDS, temp_falas);
-            Falas("%s decide se procurar um lugar com uma melhor visão." + names[0] + "\n", TimeUnit.MILLISECONDS, temp_falas);
+            Falas("E decide se procurar um lugar com uma melhor visão." + names[0] + "\n", TimeUnit.MILLISECONDS, temp_falas);
             Falas("Acabou encontrando uma janela.\ne viu que o exército das duas vilas estavão batalhando.", TimeUnit.MILLISECONDS, temp_falas);
             Falas("Chegando no meio batalha econtra " + names[1] + "\n", TimeUnit.MILLISECONDS, temp_falas);
             Falas(names[0] + ": Quanto tempo!\n", TimeUnit.MILLISECONDS, temp_falas);
@@ -752,7 +752,7 @@ public class MathMagic {
             Falas(names[5] + ": e sua espada também, quem foi o que me traiu e contou o segredo dos Magos?\n", TimeUnit.MILLISECONDS, temp_falas);
             Falas(names[2] + ": Foram anos de estudos dos meus melhores cientistas!\n", TimeUnit.MILLISECONDS, temp_falas);
             Falas(names[5] + ": Duvido que esse povo conseguiria fazer algo desse tipo!\n", TimeUnit.MILLISECONDS, temp_falas);
-            Falas(names[5] + ": Imagina eu, tomando ataques de %s e ele conseguindo se defender!\n", TimeUnit.MILLISECONDS, temp_falas);
+            Falas(names[5] + ": Imagina eu, tomando ataques e ele conseguindo se defender!\n", TimeUnit.MILLISECONDS, temp_falas);
             Falas(names[5] + ": Parece até piada!\n", TimeUnit.MILLISECONDS, temp_falas);
             Falas(names[0] + ": Como nunca fiquei sabendo disso? !\n", TimeUnit.MILLISECONDS, temp_falas);
             Falas(names[2] + ": Tem coisas que só vai saber quando se tornar líder da vila!\n", TimeUnit.MILLISECONDS, temp_falas);
